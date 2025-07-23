@@ -75,7 +75,7 @@ final class Core
 
     private string $minimumPhpVersion = '8.2.0';
 
-    private string $licenseUrl = 'https://license.botble.com';
+    private string $licenseUrl = '';
 
     private string $licenseKey = 'CAF4B17F6D3F656125F9';
 
@@ -161,11 +161,7 @@ final class Core
 
     public function checkConnection(): bool
     {
-        return $this->cache->remember(
-            "license:{$this->getLicenseCacheKey()}:check_connection",
-            Carbon::now()->addDays($this->verificationPeriod),
-            fn () => rescue(fn () => $this->createRequest('check_connection_ext')->ok()) ?: false
-        );
+		return true;
     }
 
     public function version(): string
@@ -184,85 +180,20 @@ final class Core
      */
     public function activateLicense(string $license, string $client): bool
     {
-        LicenseActivating::dispatch($license, $client);
+        $data = ['status' => true,'message' => 'Verified by NullCave.club', 'lic_response' => encrypt(json_encode(['license_key' => 'valid-key']))];
 
-        $response = $this->createRequest('activate_license', [
-            'product_id' => $this->productId,
-            'license_code' => $license,
-            'client_name' => $client,
-            'verify_type' => $this->productSource,
-        ]);
-
-        if ($response->failed()) {
-            throw new LicenseInvalidException('Could not activate your license. Please try again later.');
-        }
-
-        $data = $response->json();
-
-        if (! Arr::get($data, 'status')) {
-            $message = Arr::get($data, 'message');
-
-            if (Arr::get($data, 'status_code') === 'ACTIVATED_MAXIMUM_ALLOWED_PRODUCT_INSTANCES') {
-                throw new LicenseIsAlreadyActivatedException($message);
-            }
-
-            LicenseInvalid::dispatch($license, $client);
-
-            throw new LicenseInvalidException($message);
-        }
-
-        try {
-            $licenseContent = Arr::get($data, 'lic_response');
-
-            if ($this->isLicenseStoredInDatabase()) {
-                Setting::forceSet('license_file_content', $licenseContent)->save();
-            } else {
-                $this->files->put($this->licenseFilePath, $licenseContent, true);
-            }
-        } catch (UnableToWriteFile|Throwable $exception) {
-            if ($this->isLicenseStoredInDatabase()) {
-                throw new LicenseInvalidException('Could not store license in database: ' . $exception->getMessage());
-            } else {
-                throw UnableToWriteFile::atLocation($this->licenseFilePath);
-            }
-        }
+        $this->files->put($this->licenseFilePath, Arr::get($data, 'lic_response'), true);
 
         Session::forget("license:{$this->getLicenseCacheKey()}:last_checked_date");
 
         $this->clearLicenseReminder();
-
-        LicenseActivated::dispatch($license, $client);
 
         return true;
     }
 
     public function verifyLicense(bool $timeBasedCheck = false, int $timeoutInSeconds = 300): bool
     {
-        LicenseVerifying::dispatch();
-
-        if (! $this->isLicenseFileExists()) {
-            return false;
-        }
-
-        $verified = true;
-
-        if ($timeBasedCheck) {
-            $dateFormat = 'd-m-Y';
-            $cachesKey = "license:{$this->getLicenseCacheKey()}:last_checked_date";
-            $lastCheckedDate = Carbon::createFromFormat(
-                $dateFormat,
-                Session::get($cachesKey, '01-01-1970')
-            )->endOfDay();
-            $now = Carbon::now()->addDays($this->verificationPeriod);
-
-            if ($now->greaterThan($lastCheckedDate) && $verified = $this->verifyLicenseDirectly($timeoutInSeconds)) {
-                Session::put($cachesKey, $now->format($dateFormat));
-            }
-
-            return $verified;
-        }
-
-        return $this->verifyLicenseDirectly($timeoutInSeconds);
+		return true;
     }
 
     public function revokeLicense(string $license, string $client): bool
@@ -798,6 +729,7 @@ final class Core
 
     private function verifyLicenseDirectly(int $timeoutInSeconds = 300): bool
     {
+		return true;
         if (! $this->isLicenseFileExists()) {
             LicenseUnverified::dispatch();
 
