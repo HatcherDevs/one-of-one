@@ -34,15 +34,24 @@ class AdminAppearance
 
     public function getLocale(): string
     {
-        $generalLocale = config('core.base.general.locale', config('app.locale'));
 
+        if (session()->has('dashboard_locale')) {
+            return session('dashboard_locale');
+        }
+
+        $generalLocale = config('core.base.general.locale', config('app.locale'));
         return $this->getUserSetting('locale', $generalLocale);
     }
 
     public function getLocaleDirection(): string
     {
+        if (session()->has('dashboard_locale_direction')) {
+            return session('dashboard_locale_direction');
+        }
+
         return $this->getUserSetting('locale_direction', setting('admin_locale_direction', 'ltr'));
     }
+
 
     public function getCurrentLayout(): string
     {
@@ -137,7 +146,7 @@ class AdminAppearance
             return '';
         }
 
-        if ((! Str::contains($js, '<script') || ! Str::contains($js, '</script>')) && ! Str::contains($js, '<noscript') && ! Str::contains($js, '</noscript>')) {
+        if ((!Str::contains($js, '<script') || !Str::contains($js, '</script>')) && !Str::contains($js, '<noscript') && !Str::contains($js, '</noscript>')) {
             $js = Html::tag('script', $js);
         }
 

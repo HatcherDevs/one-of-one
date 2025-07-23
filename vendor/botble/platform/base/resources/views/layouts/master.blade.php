@@ -5,7 +5,8 @@
         'page-wrapper',
         'rv-media-integrate-wrapper' => Route::currentRouteName() === 'media.index',
     ])>
-        @include('core/base::layouts.partials.page-header')
+   @include('core/base::layouts.' . AdminAppearance::getCurrentLayout() . '.partials.header')
+  @include('core/base::layouts.partials.page-header')
 
         <div class="page-body page-content">
             <div class="{{ AdminAppearance::getContainerWidth() }}">

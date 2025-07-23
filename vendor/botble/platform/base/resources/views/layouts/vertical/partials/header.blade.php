@@ -17,9 +17,9 @@
             <x-core::icon name="ti ti-menu-2" />
         </button>
 
-        <h1 class="navbar-brand navbar-brand-autodark me-4">
+        {{-- <h1 class="navbar-brand navbar-brand-autodark me-4">
             @include('core/base::partials.logo')
-        </h1>
+        </h1> --}}
 
         <div class="flex-row navbar-nav order-md-last">
             <div class="d-flex align-items-center me-3">
@@ -41,7 +41,7 @@
 
             <div class="d-none d-md-flex me-2">
                 @include('core/base::layouts.partials.theme-toggle')
-
+              @include('core/base::layouts.partials.dashlang')
                 @auth
                     {!! apply_filters(BASE_FILTER_TOP_HEADER_LAYOUT, null) !!}
                 @endauth
