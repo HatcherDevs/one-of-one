@@ -1,0 +1,38 @@
+<?php
+
+return [
+    'name' => 'Phiếu Giảm Giá',
+    'create' => 'Phiếu Giảm Giá Mới',
+    'edit' => 'Chỉnh sửa phiếu giảm giá ":name"',
+    'intro' => [
+        'button_text' => 'Tạo phiếu giảm giá',
+        'title' => 'Quản lý mã phiếu giảm giá',
+        'description' => 'Tạo và quản lý mã phiếu giảm giá cho khách hàng của bạn.',
+    ],
+    'types' => [
+        'percentage' => 'Phần trăm',
+        'fixed' => 'Cố định',
+    ],
+    'type' => 'Loại',
+    'created_message' => 'Phiếu giảm giá đã được tạo thành công.',
+    'expires_date' => 'Ngày hết hạn',
+    'expires_time' => 'Giờ hết hạn',
+    'never_expired' => 'Không bao giờ hết hạn?',
+    'save_button' => 'Lưu',
+    'coupon_code' => 'Mã phiếu giảm giá',
+    'coupon_code_placeholder' => 'Nhập mã phiếu giảm giá',
+    'generate_code_button' => 'Tạo mã',
+    'value' => 'Giá trị',
+    'value_placeholder' => 'Nhập giá trị phiếu giảm giá',
+    'value_off' => 'Giảm :value',
+    'total_used' => 'Đã sử dụng',
+    'expired' => 'Hết hạn',
+    'active' => 'Hoạt động',
+    'unlimited' => 'Phiếu giảm giá không giới hạn?',
+    'quantity' => 'Số lượng',
+    'quantity_placeholder' => 'Nhập số lượng phiếu giảm giá',
+    'discount_amount' => 'Số tiền giảm giá',
+    'total' => 'Tổng cộng',
+    'toggle_coupon_form_text' => 'Bạn có mã phiếu giảm giá?',
+    'apply_coupon_code' => 'Áp dụng',
+];
