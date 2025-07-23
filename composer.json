@@ -37,7 +37,7 @@
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",
-        "botble/dev-tool": "^1.0.2",
+        "botble/dev-tool": "*",
         "botble/git-commit-checker": "^2.1",
         "driftingly/rector-laravel": "^2.0",
         "fakerphp/faker": "^1.23",
