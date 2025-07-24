@@ -137,6 +137,7 @@ class LanguageServiceProvider extends ServiceProvider
         ) {
             $data['prefix'] = trim((string) $locale);
         }
+        unset($data['prefix']);
 
         $data['middleware'] = array_merge(Arr::get($data, 'middleware', []), [
             'localeSessionRedirect',

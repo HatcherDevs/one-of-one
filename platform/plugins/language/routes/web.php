@@ -2,6 +2,7 @@
 
 use Botble\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 Route::group(['namespace' => 'Botble\Language\Http\Controllers'], function (): void {
     AdminHelper::registerRoutes(function (): void {
@@ -69,4 +70,20 @@ Route::group(['namespace' => 'Botble\Language\Http\Controllers'], function (): v
             'permission' => false,
         ]);
     });
+
+    
+// routes/web.php
+Route::middleware(['web', 'core','localeSessionRedirect','localizationRedirect','localize'])->group(function () {
+    Route::get('/change-language/{locale}', function ($locale) {
+                // session(['language' => $locale]);
+
+                Session::put('language', $locale);
+
+        return redirect()->back();
+    })->name('change-language');
 });
+
+
+});
+
+

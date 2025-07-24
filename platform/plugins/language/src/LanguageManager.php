@@ -21,6 +21,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Env;
 use Illuminate\Support\Str;
 use Illuminate\Translation\Translator;
+use Illuminate\Support\Facades\Session;
 
 class LanguageManager
 {
@@ -296,14 +297,15 @@ class LanguageManager
             foreach ($this->getSupportedLocales() as $localeCode => $lang) {
                 $localeCode = $this->getLocaleFromMapping($localeCode);
 
-                $parsedUrl['path'] = preg_replace('%^/?' . $localeCode . '/%', '$1', $parsedUrl['path']);
+                // $parsedUrl['path'] = preg_replace('%^/?' . $localeCode . '/%', '$1', $parsedUrl['path']);
+                $parsedUrl['path'] = preg_replace('%^/?'  . '/%', '$1', $parsedUrl['path']);
                 if ($parsedUrl['path'] !== $path) {
                     $urlLocale = $localeCode;
 
                     break;
                 }
 
-                $parsedUrl['path'] = preg_replace('%^/?' . $localeCode . '$%', '$1', $parsedUrl['path']);
+                $parsedUrl['path'] = preg_replace('%^/?' . '$%', '$1', $parsedUrl['path']);
                 if ($parsedUrl['path'] !== $path) {
                     $urlLocale = $localeCode;
 
@@ -325,11 +327,11 @@ class LanguageManager
 
         $locale = $this->getLocaleFromMapping($locale);
 
-        if (! empty($locale)) {
-            if ($forceDefaultLocation || $locale != $this->getDefaultLocale() || ! $this->hideDefaultLocaleInURL()) {
-                $parsedUrl['path'] = $locale . '/' . ltrim($parsedUrl['path'], '/');
-            }
-        }
+        // if (! empty($locale)) {
+        //     if ($forceDefaultLocation || $locale != $this->getDefaultLocale() || ! $this->hideDefaultLocaleInURL()) {
+        //         $parsedUrl['path'] = $locale . '/' . ltrim($parsedUrl['path'], '/');
+        //     }
+        // }
 
         $parsedUrl['path'] = ltrim(ltrim($basePath, '/') . '/' . $parsedUrl['path'], '/');
 
@@ -512,7 +514,7 @@ class LanguageManager
         $route = '';
 
         if ($forceDefaultLocation || ! ($locale === $this->getDefaultLocale() && $this->hideDefaultLocaleInURL())) {
-            $route = '/' . $locale;
+            $route = '/' ;
         }
 
         if (is_string($locale) && $this->translator->has($transKeyName, $locale)) {
@@ -1006,7 +1008,8 @@ class LanguageManager
         if (empty($locale) || ! is_string($locale)) {
             // If the locale has not been passed through the function
             // it tries to get it from the first segment of the url
-            $locale = $this->request->segment(1);
+            // $locale = $this->request->segment(1);
+            $locale = session('language');
 
             $localeFromRequest = $this->request->input('language') ?: $this->request->header('X-LANGUAGE');
 
@@ -1027,7 +1030,8 @@ class LanguageManager
             // it could be taken by the browser
             // depending on your configuration
 
-            $locale = null;
+            // $locale = null;
+            $localeFromSession = session('language');
 
             $this->currentLocale = $this->hideDefaultLocaleInURL()
                 ? $this->getDefaultLocale()

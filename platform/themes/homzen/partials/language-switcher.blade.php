@@ -21,7 +21,9 @@
                         @foreach ($supportedLocales as $localeCode => $properties)
                             @if ($localeCode != Language::getCurrentLocale())
                                 <li>
-                                    <a class="dropdown-item" href="{{ Language::getSwitcherUrl($localeCode, $properties['lang_code']) }}">
+                                                                        {{-- <a class="dropdown-item" href="{{ Language::getSwitcherUrl($localeCode, $properties['lang_code']) }}"> --}}
+
+<a class="dropdown-item" href="{{ route('change-language', $localeCode) }}">
                                         @if ($languageDisplay == 'all' || $languageDisplay == 'flag')
                                             {!! language_flag($properties['lang_flag'], $properties['lang_name']) !!}
                                         @endif

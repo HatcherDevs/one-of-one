@@ -3,6 +3,8 @@
 namespace Botble\Language\Http\Middleware;
 
 use Botble\Language\Facades\Language;
+use Botble\Language\Http\Middleware\LaravelLocalizationMiddlewareBase;
+use Botble\Language\LanguageManager;
 use Botble\Language\LanguageNegotiator;
 use Closure;
 use Illuminate\Http\RedirectResponse;
@@ -12,6 +14,14 @@ use Illuminate\Support\Facades\Session;
 
 class LocaleSessionRedirect extends LaravelLocalizationMiddlewareBase
 {
+
+        protected LanguageManager $languageManager;
+
+    public function __construct(LanguageManager $languageManager)
+    {
+        $this->languageManager = $languageManager;
+    }
+
     public function handle(Request $request, Closure $next)
     {
         // If the URL of the request is in exceptions.
@@ -19,26 +29,26 @@ class LocaleSessionRedirect extends LaravelLocalizationMiddlewareBase
             return $next($request);
         }
 
-        $params = array_filter(explode('/', $request->path()));
-        $paramLocale = $params[0] ?? null;
+        // $params = array_filter(explode('/', $request->path()));
+        // $paramLocale = $params[0] ?? null;
 
-        if (count($params) > 0 && Language::checkLocaleInSupportedLocales($paramLocale)) {
-            $this->updatePreviousLanguage($paramLocale);
+        // if (count($params) > 0 && Language::checkLocaleInSupportedLocales($paramLocale)) {
+        //     $this->updatePreviousLanguage($paramLocale);
 
-            Session::put(['language' => $paramLocale]);
+        //     Session::put(['language' => $paramLocale]);
 
-            App::setLocale($paramLocale);
+        //     App::setLocale($paramLocale);
 
-            return $next($request);
-        }
+        //     return $next($request);
+        // }
 
         $locale = Session::get('language', false);
 
         $defaultLocale = Language::getDefaultLocale();
 
-        if (! empty($params) && ! Language::checkLocaleInSupportedLocales($paramLocale)) {
-            $locale = $defaultLocale;
-        }
+        // if (! empty($params) && ! Language::checkLocaleInSupportedLocales($paramLocale)) {
+        //     $locale = $defaultLocale;
+        // }
 
         if (
             empty($locale) &&
@@ -62,9 +72,19 @@ class LocaleSessionRedirect extends LaravelLocalizationMiddlewareBase
 
         $locale = $locale ?: $defaultLocale;
 
+
         Session::put(['language' => $locale]);
 
+
+         $localeSet = $this->languageManager->setLocale($locale);
+
+        app()->setLocale($localeSet);
+
+        Session::put('language', $localeSet);
+
+
         App::setLocale($locale);
+        Language::setLocale($locale);
 
         if (
             $locale
@@ -77,7 +97,6 @@ class LocaleSessionRedirect extends LaravelLocalizationMiddlewareBase
 
             return new RedirectResponse($redirection, 302, ['Vary' => 'Accept-Language']);
         }
-
         return $next($request);
     }
 
