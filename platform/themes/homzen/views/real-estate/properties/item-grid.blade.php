@@ -1,11 +1,22 @@
 @php
     $class ??= null;
     $itemsPerRow ??= 3;
+
+
+@endphp
+@php
+if (!function_exists('removeLanguagePrefix')) {
+    function removeLanguagePrefix(string $url): string {
+        return preg_replace('#/(ar|en)(/|$)#', '/', $url);
+    }
+}
 @endphp
 
-<div @class(['property-item homeya-box', $class]) @if ($property->latitude && $property->longitude) data-lat="{{ $property->latitude }}" data-lng="{{ $property->longitude }}" @endif>
+
+<div @class(['property-item homeya-box', $class]) @if ($property->latitude && $property->longitude)
+data-lat="{{ $property->latitude }}" data-lng="{{ $property->longitude }}" @endif>
     <div class="archive-top">
-        <a href="{{ $property->url }}" class="images-group">
+        <a href="{{ removeLanguagePrefix($property->url) }}" class="images-group">
             <div class="images-style">
                 {{ RvMedia::image($property->image, $property->name, 'medium-rectangle') }}
             </div>
@@ -18,13 +29,10 @@
                 </div>
                 @if (RealEstateHelper::isEnabledWishlist())
                     <div class="d-flex gap-4">
-                        <button type="button" class="box-icon w-32"
-                                data-type="property"
-                                data-bb-toggle="add-to-wishlist"
-                                data-id="{{ $property->getKey() }}"
-                                data-add-message="{{ __('Added ":name" to wishlist successfully!', ['name' => $property->name]) }}"
-                                data-remove-message="{{ __('Removed ":name" from wishlist successfully!', ['name' => $property->name]) }}"
-                        >
+                        <button type="button" class="box-icon w-32" data-type="property" data-bb-toggle="add-to-wishlist"
+                            data-id="{{ $property->getKey() }}"
+                            data-add-message="{{ __('Added ":name" to wishlist successfully!', ['name' => $property->name]) }}"
+                            data-remove-message="{{ __('Removed ":name" from wishlist successfully!', ['name' => $property->name]) }}">
                             <x-core::icon name="ti ti-heart" />
                         </button>
                     </div>
@@ -38,7 +46,8 @@
         </a>
         <div class="content">
             <{{ $class === 'lg' ? 'h5' : 'div' }} @class(['text-capitalize', 'h7 fw-7' => $class !== 'lg'])>
-                <a href="{{ $property->url }}" class="link line-clamp-1" title="{{ $property->name }}">{!! BaseHelper::clean($property->name) !!}</a>
+                <a href="{{ removeLanguagePrefix($property->url) }}" class="link line-clamp-1"
+                    title="{{ $property->name }}">{!! BaseHelper::clean($property->name) !!}</a>
             </{{ $class === 'lg' ? 'h5' : 'div' }}>
             @if($property->short_address)
                 <div class="desc">
@@ -72,7 +81,7 @@
         </div>
     </div>
     <div class="archive-bottom d-flex justify-content-between align-items-center">
-        @if (! \Botble\RealEstate\Facades\RealEstateHelper::isDisabledPublicProfile() && ($author = $property->author) && $property->author->name)
+        @if (!\Botble\RealEstate\Facades\RealEstateHelper::isDisabledPublicProfile() && ($author = $property->author) && $property->author->name)
             <div class="d-flex gap-8 align-items-center">
                 @if ($itemsPerRow < 4)
                     <div class="avatar avt-40 round">
