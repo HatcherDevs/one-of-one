@@ -207,4 +207,58 @@ protected function isAccessible(User $user, ?string $path = null): bool
 - To run all tests: `php artisan test`.
 - To run all tests in a file: `php artisan test tests/Feature/ExampleTest.php`.
 - To filter on a particular test name: `php artisan test --filter=testName` (recommended after making a change to a related file).
+
+
+=== botble/agents rules ===
+
+## Botble Custom Agents
+
+This project has custom agents in `.github/agents/` for specialized tasks:
+
+### theme-developer
+- **File**: `.github/agents/theme-developer.agent.md`
+- **Purpose**: متخصص في تطوير ثيمات Botble CMS بكل مكوناتها
+- **Applies to**: `platform/themes/**/*.php`, `*.blade.php`, `*.{js,scss,css}`, `theme.json`
+- **Use when**: إنشاء أو تعديل صفحات الثيم، layouts، partials، shortcodes، functions
+
+### real-estate-manager
+- **File**: `.github/agents/real-estate-manager.agent.md`
+- **Purpose**: متخصص في إدارة الوحدة العقارية (Real Estate Plugin)
+- **Applies to**: `platform/plugins/real-estate/**/*.php`
+- **Use when**: التعامل مع العقارات، المشاريع، التصنيفات، حسابات العملاء، التقييمات
+
+### plugin-developer
+- **File**: `.github/agents/plugin-developer.agent.md`
+- **Purpose**: متخصص في تطوير وإدارة بلجينز Botble CMS
+- **Applies to**: `platform/plugins/**/*.php`
+- **Use when**: إنشاء بلجين جديد، تعديل بلجين موجود، فهم هيكل البلجينز
+
+
+=== botble/prompts rules ===
+
+## Botble Custom Prompts
+
+This project has reusable prompts in `.github/prompts/`:
+
+| Prompt | الملف | الاستخدام |
+|--------|-------|-----------|
+| Create Theme Page | `create-theme-page.prompt.md` | إنشاء صفحة ثيم جديدة كاملة |
+| Create Shortcode | `create-shortcode.prompt.md` | إنشاء شورت كود جديد مع القالب والإعدادات |
+| Add Theme Options | `add-theme-options.prompt.md` | إضافة خيارات ثيم جديدة |
+| Create Properties Page | `create-properties-page.prompt.md` | إنشاء صفحة قائمة عقارات كاملة |
+| Create Property Detail | `create-property-detail.prompt.md` | إنشاء صفحة تفاصيل عقار كاملة |
+
+
+=== botble/skills rules ===
+
+## Botble Custom Skills
+
+This project has reusable skills in `.github/skills/`:
+
+| Skill | الملف | الاستخدام |
+|-------|-------|-----------|
+| Create Botble Theme | `create-botble-theme.skill.md` | إنشاء ثيم Botble كامل من الصفر |
+| Create Botble Shortcode | `create-botble-shortcode.skill.md` | إنشاء شورت كود Botble متكامل |
+| Botble Real Estate Query | `botble-real-estate-query.skill.md` | استعلامات عقارية متقدمة |
+| Botble Widget Creation | `botble-widget-creation.skill.md` | إنشاء ودجت مخصصة |
 </laravel-boost-guidelines>
