@@ -1,76 +1,48 @@
 <?php
 
+use Botble\Base\Facades\BaseHelper;
 use Botble\Shortcode\View\View;
 use Botble\Theme\Theme;
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Inherit from another theme
-    |--------------------------------------------------------------------------
-    */
-
-    'inherit' => null, //default
-
-    /*
-    |--------------------------------------------------------------------------
-    | Listener from events
-    |--------------------------------------------------------------------------
-    |
-    | You can hook a theme when event fired on activities
-    | this is cool feature to set up a title, meta, default styles and scripts.
-    |
-    | [Notice] these events can be overridden by package config.
-    |
-    */
+    'inherit' => null,
 
     'events' => [
 
-        // Before event inherit from package config and the theme that call before,
-        // you can use this event to set meta, breadcrumb template or anything
-        // you want inheriting.
-        'before' => function ($theme): void {
-            // You can remove this line anytime.
-        },
-
-        // Listen on event before render a theme,
-        // this event should call to assign some assets,
-        // breadcrumb template.
         'beforeRenderTheme' => function (Theme $theme): void {
-            // Partial composer.
-            // $theme->partialComposer('header', function($view) {
-            //     $view->with('auth', \Auth::user());
-            // });
+            $version = get_cms_version() . '.2';
 
-            // You may use this event to set up your assets.
+            // Google Fonts
+            $theme->asset()->add('google-fonts-plus-jakarta', 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+            $theme->asset()->add('google-fonts-inter', 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+            $theme->asset()->add('google-fonts-open-sans', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+            $theme->asset()->add('google-fonts-ibm-plex-sans-arabic', 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
-            $version = get_cms_version();
+            // CSS
+            $theme->asset()->usePath()->add('vendors', 'css/vendors.min.css');
+            $theme->asset()->usePath()->add('icon', 'css/icon.min.css');
+            $theme->asset()->usePath()->add('barber', 'css/barber.css');
 
-            $theme->asset()->usePath()->add('style', 'css/style.css', version: $version);
+            if (BaseHelper::isRtlEnabled()) {
+                $theme->asset()->usePath()->add('style', 'css/style-ar.css', version: $version);
+            } else {
+                $theme->asset()->usePath()->add('style', 'css/style.css', version: $version);
+            }
 
-            $theme->asset()->container('footer')->add('jquery', 'libraries/jquery.min.js');
+            $theme->asset()->usePath()->add('responsive', 'css/responsive.css', version: $version);
 
-            $theme->asset()->container('footer')->usePath()->add(
-                'script',
-                'js/script.js',
-                ['jquery'],
-                version: $version
-            );
+            // Footer JS
+            $theme->asset()->container('footer')->usePath()->add('jquery', 'js/jquery.js');
+            $theme->asset()->container('footer')->usePath()->add('vendors', 'js/vendors.min.js');
+            $theme->asset()->container('footer')->usePath()->add('articles-data', 'js/articles-data.js');
+            $theme->asset()->container('footer')->usePath()->add('main', 'js/main.js', version: $version);
 
             if (function_exists('shortcode')) {
-                $theme->composer(['page'], function (View $view) {
+                $theme->composer(['page'], function (View $view): void {
                     $view->withShortcodes();
                 });
             }
         },
-
-        // Listen on event before render a layout,
-        // this should call to assign style, script for a layout.
-        'beforeRenderLayout' => [
-            'default' => function ($theme): void {
-                // $theme->asset()->usePath()->add('ipad', 'css/layouts/ipad.css');
-            },
-        ],
     ],
 ];
