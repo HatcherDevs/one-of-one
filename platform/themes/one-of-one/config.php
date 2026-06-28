@@ -11,7 +11,7 @@ return [
     'events' => [
 
         'beforeRenderTheme' => function (Theme $theme): void {
-            $version = get_cms_version() . '.2';
+            $version = time();
 
             // Google Fonts
             $theme->asset()->add('google-fonts-plus-jakarta', 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');

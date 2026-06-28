@@ -11,12 +11,20 @@ Route::group(['middleware' => ['web', 'core']], function (): void {
         })->name('public.project');
 
         Route::get('news-and-press', function () {
-            return Theme::scope('news-press')->render();
-        })->name('public.news-press');
+            $currentLocale = session('language', \Botble\Language\Facades\Language::getDefaultLocale());
 
-        Route::get('article-details', function () {
-            return Theme::scope('article-details')->render();
-        })->name('public.article-details');
+            $categoryId = ($currentLocale === 'ar') ? 8 : 7;
+
+            $posts = \Botble\Blog\Models\Post::query()
+                ->wherePublished()
+                ->whereHas('categories', fn($q) => $q->where('categories.id', $categoryId))
+                ->latest()
+                ->with(['slugable', 'categories.slugable'])
+                ->paginate((int) theme_option('number_of_posts_in_a_category', 12));
+
+            $view = ($currentLocale === 'ar') ? 'blog.loop-ar' : 'blog.loop';
+            return Theme::scope($view, compact('posts'))->render();
+        })->name('public.news-press');
 
         Route::get('contact-us', function () {
             return Theme::scope('contact')->render();

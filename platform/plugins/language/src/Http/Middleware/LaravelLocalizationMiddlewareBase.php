@@ -9,7 +9,10 @@ class LaravelLocalizationMiddlewareBase
     /**
      * The URIs that should not be localized.
      */
-    protected array $except = [];
+    protected array $except = [
+        'change-language',
+        'change-language/*',
+    ];
 
     /**
      * Determine if the request has a URI that should not be localized.

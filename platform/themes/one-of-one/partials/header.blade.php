@@ -62,11 +62,15 @@
         </div>
 
         <div class="logo">
+            @php
+                $useDarkLogo = Theme::get('useDarkLogo', false);
+                $logoFile = $useDarkLogo ? 'images/logo-black.png' : 'images/logo.png';
+            @endphp
             <a class="navbar-brand" href="{{ BaseHelper::getHomepageUrl() }}">
-                <img src="{{ Theme::asset()->url('images/logo.png') }}"
-                    data-at2x="{{ Theme::asset()->url('images/logo.png') }}" alt="" class="default-logo">
-                <img src="{{ Theme::asset()->url('images/logo.png') }}"
-                    data-at2x="{{ Theme::asset()->url('images/logo.png') }}" alt="" class="alt-logo">
+                <img src="{{ Theme::asset()->url($logoFile) }}" data-at2x="{{ Theme::asset()->url($logoFile) }}"
+                    alt="" class="default-logo">
+                <img src="{{ Theme::asset()->url($logoFile) }}" data-at2x="{{ Theme::asset()->url($logoFile) }}"
+                    alt="" class="alt-logo">
                 <img src="{{ Theme::asset()->url('images/logo-black.png') }}"
                     data-at2x="{{ Theme::asset()->url('images/logo-black.png') }}" alt="" class="mobile-logo">
             </a>

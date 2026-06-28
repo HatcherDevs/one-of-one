@@ -73,10 +73,8 @@ Route::group(['namespace' => 'Botble\Language\Http\Controllers'], function (): v
 
     
 // routes/web.php
-Route::middleware(['web', 'core','localeSessionRedirect','localizationRedirect','localize'])->group(function () {
+Route::middleware(['web', 'core'])->group(function () {
     Route::get('/change-language/{locale}', function ($locale) {
-                // session(['language' => $locale]);
-
                 Session::put('language', $locale);
 
         return redirect()->back();
@@ -85,5 +83,3 @@ Route::middleware(['web', 'core','localeSessionRedirect','localizationRedirect',
 
 
 });
-
-

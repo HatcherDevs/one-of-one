@@ -100,7 +100,16 @@ Event::listen(RouteMatched::class, function (): void {
     // 4. Latest News Shortcode
     // ============================================================
     Shortcode::register('latest-news', __('Latest News'), __('Latest news section with dynamic articles'), function (ShortcodeCompiler $shortcode): ?string {
-        return Theme::partial('shortcodes.latest-news.index', compact('shortcode'));
+        $limit = (int) ($shortcode->limit ?: 3);
+
+        $posts = Botble\Blog\Models\Post::query()
+            ->wherePublished()
+            ->latest()
+            ->with(['slugable', 'categories.slugable'])
+            ->limit($limit)
+            ->get();
+
+        return Theme::partial('shortcodes.latest-news.index', compact('shortcode', 'posts'));
     });
 
     Shortcode::setPreviewImage('latest-news', Theme::asset()->url('images/news/news-1.png'));
@@ -112,6 +121,7 @@ Event::listen(RouteMatched::class, function (): void {
             ->add('background_color', ColorField::class, ColorFieldOption::make()->label(__('Background color'))->defaultValue('#e6ded5'))
             ->add('button_label', TextField::class, TextFieldOption::make()->label(__('Button label'))->defaultValue('View More'))
             ->add('button_url', TextField::class, TextFieldOption::make()->label(__('Button URL')))
-            ->add('button_color', ColorField::class, ColorFieldOption::make()->label(__('Button color'))->defaultValue('#B39C75'));
+            ->add('button_color', ColorField::class, ColorFieldOption::make()->label(__('Button color'))->defaultValue('#B39C75'))
+            ->add('limit', TextField::class, TextFieldOption::make()->label(__('Number of articles to show'))->defaultValue('3'));
     });
 });
