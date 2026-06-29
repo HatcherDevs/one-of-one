@@ -15,12 +15,22 @@ Route::group(['middleware' => ['web', 'core']], function (): void {
 
             $categoryId = ($currentLocale === 'ar') ? 8 : 7;
 
-            $posts = \Botble\Blog\Models\Post::query()
+            // Get all posts (no pagination)
+            $allPosts = \Botble\Blog\Models\Post::query()
                 ->wherePublished()
                 ->whereHas('categories', fn($q) => $q->where('categories.id', $categoryId))
                 ->latest()
                 ->with(['slugable', 'categories.slugable'])
-                ->paginate((int) theme_option('number_of_posts_in_a_category', 12));
+                ->get();
+
+            // Create a custom paginator for future use (if needed)
+            $posts = new \Illuminate\Pagination\LengthAwarePaginator(
+                $allPosts,
+                $allPosts->count(),
+                $allPosts->count(), // Show all posts per page
+                1,
+                ['path' => request()->url()]
+            );
 
             $view = ($currentLocale === 'ar') ? 'blog.loop-ar' : 'blog.loop';
             return Theme::scope($view, compact('posts'))->render();

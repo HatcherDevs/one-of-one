@@ -75,10 +75,11 @@
                         <div class="col-lg-4 col-md-6">
                             <a href="{{ $postUrl }}" class="card border-0 bg-transparent">
                                 <img src="{{ RvMedia::getImageUrl($post->image, null, false, RvMedia::getDefaultImage()) }}"
-                                    alt="{{ $post->name }}" class="w-100 mb-3"
+                                    alt="{{ $post->name }}" class="w-100 mb-3 post-image"
                                     style="height: 280px; object-fit: cover; object-position: top;">
                                 <div class="text-muted small mb-1">
-                                    <i class="fa-solid fa-calendar"></i> {{ $post->created_at->format('d F Y') }}
+                                    <i class="fa-solid fa-calendar"></i>
+                                    {{ $post->created_at->translatedFormat('d F Y') }}
                                 </div>
                                 <h5 class="text-dark xs-fs-20 fw-lighter mb-2 pt-2 post-title">
                                     {{ $post->name }}
@@ -102,12 +103,13 @@
                 @endif
             </div>
 
-            {{-- Pagination --}}
+            {{-- Pagination (Disabled - Show all posts)
             @if ($posts->hasPages())
                 <div class="pagination-style-01 mt-5 text-center">
                     {!! $posts->withQueryString()->links() !!}
                 </div>
             @endif
+            --}}
         </div>
     </div>
 </section>
