@@ -38,7 +38,7 @@
                         <li class="nav-item"><span class="nav-link text-white px-4 small"
                                 style="direction: ltr;">{{ $hotline }}</span></li>
                     @endif
-                    <li class="nav-item"><a href="{{ route('public.contact') }}"
+                    <li class="nav-item"><a href="{{ url('contact-us') }}"
                             class="nav-link text-white px-4 small">{{ __('Contact us') }}</a></li>
                 </ul>
 

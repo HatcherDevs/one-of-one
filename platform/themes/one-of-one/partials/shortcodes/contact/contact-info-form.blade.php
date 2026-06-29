@@ -1,54 +1,43 @@
 @php
-    Theme::layout('default');
-    Theme::set('pageTitle', __('Contact Us'));
-    Theme::set('useDarkLogo', false); // Use white logo for contact page
-    SeoHelper::setTitle(__('One Of One | Contact Us'));
-    Theme::asset()->usePath()->add('contact', 'css/contact.css');
+    $heading = $shortcode->heading ?: __('Have a query? Contact us.');
+    $description =
+        $shortcode->description ?: __('To discover more about our services, please reach out to our investment team:');
+    $email = $shortcode->email ?: 'marketing@oneofone.com.eg';
+    $phone = $shortcode->phone ?: '17444';
+    $introText =
+        $shortcode->intro_text ?:
+        __('Alternatively, you may submit your inquiries using the form provided below. We will respond promptly.');
+    $backgroundColor = $shortcode->background_color ?: '#EAE4DE';
 @endphp
 
-{{-- Page Title --}}
-<section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-12 text-center position-relative">
-                <div class="d-flex flex-column small-screen">
-                    <div style="margin-block: auto;">
-                        <h1 class="text-white mb-0 text-shadow-extra-large fw-lighter ls-minus-1px"
-                            style="font-size: 43.75px;">{{ __('Get in Touch') }}</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- Start Contact Section --}}
-<section class="contact-section pt-5 pb-0" style="background-color: #EAE4DE;">
+<section class="contact-section pt-5 pb-0" style="background-color: {{ $backgroundColor }};">
     <div class="container-fluid px-lg-5">
         <div class="g-0 px-lg-4">
             {{-- Heading --}}
             <h2 class="display-5 fw-semibold mb-2" style="color: #4b3c32; font-size: 32.3px;">
-                {{ __('Have a query? Contact us.') }}</h2>
+                {{ $heading }}
+            </h2>
             <p class="mb-3 fs-22" style="color: #4b3c32;">
-                {{ __('To discover more about our services, please reach out to our investment team:') }}
+                {{ $description }}
             </p>
 
             {{-- Contact Info --}}
             <div class="row mb-2">
                 <div class="col-md-6">
                     <p class="fw-bold" style="color: #4b3c32;">
-                        {{ __('Email:') }} <a href="mailto:marketing@oneofone.com.eg"
-                            style="color: #4b3c32; text-decoration: none;">marketing@oneofone.com.eg</a>
+                        {{ __('Email:') }}
+                        <a href="mailto:{{ $email }}"
+                            style="color: #4b3c32; text-decoration: none;">{{ $email }}</a>
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <p class="fw-bold" style="color: #4b3c32;">{{ __('Phone:') }} 17444</p>
+                    <p class="fw-bold" style="color: #4b3c32;">{{ __('Phone:') }} {{ $phone }}</p>
                 </div>
             </div>
 
             {{-- Intro Text --}}
             <p class="mb-3 fs-22" style="color: #4b3c32;">
-                {{ __('Alternatively, you may submit your inquiries using the form provided below. We will respond promptly.') }}
+                {{ $introText }}
             </p>
 
             {{-- Contact Form --}}
@@ -95,33 +84,3 @@
         </div>
     </div>
 </section>
-{{-- End Contact Section --}}
-
-{{-- Start Find Us Section --}}
-<section class="contact-section" style="background-color: #EAE4DE;overflow-x: hidden;">
-    <div class="p-0">
-        <div class="container-fluid px-lg-5 g-0">
-            <div class="px-lg-4">
-                {{-- Heading --}}
-                <h2 class="display-5 fw-semibold" style="color: #4b3c32; font-size: 32.3px;">{{ __('Find us at') }}
-                </h2>
-                <p class="mb-4 fs-22 fw-lighter" style="color: #4b3c32;">
-                    Park St. East, B3, Office 3006
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10">
-                <img class="w-100" src="{{ Theme::asset()->url('images/contact-us/map.png') }}" alt="Map">
-            </div>
-            <div class="col-md-2 d-flex align-items-end justify-content-between">
-                <a class="btn fw-lighter fs-22" href="https://maps.google.com" target="_blank" style="color: #4b3c32;">
-                    <i class="fa-solid fs-30 fa-maximize"></i>
-                    {{ __('Open in maps') }}
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-{{-- End Find Us Section --}}

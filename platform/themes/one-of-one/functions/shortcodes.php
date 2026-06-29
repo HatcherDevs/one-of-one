@@ -124,4 +124,49 @@ Event::listen(RouteMatched::class, function (): void {
             ->add('button_color', ColorField::class, ColorFieldOption::make()->label(__('Button color'))->defaultValue('#B39C75'))
             ->add('limit', TextField::class, TextFieldOption::make()->label(__('Number of articles to show'))->defaultValue('3'));
     });
+
+    // ============================================================
+    // 5. Contact Page Shortcodes
+    // ============================================================
+
+    // Page Title Parallax Background
+    Shortcode::register('contact-page-title', __('Contact Page Title'), __('Page title with parallax background image'), function (ShortcodeCompiler $shortcode): ?string {
+        return Theme::partial('shortcodes.contact.page-title', compact('shortcode'));
+    });
+
+    Shortcode::setAdminConfig('contact-page-title', function (array $attributes): ShortcodeForm {
+        return ShortcodeForm::createFromArray($attributes)
+            ->withLazyLoading()
+            ->add('title', TextField::class, TextFieldOption::make()->label(__('Title'))->defaultValue('Get in Touch'))
+            ->add('image', MediaImageField::class, MediaImageFieldOption::make()->label(__('Background image')));
+    });
+
+    // Contact Info & Form Section
+    Shortcode::register('contact-info-form', __('Contact Info & Form'), __('Contact section with info and form'), function (ShortcodeCompiler $shortcode): ?string {
+        return Theme::partial('shortcodes.contact.contact-info-form', compact('shortcode'));
+    });
+
+    Shortcode::setAdminConfig('contact-info-form', function (array $attributes): ShortcodeForm {
+        return ShortcodeForm::createFromArray($attributes)
+            ->withLazyLoading()
+            ->add('heading', TextField::class, TextFieldOption::make()->label(__('Heading'))->defaultValue('Have a query? Contact us.'))
+            ->add('description', TextareaField::class, TextareaFieldOption::make()->label(__('Description'))->defaultValue('To discover more about our services, please reach out to our investment team:'))
+            ->add('email', TextField::class, TextFieldOption::make()->label(__('Email'))->defaultValue('marketing@oneofone.com.eg'))
+            ->add('phone', TextField::class, TextFieldOption::make()->label(__('Phone'))->defaultValue('17444'))
+            ->add('intro_text', TextareaField::class, TextareaFieldOption::make()->label(__('Intro text'))->defaultValue('Alternatively, you may submit your inquiries using the form provided below. We will respond promptly.'))
+            ->add('background_color', ColorField::class, ColorFieldOption::make()->label(__('Background color'))->defaultValue('#EAE4DE'));
+    });
+
+    // Find Us Section
+    Shortcode::register('find-us-section', __('Find Us Section'), __('Find us section with address and map'), function (ShortcodeCompiler $shortcode): ?string {
+        return Theme::partial('shortcodes.contact.find-us-section', compact('shortcode'));
+    });
+
+    Shortcode::setAdminConfig('find-us-section', function (array $attributes): ShortcodeForm {
+        return ShortcodeForm::createFromArray($attributes)
+            ->withLazyLoading()
+            ->add('heading', TextField::class, TextFieldOption::make()->label(__('Heading'))->defaultValue('Find us at'))
+            ->add('address', TextField::class, TextFieldOption::make()->label(__('Address'))->defaultValue('Park St. East, B3, Office 3006'))
+            ->add('map_url', TextField::class, TextFieldOption::make()->label(__('Map URL'))->defaultValue('https://maps.google.com'));
+    });
 });

@@ -29,7 +29,7 @@
                 </li>
             @endif
             <li><a href="{{ route('public.news-press') }}">{{ __('Press') }}</a></li>
-            <li><a href="{{ route('public.contact') }}">{{ __('Contact Us') }}</a></li>
+            <li><a href="{{ url('contact-us') }}">{{ __('Contact Us') }}</a></li>
         </ul>
         <div class="social-links">
             <span>{{ __('Get in touch') }}</span>

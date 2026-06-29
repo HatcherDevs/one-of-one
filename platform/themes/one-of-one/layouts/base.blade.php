@@ -28,26 +28,6 @@
             --primary-font: "Inter", sans-serif;
         }
 
-        body {
-            font-family: var(--primary-font);
-            font-size: 16px;
-            line-height: 30px;
-            font-weight: 400;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Plus Jakarta Sans", sans-serif;
-        }
-
-        .alt-font {
-            font-family: var(--alt-font);
-        }
-
         .fw-lighter {
             font-weight: 300 !important;
         }

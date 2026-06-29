@@ -35,10 +35,6 @@ Route::group(['middleware' => ['web', 'core']], function (): void {
             $view = ($currentLocale === 'ar') ? 'blog.loop-ar' : 'blog.loop';
             return Theme::scope($view, compact('posts'))->render();
         })->name('public.news-press');
-
-        Route::get('contact-us', function () {
-            return Theme::scope('contact')->render();
-        })->name('public.contact');
     });
 });
 
