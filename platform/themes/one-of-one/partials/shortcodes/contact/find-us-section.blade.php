@@ -1,6 +1,6 @@
 @php
     $heading = $shortcode->heading ?: __('Find us at');
-    $address = $shortcode->address ?: 'Park St. East, B3, Office 3006';
+    $address = $shortcode->address ?: theme_option('address', 'Park St. East, B3, Office 3006');
     $mapUrl = $shortcode->map_url ?: 'https://maps.google.com';
 @endphp
 

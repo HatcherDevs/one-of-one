@@ -1,9 +1,11 @@
 <?php
 
 use Botble\Media\Facades\RvMedia;
+use Botble\Menu\Facades\Menu;
 use Botble\Theme\Facades\Theme;
 use Botble\Theme\Supports\ThemeSupport;
 use Botble\Theme\Typography\TypographyItem;
+use Illuminate\Routing\Events\RouteMatched;
 
 register_page_template([
     'default' => __('Default'),
@@ -34,4 +36,10 @@ app()->booted(function (): void {
             new TypographyItem('h6', __('Heading 6'), 20),
             new TypographyItem('body', __('Body'), 16),
         ]);
+});
+
+// Register menu locations
+Event::listen(RouteMatched::class, function (): void {
+    Menu::addMenuLocation('sidebar-menu', __('Sidebar Menu'));
+    Menu::addMenuLocation('footer-menu', __('Footer Menu'));
 });

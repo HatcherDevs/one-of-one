@@ -2,8 +2,8 @@
     $heading = $shortcode->heading ?: __('Have a query? Contact us.');
     $description =
         $shortcode->description ?: __('To discover more about our services, please reach out to our investment team:');
-    $email = $shortcode->email ?: 'marketing@oneofone.com.eg';
-    $phone = $shortcode->phone ?: '17444';
+    $email = $shortcode->email ?: theme_option('email', 'marketing@oneofone.com.eg');
+    $phone = $shortcode->phone ?: theme_option('hotline', '17444');
     $introText =
         $shortcode->intro_text ?:
         __('Alternatively, you may submit your inquiries using the form provided below. We will respond promptly.');
