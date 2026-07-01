@@ -1,5 +1,19 @@
+@php
+    $currentLocaleCode = is_plugin_active('language')
+        ? \Botble\Language\Facades\Language::getCurrentLocaleCode()
+        : null;
+    $filteredNodes = $menu_nodes;
+    if ($currentLocaleCode) {
+        $filteredNodes = $menu_nodes->filter(function ($node) use ($currentLocaleCode) {
+            $meta = \Botble\Language\Models\LanguageMeta::where('reference_id', $node->id)
+                ->where('reference_type', \Botble\Menu\Models\MenuNode::class)
+                ->first();
+            return !$meta || $meta->lang_meta_code === $currentLocaleCode;
+        });
+    }
+@endphp
 <ul class="nav-links">
-    @foreach ($menu_nodes as $key => $row)
+    @foreach ($filteredNodes as $key => $row)
         <li @class([
             'has-submenu' => $row->has_child,
             'current' => $row->active,

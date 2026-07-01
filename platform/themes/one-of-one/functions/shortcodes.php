@@ -102,10 +102,17 @@ Event::listen(RouteMatched::class, function (): void {
     Shortcode::register('latest-news', __('Latest News'), __('Latest news section with dynamic articles'), function (ShortcodeCompiler $shortcode): ?string {
         $limit = (int) ($shortcode->limit ?: 3);
 
+        $currentLocaleCode = \Botble\Language\Facades\Language::getCurrentLocaleCode();
+
         $posts = Botble\Blog\Models\Post::query()
             ->wherePublished()
             ->latest()
             ->with(['slugable', 'categories.slugable'])
+            ->when($currentLocaleCode && is_plugin_active('language'), function ($query) use ($currentLocaleCode) {
+                $query->whereHas('languageMeta', function ($q) use ($currentLocaleCode) {
+                    $q->where('lang_meta_code', $currentLocaleCode);
+                });
+            })
             ->limit($limit)
             ->get();
 

@@ -41,5 +41,7 @@ app()->booted(function (): void {
 // Register menu locations
 Event::listen(RouteMatched::class, function (): void {
     Menu::addMenuLocation('sidebar-menu', __('Sidebar Menu'));
+    Menu::addMenuLocation('sidebar-menu-en', __('Sidebar Menu (English)'));
+    Menu::addMenuLocation('sidebar-menu-ar', __('Sidebar Menu (Arabic)'));
     Menu::addMenuLocation('footer-menu', __('Footer Menu'));
 });
