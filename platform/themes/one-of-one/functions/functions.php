@@ -36,6 +36,58 @@ app()->booted(function (): void {
             new TypographyItem('h6', __('Heading 6'), 20),
             new TypographyItem('body', __('Body'), 16),
         ]);
+
+    // Add Page to language supported models
+    add_filter('model_using_multi_language', function (array $models): array {
+        if (!in_array('Botble\Page\Models\Page', $models)) {
+            $models[] = 'Botble\Page\Models\Page';
+        }
+        return $models;
+    });
+
+    // Re-initialize model relations so Page gets the languageMeta relation
+    if (is_plugin_active('language')) {
+        \Botble\Language\Facades\Language::initModelRelations();
+    }
+
+    // Handle page translation switching (fixes getRelatedDataForOtherLanguage issue)
+    add_filter('before_get_home_page_data_single', function ($query, $model): mixed {
+        if (!$model instanceof \Botble\Page\Models\Page || !is_plugin_active('language')) {
+            return $query;
+        }
+
+        $currentLocale = \Botble\Language\Facades\Language::getCurrentLocaleCode();
+        $defaultLocale = \Botble\Language\Facades\Language::getDefaultLocaleCode();
+
+        if ($currentLocale === $defaultLocale) {
+            return $query;
+        }
+
+        $data = $query->first();
+        if (!$data) {
+            return $query;
+        }
+
+        $meta = \Botble\Language\Models\LanguageMeta::where('reference_id', $data->id)
+            ->where('reference_type', \Botble\Page\Models\Page::class)
+            ->first();
+
+        if (!$meta || $meta->lang_meta_code === $currentLocale) {
+            return $query;
+        }
+
+        $translatedId = \Botble\Language\Models\LanguageMeta::where('lang_meta_origin', $meta->lang_meta_origin)
+            ->where('reference_id', '!=', $data->id)
+            ->where('reference_type', \Botble\Page\Models\Page::class)
+            ->where('lang_meta_code', $currentLocale)
+            ->value('reference_id');
+
+        if ($translatedId) {
+            return $model->newQuery()->where('id', $translatedId);
+        }
+
+        return $query;
+    }, 45, 2);
 });
 
 // Register menu locations
