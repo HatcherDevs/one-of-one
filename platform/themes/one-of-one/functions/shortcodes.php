@@ -72,11 +72,10 @@ Event::listen(RouteMatched::class, function (): void {
     // ============================================================
     // 3. Projects Showcase Shortcode
     // ============================================================
-    Shortcode::register('projects-showcase', __('Projects Showcase'), __('Projects list with description and Mission/Vision/Values cards'), function (ShortcodeCompiler $shortcode): ?string {
+    Shortcode::register('projects-showcase', __('Projects Showcase'), __('Projects list with description'), function (ShortcodeCompiler $shortcode): ?string {
         $projects = Shortcode::fields()->getTabsData(['name', 'description'], $shortcode, 'projects');
-        $cards = Shortcode::fields()->getTabsData(['title', 'description', 'image'], $shortcode, 'cards');
 
-        return Theme::partial('shortcodes.projects-showcase.index', compact('shortcode', 'projects', 'cards'));
+        return Theme::partial('shortcodes.projects-showcase.index', compact('shortcode', 'projects'));
     });
 
     Shortcode::setPreviewImage('projects-showcase', Theme::asset()->url('images/home/projects/project-1.png'));
@@ -92,6 +91,32 @@ Event::listen(RouteMatched::class, function (): void {
                     'name' => ['type' => 'text', 'title' => __('Project name')],
                     'description' => ['type' => 'textarea', 'title' => __('Project description')],
                 ], 'projects')
+                ->attrs($attributes)
+            );
+    });
+
+    // ============================================================
+    // 3.5 Mission / Vision / Values Cards Shortcode
+    // ============================================================
+    Shortcode::register('mission-vision-cards', __('Mission / Vision / Values Cards'), __('Interactive cards with hover overlay effect'), function (ShortcodeCompiler $shortcode): ?string {
+        $cards = Shortcode::fields()->getTabsData(['title', 'description', 'image'], $shortcode, 'cards');
+
+        return Theme::partial('shortcodes.mission-vision-cards.index', compact('shortcode', 'cards'));
+    });
+
+    Shortcode::setPreviewImage('mission-vision-cards', Theme::asset()->url('images/home/projects/project-1.png'));
+
+    Shortcode::setAdminConfig('mission-vision-cards', function (array $attributes): ShortcodeForm {
+        return ShortcodeForm::createFromArray($attributes)
+            ->withLazyLoading()
+            ->add('background_color', ColorField::class, ColorFieldOption::make()->label(__('Background color'))->defaultValue('#e6ded5'))
+            ->add('cards', ShortcodeTabsField::class, ShortcodeTabsFieldOption::make()
+                ->label(__('Cards'))
+                ->fields([
+                    'title' => ['type' => 'text', 'title' => __('Card title')],
+                    'description' => ['type' => 'textarea', 'title' => __('Card description')],
+                    'image' => ['type' => 'image', 'title' => __('Card image')],
+                ], 'cards')
                 ->attrs($attributes)
             );
     });

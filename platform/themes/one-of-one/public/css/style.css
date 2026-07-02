@@ -24464,6 +24464,86 @@ footer .footer-navbar .nav-item:last-child a {
   margin: 0;
   border: 0;
   height: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    z-index 0.3s;
+  width: 32.8%;
+  opacity: 1;
+  z-index: 1;
+}
+
+.current_projects:hover .card {
+  width: 25%;
+  opacity: 0.7;
+}
+
+.current_projects .card:hover {
+  width: 48%;
+  opacity: 1;
+  z-index: 2;
+}
+
+.main-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #eedfcd;
+  z-index: 3;
+  letter-spacing: 1px;
+  pointer-events: none;
+  transition: opacity 0.33s;
+}
+
+.card:hover .main-title,
+.card:focus-within .main-title {
+  opacity: 0;
+}
+
+.card-overlay-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 23, 18, 0.62);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.33s, filter 0.4s;
+  padding: 40px 30px 30px 30px;
+  pointer-events: none;
+  z-index: 4;
+  padding-top: 12%;
+}
+
+.card:hover .card-overlay-custom,
+.card:focus-within .card-overlay-custom {
+  opacity: 1;
+  pointer-events: all;
+  filter: blur(0);
+}
+
+.overlay-title {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.25);
+}
+
+.overlay-desc {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #eedfcd;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .18);
 }
 
 @media (min-width: 1200px) {
