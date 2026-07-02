@@ -3,10 +3,18 @@ require __DIR__ . '/vendor/autoload.php';
 $app = require_once __DIR__ . '/bootstrap/app.php';
 $app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
 
-$arPosts = \Botble\Blog\Models\Post::whereHas('categories', function($q) { $q->where('id', 8); })->count();
-$enPosts = \Botble\Blog\Models\Post::whereHas('categories', function($q) { $q->where('id', 7); })->count();
-$arFeatured = \Botble\Blog\Models\Post::where('is_featured', 1)->whereHas('categories', function($q) { $q->where('id', 8); })->count();
-$enFeatured = \Botble\Blog\Models\Post::where('is_featured', 1)->whereHas('categories', function($q) { $q->where('id', 7); })->count();
+use Botble\Blog\Models\Post;
+use Botble\Language\Models\LanguageMeta;
 
-echo "AR Posts: $arPosts (Featured: $arFeatured)\n";
-echo "EN Posts: $enPosts (Featured: $enFeatured)\n";
+echo "=== All Posts ===\n";
+$posts = Post::with('languageMeta')->get();
+foreach ($posts as $p) {
+    $meta = $p->languageMeta;
+    echo "ID: {$p->id} | Name: {$p->name} | Status: {$p->status} | Lang: " . ($meta->lang_meta_code ?? 'N/A') . "\n";
+}
+
+echo "\n=== LanguageMeta for Posts ===\n";
+$metas = LanguageMeta::where('reference_type', 'Botble\Blog\Models\Post')->get();
+foreach ($metas as $m) {
+    echo "Meta ID: {$m->lang_meta_id} | Code: {$m->lang_meta_code} | RefID: {$m->reference_id}\n";
+}

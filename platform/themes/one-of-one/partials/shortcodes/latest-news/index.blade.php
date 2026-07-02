@@ -16,31 +16,24 @@
             <div class="row g-0">
                 @if (!empty($posts) && $posts->isNotEmpty())
                     @foreach ($posts as $post)
-                        <div class="col-lg-4 col-md-6 col-12 mb-4 px-4">
-                            <article class="card border-0 bg-transparent h-100">
-                                <a href="{{ $post->url }}" class="text-decoration-none">
-                                    <div class="overflow-hidden mb-3">
-                                        <img src="{{ RvMedia::getImageUrl($post->image, null, false, RvMedia::getDefaultImage()) }}"
-                                            alt="{{ $post->name }}" class="w-100"
-                                            style="height: 220px; object-fit: cover; object-position: center;">
-                                    </div>
-                                    <div class="card-body p-0">
-                                        @if ($post->categories->isNotEmpty())
-                                            <span class="text-uppercase small"
-                                                style="color: #B39C75; letter-spacing: 1px;">
-                                                {{ $post->categories->first()->name }}
-                                            </span>
-                                        @endif
-                                        <h5 class="fw-lighter mt-2" style="color: #554A41;">
-                                            {{ $post->name }}
-                                        </h5>
-                                        <p class="text-muted small">{{ $post->created_at->format('M d, Y') }}</p>
-                                        <p class="text-muted" style="color: #554A41 !important;">
-                                            {{ Str::limit($post->description, 100) }}
-                                        </p>
-                                    </div>
-                                </a>
-                            </article>
+                        <div class="col-lg-4 col-md-6 col-12 px-4 mb-4">
+                            <div class="card border-0 bg-transparent">
+                                <img src="{{ RvMedia::getImageUrl($post->image, null, false, RvMedia::getDefaultImage()) }}"
+                                    class="card-img-top rounded" alt="{{ $post->name }}"
+                                    style="height: 280px; object-fit: cover; object-position: top;"
+                                    onerror="this.src='{{ Theme::asset()->url('images/home/news/news-' . ($loop->index + 1) . '.png') }}'">
+                                <div class="card-body px-0">
+                                    <p class="mb-1 small text-muted">
+                                        <i class="bi bi-calendar3 me-2"></i> {{ $post->created_at->format('M d, Y') }}
+                                    </p>
+                                    <h5 class="card-title text-dark-gray fw-normal sm-fs-22">{{ $post->name }}</h5>
+                                    <p class="card-text text-muted small lh-sm">
+                                        {{ Str::limit(strip_tags($post->description), 150) }}...
+                                        <a href="{{ $post->url }}" class="text-decoration-none fw-semibold"
+                                            style="color: #B39C75;">{{ __('Read more') }}</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     @endforeach
                 @else
@@ -49,7 +42,7 @@
                     </div>
                 @endif
             </div>
-            <div class="col-12 text-center mt-4" id="view-more-container">
+            <div class="col-12 text-center mt-4">
                 <a href="{{ $buttonUrl }}" class="btn btn-lg text-white"
                     style="background-color: {{ $buttonColor }};border-radius: 0;padding: 7px 30px;font-size: 1rem;text-wrap-mode: nowrap;font-weight: 300;">
                     {{ $buttonLabel }} <i class="fa-solid fa-arrow-right ms-2"></i>
