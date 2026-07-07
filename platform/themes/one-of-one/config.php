@@ -23,6 +23,7 @@ return [
             $theme->asset()->usePath()->add('vendors', 'css/vendors.min.css');
             $theme->asset()->usePath()->add('icon', 'css/icon.min.css');
             $theme->asset()->usePath()->add('barber', 'css/barber.css');
+            $theme->asset()->add('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css');
 
             if (BaseHelper::isRtlEnabled()) {
                 $theme->asset()->usePath()->add('style', 'css/style-ar.css', version: $version);
@@ -36,6 +37,7 @@ return [
             $theme->asset()->container('footer')->usePath()->add('jquery', 'js/jquery.js');
             $theme->asset()->container('footer')->usePath()->add('vendors', 'js/vendors.min.js');
             $theme->asset()->container('footer')->usePath()->add('articles-data', 'js/articles-data.js');
+            $theme->asset()->container('footer')->add('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js');
             $theme->asset()->container('footer')->usePath()->add('main', 'js/main.js', version: $version);
 
             if (function_exists('shortcode')) {

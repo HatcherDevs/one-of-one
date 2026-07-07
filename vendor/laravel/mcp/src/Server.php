@@ -30,6 +30,7 @@ abstract class Server
      * The versions of the MCP specification supported by the server.
      */
     public array $supportedProtocolVersion = [
+        '2025-11-25',
         '2025-06-18',
         '2025-03-26',
         '2024-11-05',
@@ -146,6 +147,15 @@ abstract class Server
     {
         $sessionId = $this->transport->sessionId() ?? Str::uuid()->toString();
 
+        // Debug: log raw incoming MCP messages to storage/logs/mcp.log
+        try {
+            $logPath = storage_path('logs/mcp.log');
+            $time = now()->toDateTimeString();
+@file_put_contents($logPath, "[{$time}] RAW MESSAGE: {$rawMessage}".PHP_EOL, FILE_APPEND);
+        } catch (Throwable $e) {
+            // ignore logging failures
+        }
+
         $context = new ServerContext(
             supportedProtocolVersions: $this->supportedProtocolVersion,
             serverCapabilities: $this->capabilities,
@@ -158,7 +168,6 @@ abstract class Server
             resources: $this->registeredResources,
             prompts: $this->registeredPrompts,
         );
-
         try {
             $request = JsonRpcRequest::fromJson($rawMessage);
 

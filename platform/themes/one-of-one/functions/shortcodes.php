@@ -158,7 +158,51 @@ Event::listen(RouteMatched::class, function (): void {
     });
 
     // ============================================================
-    // 5. Contact Page Shortcodes
+    // 5. Project Detail Shortcode
+    // ============================================================
+    Shortcode::register('project-detail', __('Project Detail'), __('Project detail page with hero, gallery, masterplan and videos'), function (ShortcodeCompiler $shortcode): ?string {
+        $galleryImages = Shortcode::fields()->getTabsData(['image'], $shortcode, 'gallery');
+        $videos = Shortcode::fields()->getTabsData(['url', 'thumbnail'], $shortcode, 'videos');
+
+        return Theme::partial('shortcodes.project-detail.index', compact('shortcode', 'galleryImages', 'videos'));
+    });
+
+    Shortcode::setPreviewImage('project-detail', Theme::asset()->url('images/home/projects/project-1.png'));
+
+    Shortcode::setAdminConfig('project-detail', function (array $attributes): ShortcodeForm {
+        return ShortcodeForm::createFromArray($attributes)
+            ->withLazyLoading()
+            ->add('title', TextField::class, TextFieldOption::make()->label(__('Project title')))
+            ->add('subtitle', TextField::class, TextFieldOption::make()->label(__('Subtitle')))
+            ->add('description', TextareaField::class, TextareaFieldOption::make()->label(__('Description'))->rows(10))
+            ->add('brochure_label', TextField::class, TextFieldOption::make()->label(__('Brochure button label'))->defaultValue('Download Brochure'))
+            ->add('brochure_url', TextField::class, TextFieldOption::make()->label(__('Brochure URL')))
+            ->add('hero_image', MediaImageField::class, MediaImageFieldOption::make()->label(__('Hero background image')))
+            ->add('map_image', MediaImageField::class, MediaImageFieldOption::make()->label(__('Map image')))
+            ->add('feature_title', TextField::class, TextFieldOption::make()->label(__('Feature box title (Bridges only)')))
+            ->add('feature_subtitle', TextField::class, TextFieldOption::make()->label(__('Feature box subtitle (Bridges only)')))
+            ->add('masterplan_title', TextField::class, TextFieldOption::make()->label(__('Masterplan title'))->defaultValue('Masterplan'))
+            ->add('masterplan_image', MediaImageField::class, MediaImageFieldOption::make()->label(__('Masterplan image')))
+            ->add('video_title', TextField::class, TextFieldOption::make()->label(__('Videos section title'))->defaultValue('Videos'))
+            ->add('gallery', ShortcodeTabsField::class, ShortcodeTabsFieldOption::make()
+                ->label(__('Gallery Images'))
+                ->fields([
+                    'image' => ['type' => 'image', 'title' => __('Image')],
+                ], 'gallery')
+                ->attrs($attributes)
+            )
+            ->add('videos', ShortcodeTabsField::class, ShortcodeTabsFieldOption::make()
+                ->label(__('Videos'))
+                ->fields([
+                    'url' => ['type' => 'text', 'title' => __('YouTube URL')],
+                    'thumbnail' => ['type' => 'image', 'title' => __('Thumbnail')],
+                ], 'videos')
+                ->attrs($attributes)
+            );
+    });
+
+    // ============================================================
+    // 6. Contact Page Shortcodes
     // ============================================================
 
     // Page Title Parallax Background

@@ -3798,3 +3798,26 @@ if (closeBtn) {
         sidebar.classList.remove('active');
     });
 }
+
+// Submenu toggle functionality
+(function () {
+    function initSubmenu() {
+        var toggles = document.querySelectorAll('.projects-toggle');
+        toggles.forEach(function (toggle) {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var parentLi = this.closest('.has-submenu');
+                if (parentLi) {
+                    parentLi.classList.toggle('active');
+                }
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSubmenu);
+    } else {
+        initSubmenu();
+    }
+})();

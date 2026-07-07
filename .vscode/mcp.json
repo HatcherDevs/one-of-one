@@ -2,10 +2,16 @@
     "servers": {
         "laravel-boost": {
             "command": "php",
-            "args": [
-                "artisan",
-                "boost:mcp"
-            ]
+            "args": ["artisan", "boost:mcp"]
+        },
+        "flyenv": {
+            "tools": ["*"],
+            "type": "http",
+            "url": "http://127.0.0.1:7682",
+            "source": "user",
+            "headers": {
+                "Authorization": "Bearer 40ceb2863e1a4e578121bf4ed68f79f8"
+            }
         }
     }
 }

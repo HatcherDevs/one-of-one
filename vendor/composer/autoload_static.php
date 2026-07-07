@@ -46,62 +46,57 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'ffecb95d45175fd40f75be8a23b34f90' => __DIR__ . '/..' . '/twig/twig/src/Resources/debug.php',
         'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
         'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
-        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
-        '1f87db08236948d07391152dccb70f04' => __DIR__ . '/..' . '/google/apiclient-services/autoload.php',
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '38143a9afc50997d55e4815db8489d1c' => __DIR__ . '/..' . '/rector/rector/bootstrap.php',
-        '941748b3c8cae4466c827dfb5ca9602a' => __DIR__ . '/..' . '/rmccue/requests/library/Deprecated.php',
         '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
-        'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
         'c72349b1fe8d0deeedd3a52e8aa814d8' => __DIR__ . '/..' . '/mockery/mockery/library/helpers.php',
         'ce9671a430e4846b44e1c68c7611f9f5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         '56823cacd97af379eceaf82ad00b928f' => __DIR__ . '/..' . '/phpseclib/bcmath_compat/lib/bcmath.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
-        '13906c19e3d8fcd1341b24ed4d51cf72' => __DIR__ . '/..' . '/razorpay/razorpay/Deprecated.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'v' => 
+        'v' =>
         array (
             'voku\\' => 5,
         ),
-        's' => 
+        's' =>
         array (
             'setasign\\Fpdi\\' => 14,
         ),
-        'p' => 
+        'p' =>
         array (
             'phpseclib3\\' => 11,
         ),
-        'i' => 
+        'i' =>
         array (
             'iamcal\\' => 7,
         ),
-        'b' => 
+        'b' =>
         array (
             'bcmath_compat\\' => 14,
         ),
-        'Z' => 
+        'Z' =>
         array (
             'ZipStream\\' => 10,
         ),
-        'Y' => 
+        'Y' =>
         array (
             'Yajra\\DataTables\\' => 17,
         ),
-        'W' => 
+        'W' =>
         array (
-            'WpOrg\\Requests\\' => 15,
             'Workbench\\App\\' => 14,
             'Wikimedia\\Composer\\Merge\\V2\\' => 28,
             'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
         ),
-        'T' => 
+        'T' =>
         array (
             'Twig\\' => 5,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
@@ -110,7 +105,7 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'Tests\\' => 6,
             'Termwind\\' => 9,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Uuid\\' => 22,
             'Symfony\\Polyfill\\Php83\\' => 23,
@@ -148,26 +143,22 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'Symfony\\Component\\Clock\\' => 24,
             'Symfony\\Component\\Cache\\' => 24,
             'Svg\\' => 4,
-            'Stripe\\' => 7,
             'Spatie\\SimpleExcel\\' => 19,
             'Spatie\\LaravelIgnition\\' => 23,
             'Spatie\\Ignition\\' => 16,
             'Spatie\\FlareClient\\' => 19,
             'Spatie\\ErrorSolutions\\' => 22,
             'Spatie\\Backtrace\\' => 17,
-            'Sample\\' => 7,
             'Sabberworm\\CSS\\' => 15,
         ),
-        'R' => 
+        'R' =>
         array (
             'Resend\\' => 7,
             'RectorLaravel\\' => 14,
-            'Razorpay\\Tests\\' => 15,
-            'Razorpay\\Api\\' => 13,
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psy\\' => 4,
             'Psr\\SimpleCache\\' => 16,
@@ -182,36 +173,31 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
             'PhpOffice\\PhpSpreadsheet\\' => 25,
-            'PayPalHttp\\' => 11,
-            'PayPalCheckoutSdk\\' => 18,
             'ParagonIE\\ConstantTime\\' => 23,
         ),
-        'O' => 
+        'O' =>
         array (
             'OpenSpout\\' => 10,
         ),
-        'N' => 
+        'N' =>
         array (
             'NunoMaduro\\Collision\\' => 21,
         ),
-        'M' => 
+        'M' =>
         array (
             'Mpdf\\PsrLogAwareTrait\\' => 22,
             'Mpdf\\PsrHttpMessageShim\\' => 24,
             'Mpdf\\' => 5,
             'Monolog\\' => 8,
-            'Mollie\\Laravel\\' => 15,
-            'Mollie\\Api\\' => 11,
             'Mockery\\' => 8,
             'Mews\\Purifier\\' => 14,
             'Matrix\\' => 7,
             'Masterminds\\' => 12,
             'Maatwebsite\\Excel\\' => 18,
         ),
-        'L' => 
+        'L' =>
         array (
             'League\\Uri\\' => 11,
-            'League\\OAuth1\\Client\\' => 21,
             'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\Local\\' => 23,
             'League\\Flysystem\\AwsS3V3\\' => 25,
@@ -219,7 +205,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'League\\Config\\' => 14,
             'League\\CommonMark\\' => 18,
             'Laravel\\Tinker\\' => 15,
-            'Laravel\\Socialite\\' => 18,
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
@@ -232,22 +217,22 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'Laravel\\Boost\\' => 14,
             'Larastan\\Larastan\\' => 18,
         ),
-        'K' => 
+        'K' =>
         array (
             'Kris\\LaravelFormBuilder\\' => 24,
         ),
-        'J' => 
+        'J' =>
         array (
             'JmesPath\\' => 9,
         ),
-        'I' => 
+        'I' =>
         array (
             'Intervention\\Image\\' => 19,
             'Intervention\\Gif\\' => 17,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\' => 11,
         ),
-        'G' => 
+        'G' =>
         array (
             'GuzzleHttp\\UriTemplate\\' => 23,
             'GuzzleHttp\\Psr7\\' => 16,
@@ -257,7 +242,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'Grpc\\' => 5,
             'GrahamCampbell\\ResultType\\' => 26,
             'Google\\Type\\' => 12,
-            'Google\\Service\\' => 15,
             'Google\\Rpc\\' => 11,
             'Google\\Protobuf\\' => 16,
             'Google\\LongRunning\\' => 19,
@@ -268,7 +252,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'Google\\ApiCore\\LongRunning\\' => 27,
             'Google\\ApiCore\\' => 15,
             'Google\\Analytics\\Data\\' => 22,
-            'Google\\' => 7,
             'GPBMetadata\\Google\\Type\\' => 24,
             'GPBMetadata\\Google\\Rpc\\' => 23,
             'GPBMetadata\\Google\\Protobuf\\' => 28,
@@ -280,18 +263,18 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'GPBMetadata\\Google\\Analytics\\Data\\' => 34,
             'GPBMetadata\\ApiCore\\' => 20,
         ),
-        'F' => 
+        'F' =>
         array (
             'Fruitcake\\Cors\\' => 15,
             'FontLib\\' => 8,
             'Firebase\\JWT\\' => 13,
             'Faker\\' => 6,
         ),
-        'E' => 
+        'E' =>
         array (
             'Egulias\\EmailValidator\\' => 23,
         ),
-        'D' => 
+        'D' =>
         array (
             'Dotenv\\' => 7,
             'Dompdf\\' => 7,
@@ -306,18 +289,17 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'Database\\Seeders\\' => 17,
             'Database\\Factories\\' => 19,
         ),
-        'C' => 
+        'C' =>
         array (
             'Cron\\' => 5,
             'Composer\\Semver\\' => 16,
             'Composer\\Pcre\\' => 14,
             'Composer\\ClassMapGenerator\\' => 27,
-            'Composer\\CaBundle\\' => 18,
             'Complex\\' => 8,
             'Carbon\\Doctrine\\' => 16,
             'Carbon\\' => 7,
         ),
-        'B' => 
+        'B' =>
         array (
             'Brick\\Math\\' => 11,
             'Botble\\Widget\\' => 14,
@@ -353,886 +335,825 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
             'Barryvdh\\DomPDF\\' => 16,
             'Barryvdh\\Debugbar\\' => 18,
         ),
-        'A' => 
+        'A' =>
         array (
             'Aws\\' => 4,
-            'ArPHP\\I18N\\' => 11,
             'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'voku\\' => 
+        'voku\\' =>
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
         ),
-        'setasign\\Fpdi\\' => 
+        'setasign\\Fpdi\\' =>
         array (
             0 => __DIR__ . '/..' . '/setasign/fpdi/src',
         ),
-        'phpseclib3\\' => 
+        'phpseclib3\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
         ),
-        'iamcal\\' => 
+        'iamcal\\' =>
         array (
             0 => __DIR__ . '/..' . '/iamcal/sql-parser/src',
         ),
-        'bcmath_compat\\' => 
+        'bcmath_compat\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpseclib/bcmath_compat/src',
         ),
-        'ZipStream\\' => 
+        'ZipStream\\' =>
         array (
             0 => __DIR__ . '/..' . '/maennchen/zipstream-php/src',
         ),
-        'Yajra\\DataTables\\' => 
+        'Yajra\\DataTables\\' =>
         array (
             0 => __DIR__ . '/..' . '/yajra/laravel-datatables-buttons/src',
             1 => __DIR__ . '/..' . '/yajra/laravel-datatables-html/src',
             2 => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src',
         ),
-        'WpOrg\\Requests\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/rmccue/requests/src',
-        ),
-        'Workbench\\App\\' => 
+        'Workbench\\App\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/mcp/workbench/app',
         ),
-        'Wikimedia\\Composer\\Merge\\V2\\' => 
+        'Wikimedia\\Composer\\Merge\\V2\\' =>
         array (
             0 => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src',
         ),
-        'Whoops\\' => 
+        'Whoops\\' =>
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
-        'Webmozart\\Assert\\' => 
+        'Webmozart\\Assert\\' =>
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'Twig\\' => 
+        'Twig\\' =>
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
-        'TijsVerkoyen\\CssToInlineStyles\\' => 
+        'TijsVerkoyen\\CssToInlineStyles\\' =>
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
         ),
-        'Tightenco\\Ziggy\\' => 
+        'Tightenco\\Ziggy\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/base/src/Ziggy',
         ),
-        'Tighten\\Ziggy\\' => 
+        'Tighten\\Ziggy\\' =>
         array (
             0 => __DIR__ . '/..' . '/tightenco/ziggy/src',
         ),
-        'Tests\\' => 
+        'Tests\\' =>
         array (
             0 => __DIR__ . '/../..' . '/tests',
         ),
-        'Termwind\\' => 
+        'Termwind\\' =>
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/termwind/src',
         ),
-        'Symfony\\Polyfill\\Uuid\\' => 
+        'Symfony\\Polyfill\\Uuid\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-uuid',
         ),
-        'Symfony\\Polyfill\\Php83\\' => 
+        'Symfony\\Polyfill\\Php83\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
         ),
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Idn\\' => 
+        'Symfony\\Polyfill\\Intl\\Idn\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Polyfill\\Ctype\\' => 
+        'Symfony\\Polyfill\\Ctype\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Symfony\\Contracts\\Translation\\' => 
+        'Symfony\\Contracts\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
-        'Symfony\\Contracts\\Service\\' => 
+        'Symfony\\Contracts\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\HttpClient\\' => 
+        'Symfony\\Contracts\\HttpClient\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-client-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
+        'Symfony\\Contracts\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
-        'Symfony\\Contracts\\Cache\\' => 
+        'Symfony\\Contracts\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/cache-contracts',
         ),
-        'Symfony\\Component\\Yaml\\' => 
+        'Symfony\\Component\\Yaml\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Symfony\\Component\\VarExporter\\' => 
+        'Symfony\\Component\\VarExporter\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/var-exporter',
         ),
-        'Symfony\\Component\\VarDumper\\' => 
+        'Symfony\\Component\\VarDumper\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Symfony\\Component\\Uid\\' => 
+        'Symfony\\Component\\Uid\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/uid',
         ),
-        'Symfony\\Component\\Translation\\' => 
+        'Symfony\\Component\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Symfony\\Component\\String\\' => 
+        'Symfony\\Component\\String\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\Routing\\' => 
+        'Symfony\\Component\\Routing\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/routing',
         ),
-        'Symfony\\Component\\Process\\' => 
+        'Symfony\\Component\\Process\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
         ),
-        'Symfony\\Component\\Mime\\' => 
+        'Symfony\\Component\\Mime\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mime',
         ),
-        'Symfony\\Component\\Mailer\\Bridge\\Postmark\\' => 
+        'Symfony\\Component\\Mailer\\Bridge\\Postmark\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/postmark-mailer',
         ),
-        'Symfony\\Component\\Mailer\\Bridge\\Mailgun\\' => 
+        'Symfony\\Component\\Mailer\\Bridge\\Mailgun\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mailgun-mailer',
         ),
-        'Symfony\\Component\\Mailer\\' => 
+        'Symfony\\Component\\Mailer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mailer',
         ),
-        'Symfony\\Component\\HttpKernel\\' => 
+        'Symfony\\Component\\HttpKernel\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-kernel',
         ),
-        'Symfony\\Component\\HttpFoundation\\' => 
+        'Symfony\\Component\\HttpFoundation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Symfony\\Component\\HttpClient\\' => 
+        'Symfony\\Component\\HttpClient\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-client',
         ),
-        'Symfony\\Component\\Finder\\' => 
+        'Symfony\\Component\\Finder\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
+        'Symfony\\Component\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Symfony\\Component\\ErrorHandler\\' => 
+        'Symfony\\Component\\ErrorHandler\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/error-handler',
         ),
-        'Symfony\\Component\\CssSelector\\' => 
+        'Symfony\\Component\\CssSelector\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/css-selector',
         ),
-        'Symfony\\Component\\Console\\' => 
+        'Symfony\\Component\\Console\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Symfony\\Component\\Clock\\' => 
+        'Symfony\\Component\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/clock',
         ),
-        'Symfony\\Component\\Cache\\' => 
+        'Symfony\\Component\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/cache',
         ),
-        'Svg\\' => 
+        'Svg\\' =>
         array (
             0 => __DIR__ . '/..' . '/dompdf/php-svg-lib/src/Svg',
         ),
-        'Stripe\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
-        ),
-        'Spatie\\SimpleExcel\\' => 
+        'Spatie\\SimpleExcel\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/simple-excel/src',
         ),
-        'Spatie\\LaravelIgnition\\' => 
+        'Spatie\\LaravelIgnition\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
             1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
         ),
-        'Spatie\\Ignition\\' => 
+        'Spatie\\Ignition\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/ignition/src',
             1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
         ),
-        'Spatie\\FlareClient\\' => 
+        'Spatie\\FlareClient\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/flare-client-php/src',
         ),
-        'Spatie\\ErrorSolutions\\' => 
+        'Spatie\\ErrorSolutions\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/error-solutions/src',
         ),
-        'Spatie\\Backtrace\\' => 
+        'Spatie\\Backtrace\\' =>
         array (
             0 => __DIR__ . '/..' . '/spatie/backtrace/src',
         ),
-        'Sample\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples',
-        ),
-        'Sabberworm\\CSS\\' => 
+        'Sabberworm\\CSS\\' =>
         array (
             0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
         ),
-        'Resend\\' => 
+        'Resend\\' =>
         array (
             0 => __DIR__ . '/..' . '/resend/resend-php/src',
         ),
-        'RectorLaravel\\' => 
+        'RectorLaravel\\' =>
         array (
             0 => __DIR__ . '/..' . '/driftingly/rector-laravel/src',
         ),
-        'Razorpay\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/razorpay/razorpay/tests',
-        ),
-        'Razorpay\\Api\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/razorpay/razorpay/src',
-        ),
-        'Ramsey\\Uuid\\' => 
+        'Ramsey\\Uuid\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
         ),
-        'Ramsey\\Collection\\' => 
+        'Ramsey\\Collection\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
         ),
-        'Psy\\' => 
+        'Psy\\' =>
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src',
         ),
-        'Psr\\SimpleCache\\' => 
+        'Psr\\SimpleCache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\Log\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Psr\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Psr\\Http\\Client\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Psr\\EventDispatcher\\' => 
+        'Psr\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Clock\\' => 
+        'Psr\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
-        'Psr\\Cache\\' => 
+        'Psr\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
-        'Predis\\' => 
+        'Predis\\' =>
         array (
             0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
-        'PhpParser\\' => 
+        'PhpParser\\' =>
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'PhpOption\\' => 
+        'PhpOption\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
-        'PhpOffice\\PhpSpreadsheet\\' => 
+        'PhpOffice\\PhpSpreadsheet\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
         ),
-        'PayPalHttp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp',
-        ),
-        'PayPalCheckoutSdk\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk',
-        ),
-        'ParagonIE\\ConstantTime\\' => 
+        'ParagonIE\\ConstantTime\\' =>
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
-        'OpenSpout\\' => 
+        'OpenSpout\\' =>
         array (
             0 => __DIR__ . '/..' . '/openspout/openspout/src',
         ),
-        'NunoMaduro\\Collision\\' => 
+        'NunoMaduro\\Collision\\' =>
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
-        'Mpdf\\PsrLogAwareTrait\\' => 
+        'Mpdf\\PsrLogAwareTrait\\' =>
         array (
             0 => __DIR__ . '/..' . '/mpdf/psr-log-aware-trait/src',
         ),
-        'Mpdf\\PsrHttpMessageShim\\' => 
+        'Mpdf\\PsrHttpMessageShim\\' =>
         array (
             0 => __DIR__ . '/..' . '/mpdf/psr-http-message-shim/src',
         ),
-        'Mpdf\\' => 
+        'Mpdf\\' =>
         array (
             0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
         ),
-        'Monolog\\' => 
+        'Monolog\\' =>
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'Mollie\\Laravel\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mollie/laravel-mollie/src',
-        ),
-        'Mollie\\Api\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mollie/mollie-api-php/src',
-        ),
-        'Mockery\\' => 
+        'Mockery\\' =>
         array (
             0 => __DIR__ . '/..' . '/mockery/mockery/library/Mockery',
         ),
-        'Mews\\Purifier\\' => 
+        'Mews\\Purifier\\' =>
         array (
             0 => __DIR__ . '/..' . '/mews/purifier/src',
         ),
-        'Matrix\\' => 
+        'Matrix\\' =>
         array (
             0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
         ),
-        'Masterminds\\' => 
+        'Masterminds\\' =>
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
-        'Maatwebsite\\Excel\\' => 
+        'Maatwebsite\\Excel\\' =>
         array (
             0 => __DIR__ . '/..' . '/maatwebsite/excel/src',
         ),
-        'League\\Uri\\' => 
+        'League\\Uri\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/uri',
             1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
-        'League\\OAuth1\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/oauth1-client/src',
-        ),
-        'League\\MimeTypeDetection\\' => 
+        'League\\MimeTypeDetection\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
         ),
-        'League\\Flysystem\\Local\\' => 
+        'League\\Flysystem\\Local\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-local',
         ),
-        'League\\Flysystem\\AwsS3V3\\' => 
+        'League\\Flysystem\\AwsS3V3\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem-aws-s3-v3',
         ),
-        'League\\Flysystem\\' => 
+        'League\\Flysystem\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
-        'League\\Config\\' => 
+        'League\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/config/src',
         ),
-        'League\\CommonMark\\' => 
+        'League\\CommonMark\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/commonmark/src',
         ),
-        'Laravel\\Tinker\\' => 
+        'Laravel\\Tinker\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
-        'Laravel\\Socialite\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/laravel/socialite/src',
-        ),
-        'Laravel\\SerializableClosure\\' => 
+        'Laravel\\SerializableClosure\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
         ),
-        'Laravel\\Sanctum\\' => 
+        'Laravel\\Sanctum\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/sanctum/src',
         ),
-        'Laravel\\Sail\\' => 
+        'Laravel\\Sail\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
-        'Laravel\\Roster\\' => 
+        'Laravel\\Roster\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/roster/src',
         ),
-        'Laravel\\Prompts\\' => 
+        'Laravel\\Prompts\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
         ),
-        'Laravel\\Pail\\' => 
+        'Laravel\\Pail\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/pail/src',
         ),
-        'Laravel\\Mcp\\Tests\\' => 
+        'Laravel\\Mcp\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/mcp/tests',
         ),
-        'Laravel\\Mcp\\Server\\' => 
+        'Laravel\\Mcp\\Server\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/mcp/src/Server',
         ),
-        'Laravel\\Mcp\\' => 
+        'Laravel\\Mcp\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/mcp/src',
         ),
-        'Laravel\\Boost\\' => 
+        'Laravel\\Boost\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/boost/src',
         ),
-        'Larastan\\Larastan\\' => 
+        'Larastan\\Larastan\\' =>
         array (
             0 => __DIR__ . '/..' . '/larastan/larastan/src',
         ),
-        'Kris\\LaravelFormBuilder\\' => 
+        'Kris\\LaravelFormBuilder\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/form-builder/src',
         ),
-        'JmesPath\\' => 
+        'JmesPath\\' =>
         array (
             0 => __DIR__ . '/..' . '/mtdowling/jmespath.php/src',
         ),
-        'Intervention\\Image\\' => 
+        'Intervention\\Image\\' =>
         array (
             0 => __DIR__ . '/..' . '/intervention/image/src',
         ),
-        'Intervention\\Gif\\' => 
+        'Intervention\\Gif\\' =>
         array (
             0 => __DIR__ . '/..' . '/intervention/gif/src',
         ),
-        'Illuminate\\Support\\' => 
+        'Illuminate\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
             1 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections',
             2 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Conditionable',
         ),
-        'Illuminate\\' => 
+        'Illuminate\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
-        'GuzzleHttp\\UriTemplate\\' => 
+        'GuzzleHttp\\UriTemplate\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/uri-template/src',
         ),
-        'GuzzleHttp\\Psr7\\' => 
+        'GuzzleHttp\\Psr7\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
+        'GuzzleHttp\\Promise\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
         ),
-        'GuzzleHttp\\' => 
+        'GuzzleHttp\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Grpc\\Gcp\\' => 
+        'Grpc\\Gcp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/grpc-gcp/src',
         ),
-        'Grpc\\' => 
+        'Grpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
         ),
-        'GrahamCampbell\\ResultType\\' => 
+        'GrahamCampbell\\ResultType\\' =>
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
         ),
-        'Google\\Type\\' => 
+        'Google\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Type',
         ),
-        'Google\\Service\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/google/apiclient-services/src',
-        ),
-        'Google\\Rpc\\' => 
+        'Google\\Rpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Rpc',
         ),
-        'Google\\Protobuf\\' => 
+        'Google\\Protobuf\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf',
         ),
-        'Google\\LongRunning\\' => 
+        'Google\\LongRunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/longrunning/src/LongRunning',
         ),
-        'Google\\Iam\\' => 
+        'Google\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Iam',
         ),
-        'Google\\Cloud\\' => 
+        'Google\\Cloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Cloud',
         ),
-        'Google\\Auth\\' => 
+        'Google\\Auth\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/auth/src',
         ),
-        'Google\\Api\\' => 
+        'Google\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Api',
         ),
-        'Google\\ApiCore\\LongRunning\\' => 
+        'Google\\ApiCore\\LongRunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/longrunning/src/ApiCore/LongRunning',
         ),
-        'Google\\ApiCore\\' => 
+        'Google\\ApiCore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/gax/src',
         ),
-        'Google\\Analytics\\Data\\' => 
+        'Google\\Analytics\\Data\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/analytics-data/src',
         ),
-        'Google\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/google/apiclient/src',
-        ),
-        'GPBMetadata\\Google\\Type\\' => 
+        'GPBMetadata\\Google\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Type',
         ),
-        'GPBMetadata\\Google\\Rpc\\' => 
+        'GPBMetadata\\Google\\Rpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Rpc',
         ),
-        'GPBMetadata\\Google\\Protobuf\\' => 
+        'GPBMetadata\\Google\\Protobuf\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
         ),
-        'GPBMetadata\\Google\\Longrunning\\' => 
+        'GPBMetadata\\Google\\Longrunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/longrunning/metadata/Longrunning',
         ),
-        'GPBMetadata\\Google\\Logging\\' => 
+        'GPBMetadata\\Google\\Logging\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Logging',
         ),
-        'GPBMetadata\\Google\\Iam\\' => 
+        'GPBMetadata\\Google\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Iam',
         ),
-        'GPBMetadata\\Google\\Cloud\\' => 
+        'GPBMetadata\\Google\\Cloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Cloud',
         ),
-        'GPBMetadata\\Google\\Api\\' => 
+        'GPBMetadata\\Google\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/metadata/Api',
         ),
-        'GPBMetadata\\Google\\Analytics\\Data\\' => 
+        'GPBMetadata\\Google\\Analytics\\Data\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/analytics-data/metadata',
         ),
-        'GPBMetadata\\ApiCore\\' => 
+        'GPBMetadata\\ApiCore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/gax/metadata/ApiCore',
         ),
-        'Fruitcake\\Cors\\' => 
+        'Fruitcake\\Cors\\' =>
         array (
             0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
-        'FontLib\\' => 
+        'FontLib\\' =>
         array (
             0 => __DIR__ . '/..' . '/dompdf/php-font-lib/src/FontLib',
         ),
-        'Firebase\\JWT\\' => 
+        'Firebase\\JWT\\' =>
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
-        'Faker\\' => 
+        'Faker\\' =>
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
-        'Egulias\\EmailValidator\\' => 
+        'Egulias\\EmailValidator\\' =>
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
         ),
-        'Dotenv\\' => 
+        'Dotenv\\' =>
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
-        'Dompdf\\' => 
+        'Dompdf\\' =>
         array (
             0 => __DIR__ . '/..' . '/dompdf/dompdf/src',
         ),
-        'Doctrine\\Inflector\\' => 
+        'Doctrine\\Inflector\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
-        'Doctrine\\Deprecations\\' => 
+        'Doctrine\\Deprecations\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/deprecations/src',
         ),
-        'Doctrine\\DBAL\\' => 
+        'Doctrine\\DBAL\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/dbal/src',
         ),
-        'Doctrine\\Common\\Lexer\\' => 
+        'Doctrine\\Common\\Lexer\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/src',
         ),
-        'Dflydev\\DotAccessData\\' => 
+        'Dflydev\\DotAccessData\\' =>
         array (
             0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
         ),
-        'Detection\\' => 
+        'Detection\\' =>
         array (
             0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/src',
         ),
-        'DeepCopy\\' => 
+        'DeepCopy\\' =>
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'DebugBar\\' => 
+        'DebugBar\\' =>
         array (
             0 => __DIR__ . '/..' . '/php-debugbar/php-debugbar/src/DebugBar',
         ),
-        'Database\\Seeders\\' => 
+        'Database\\Seeders\\' =>
         array (
             0 => __DIR__ . '/../..' . '/database/seeders',
             1 => __DIR__ . '/..' . '/laravel/pint/database/seeders',
         ),
-        'Database\\Factories\\' => 
+        'Database\\Factories\\' =>
         array (
             0 => __DIR__ . '/../..' . '/database/factories',
             1 => __DIR__ . '/..' . '/laravel/pint/database/factories',
         ),
-        'Cron\\' => 
+        'Cron\\' =>
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
-        'Composer\\Semver\\' => 
+        'Composer\\Semver\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
-        'Composer\\Pcre\\' => 
+        'Composer\\Pcre\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
-        'Composer\\ClassMapGenerator\\' => 
+        'Composer\\ClassMapGenerator\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/class-map-generator/src',
         ),
-        'Composer\\CaBundle\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
-        ),
-        'Complex\\' => 
+        'Complex\\' =>
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
         ),
-        'Carbon\\Doctrine\\' => 
+        'Carbon\\Doctrine\\' =>
         array (
             0 => __DIR__ . '/..' . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine',
         ),
-        'Carbon\\' => 
+        'Carbon\\' =>
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
-        'Brick\\Math\\' => 
+        'Brick\\Math\\' =>
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
-        'Botble\\Widget\\' => 
+        'Botble\\Widget\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/widget/src',
         ),
-        'Botble\\Theme\\' => 
+        'Botble\\Theme\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/theme/src',
         ),
-        'Botble\\Table\\' => 
+        'Botble\\Table\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/table/src',
         ),
-        'Botble\\Support\\' => 
+        'Botble\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/support/src',
         ),
-        'Botble\\Slug\\' => 
+        'Botble\\Slug\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/slug/src',
         ),
-        'Botble\\Sitemap\\' => 
+        'Botble\\Sitemap\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/sitemap/src',
         ),
-        'Botble\\Shortcode\\' => 
+        'Botble\\Shortcode\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/shortcode/src',
         ),
-        'Botble\\Setting\\' => 
+        'Botble\\Setting\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/setting/src',
         ),
-        'Botble\\SeoHelper\\' => 
+        'Botble\\SeoHelper\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/seo-helper/src',
         ),
-        'Botble\\Revision\\' => 
+        'Botble\\Revision\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/revision/src',
         ),
-        'Botble\\PluginManagement\\' => 
+        'Botble\\PluginManagement\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/plugin-management/src',
         ),
-        'Botble\\Page\\' => 
+        'Botble\\Page\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/page/src',
         ),
-        'Botble\\Optimize\\' => 
+        'Botble\\Optimize\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/optimize/src',
         ),
-        'Botble\\Menu\\' => 
+        'Botble\\Menu\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/menu/src',
         ),
-        'Botble\\Media\\' => 
+        'Botble\\Media\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/media/src',
         ),
-        'Botble\\JsValidation\\' => 
+        'Botble\\JsValidation\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/js-validation/src',
         ),
-        'Botble\\Installer\\' => 
+        'Botble\\Installer\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/installer/src',
         ),
-        'Botble\\Icon\\' => 
+        'Botble\\Icon\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/icon/src',
         ),
-        'Botble\\GitCommitChecker\\' => 
+        'Botble\\GitCommitChecker\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/git-commit-checker/src',
         ),
-        'Botble\\GetStarted\\' => 
+        'Botble\\GetStarted\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/get-started/src',
         ),
-        'Botble\\DevTool\\' => 
+        'Botble\\DevTool\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/dev-tool/src',
         ),
-        'Botble\\DataSynchronize\\' => 
+        'Botble\\DataSynchronize\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/data-synchronize/src',
         ),
-        'Botble\\Dashboard\\' => 
+        'Botble\\Dashboard\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/dashboard/src',
         ),
-        'Botble\\Chart\\' => 
+        'Botble\\Chart\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/chart/src',
         ),
-        'Botble\\Base\\Tests\\' => 
+        'Botble\\Base\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/base/tests',
         ),
-        'Botble\\Base\\' => 
+        'Botble\\Base\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/base/src',
         ),
-        'Botble\\Assets\\' => 
+        'Botble\\Assets\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/assets/src',
         ),
-        'Botble\\Api\\' => 
+        'Botble\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/api/src',
         ),
-        'Botble\\ACL\\' => 
+        'Botble\\ACL\\' =>
         array (
             0 => __DIR__ . '/..' . '/botble/platform/acl/src',
         ),
-        'Barryvdh\\LaravelIdeHelper\\' => 
+        'Barryvdh\\LaravelIdeHelper\\' =>
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-ide-helper/src',
         ),
-        'Barryvdh\\DomPDF\\' => 
+        'Barryvdh\\DomPDF\\' =>
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-dompdf/src',
         ),
-        'Barryvdh\\Debugbar\\' => 
+        'Barryvdh\\Debugbar\\' =>
         array (
             0 => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src',
         ),
-        'Aws\\' => 
+        'Aws\\' =>
         array (
             0 => __DIR__ . '/..' . '/aws/aws-sdk-php/src',
         ),
-        'ArPHP\\I18N\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/khaled.alshamaa/ar-php/src',
-        ),
-        'App\\' => 
+        'App\\' =>
         array (
             0 => __DIR__ . '/../..' . '/app',
             1 => __DIR__ . '/..' . '/laravel/pint/app',
@@ -1240,16 +1161,16 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
     );
 
     public static $prefixesPsr0 = array (
-        'H' => 
+        'H' =>
         array (
-            'HTMLPurifier' => 
+            'HTMLPurifier' =>
             array (
                 0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
             ),
         ),
-        'B' => 
+        'B' =>
         array (
-            'Barryvdh' => 
+            'Barryvdh' =>
             array (
                 0 => __DIR__ . '/..' . '/barryvdh/reflection-docblock/src',
             ),
@@ -1287,7 +1208,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'ArPHP\\I18N\\Arabic' => __DIR__ . '/..' . '/khaled.alshamaa/ar-php/src/Arabic.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Aws\\AbstractConfigurationProvider' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/AbstractConfigurationProvider.php',
         'Aws\\Api\\AbstractModel' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/Api/AbstractModel.php',
@@ -2909,7 +2829,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Complex\\Exception' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Exception.php',
         'Complex\\Functions' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Functions.php',
         'Complex\\Operations' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Operations.php',
-        'Composer\\CaBundle\\CaBundle' => __DIR__ . '/..' . '/composer/ca-bundle/src/CaBundle.php',
         'Composer\\ClassMapGenerator\\ClassMap' => __DIR__ . '/..' . '/composer/class-map-generator/src/ClassMap.php',
         'Composer\\ClassMapGenerator\\ClassMapGenerator' => __DIR__ . '/..' . '/composer/class-map-generator/src/ClassMapGenerator.php',
         'Composer\\ClassMapGenerator\\FileList' => __DIR__ . '/..' . '/composer/class-map-generator/src/FileList.php',
@@ -4306,8 +4225,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'GPBMetadata\\Google\\Type\\Quaternion' => __DIR__ . '/..' . '/google/common-protos/metadata/Type/Quaternion.php',
         'GPBMetadata\\Google\\Type\\Timeofday' => __DIR__ . '/..' . '/google/common-protos/metadata/Type/Timeofday.php',
         'GPBMetadata\\GrpcGcp' => __DIR__ . '/..' . '/google/grpc-gcp/src/generated/GPBMetadata/GrpcGcp.php',
-        'Google\\AccessToken\\Revoke' => __DIR__ . '/..' . '/google/apiclient/src/AccessToken/Revoke.php',
-        'Google\\AccessToken\\Verify' => __DIR__ . '/..' . '/google/apiclient/src/AccessToken/Verify.php',
         'Google\\Analytics\\Data\\V1alpha\\AudienceDimension' => __DIR__ . '/..' . '/google/analytics-data/src/V1alpha/AudienceDimension.php',
         'Google\\Analytics\\Data\\V1alpha\\AudienceDimensionValue' => __DIR__ . '/..' . '/google/analytics-data/src/V1alpha/AudienceDimensionValue.php',
         'Google\\Analytics\\Data\\V1alpha\\AudienceList' => __DIR__ . '/..' . '/google/analytics-data/src/V1alpha/AudienceList.php',
@@ -4693,9 +4610,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Google\\Api\\UsageRule' => __DIR__ . '/..' . '/google/common-protos/src/Api/UsageRule.php',
         'Google\\Api\\Visibility' => __DIR__ . '/..' . '/google/common-protos/src/Api/Visibility.php',
         'Google\\Api\\VisibilityRule' => __DIR__ . '/..' . '/google/common-protos/src/Api/VisibilityRule.php',
-        'Google\\AuthHandler\\AuthHandlerFactory' => __DIR__ . '/..' . '/google/apiclient/src/AuthHandler/AuthHandlerFactory.php',
-        'Google\\AuthHandler\\Guzzle6AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/AuthHandler/Guzzle6AuthHandler.php',
-        'Google\\AuthHandler\\Guzzle7AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/AuthHandler/Guzzle7AuthHandler.php',
         'Google\\Auth\\AccessToken' => __DIR__ . '/..' . '/google/auth/src/AccessToken.php',
         'Google\\Auth\\ApplicationDefaultCredentials' => __DIR__ . '/..' . '/google/auth/src/ApplicationDefaultCredentials.php',
         'Google\\Auth\\CacheTrait' => __DIR__ . '/..' . '/google/auth/src/CacheTrait.php',
@@ -4747,7 +4661,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Google\\Auth\\SignBlobInterface' => __DIR__ . '/..' . '/google/auth/src/SignBlobInterface.php',
         'Google\\Auth\\UpdateMetadataInterface' => __DIR__ . '/..' . '/google/auth/src/UpdateMetadataInterface.php',
         'Google\\Auth\\UpdateMetadataTrait' => __DIR__ . '/..' . '/google/auth/src/UpdateMetadataTrait.php',
-        'Google\\Client' => __DIR__ . '/..' . '/google/apiclient/src/Client.php',
         'Google\\Cloud\\Iam\\V1\\AuditConfig' => __DIR__ . '/..' . '/google/common-protos/src/Cloud/Iam/V1/AuditConfig.php',
         'Google\\Cloud\\Iam\\V1\\AuditConfigDelta' => __DIR__ . '/..' . '/google/common-protos/src/Cloud/Iam/V1/AuditConfigDelta.php',
         'Google\\Cloud\\Iam\\V1\\AuditConfigDelta\\Action' => __DIR__ . '/..' . '/google/common-protos/src/Cloud/Iam/V1/AuditConfigDelta/Action.php',
@@ -4771,11 +4684,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Google\\Cloud\\Logging\\Type\\HttpRequest' => __DIR__ . '/..' . '/google/common-protos/src/Cloud/Logging/Type/HttpRequest.php',
         'Google\\Cloud\\Logging\\Type\\LogSeverity' => __DIR__ . '/..' . '/google/common-protos/src/Cloud/Logging/Type/LogSeverity.php',
         'Google\\Cloud\\OperationResponseMapping' => __DIR__ . '/..' . '/google/common-protos/src/Cloud/OperationResponseMapping.php',
-        'Google\\Collection' => __DIR__ . '/..' . '/google/apiclient/src/Collection.php',
-        'Google\\Exception' => __DIR__ . '/..' . '/google/apiclient/src/Exception.php',
-        'Google\\Http\\Batch' => __DIR__ . '/..' . '/google/apiclient/src/Http/Batch.php',
-        'Google\\Http\\MediaFileUpload' => __DIR__ . '/..' . '/google/apiclient/src/Http/MediaFileUpload.php',
-        'Google\\Http\\REST' => __DIR__ . '/..' . '/google/apiclient/src/Http/REST.php',
         'Google\\Iam\\V1\\Logging\\AuditData' => __DIR__ . '/..' . '/google/common-protos/src/Iam/V1/Logging/AuditData.php',
         'Google\\LongRunning\\CancelOperationRequest' => __DIR__ . '/..' . '/google/longrunning/src/LongRunning/CancelOperationRequest.php',
         'Google\\LongRunning\\Client\\OperationsClient' => __DIR__ . '/..' . '/google/longrunning/src/LongRunning/Client/OperationsClient.php',
@@ -4789,7 +4697,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Google\\LongRunning\\OperationsClient' => __DIR__ . '/..' . '/google/longrunning/src/LongRunning/OperationsClient.php',
         'Google\\LongRunning\\OperationsGrpcClient' => __DIR__ . '/..' . '/google/longrunning/src/LongRunning/OperationsGrpcClient.php',
         'Google\\LongRunning\\WaitOperationRequest' => __DIR__ . '/..' . '/google/longrunning/src/LongRunning/WaitOperationRequest.php',
-        'Google\\Model' => __DIR__ . '/..' . '/google/apiclient/src/Model.php',
         'Google\\Protobuf\\Any' => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf/Any.php',
         'Google\\Protobuf\\Api' => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf/Api.php',
         'Google\\Protobuf\\BoolValue' => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf/BoolValue.php',
@@ -4937,90 +4844,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Google\\Rpc\\ResourceInfo' => __DIR__ . '/..' . '/google/common-protos/src/Rpc/ResourceInfo.php',
         'Google\\Rpc\\RetryInfo' => __DIR__ . '/..' . '/google/common-protos/src/Rpc/RetryInfo.php',
         'Google\\Rpc\\Status' => __DIR__ . '/..' . '/google/common-protos/src/Rpc/Status.php',
-        'Google\\Service' => __DIR__ . '/..' . '/google/apiclient/src/Service.php',
-        'Google\\Service\\Drive' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive.php',
-        'Google\\Service\\Drive\\About' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/About.php',
-        'Google\\Service\\Drive\\AboutDriveThemes' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/AboutDriveThemes.php',
-        'Google\\Service\\Drive\\AboutStorageQuota' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/AboutStorageQuota.php',
-        'Google\\Service\\Drive\\AboutTeamDriveThemes' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/AboutTeamDriveThemes.php',
-        'Google\\Service\\Drive\\AccessProposal' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/AccessProposal.php',
-        'Google\\Service\\Drive\\AccessProposalRoleAndView' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/AccessProposalRoleAndView.php',
-        'Google\\Service\\Drive\\App' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/App.php',
-        'Google\\Service\\Drive\\AppIcons' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/AppIcons.php',
-        'Google\\Service\\Drive\\AppList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/AppList.php',
-        'Google\\Service\\Drive\\Change' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Change.php',
-        'Google\\Service\\Drive\\ChangeList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ChangeList.php',
-        'Google\\Service\\Drive\\Channel' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Channel.php',
-        'Google\\Service\\Drive\\Comment' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Comment.php',
-        'Google\\Service\\Drive\\CommentList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/CommentList.php',
-        'Google\\Service\\Drive\\CommentQuotedFileContent' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/CommentQuotedFileContent.php',
-        'Google\\Service\\Drive\\ContentRestriction' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ContentRestriction.php',
-        'Google\\Service\\Drive\\DownloadRestriction' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DownloadRestriction.php',
-        'Google\\Service\\Drive\\Drive' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Drive.php',
-        'Google\\Service\\Drive\\DriveBackgroundImageFile' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveBackgroundImageFile.php',
-        'Google\\Service\\Drive\\DriveCapabilities' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveCapabilities.php',
-        'Google\\Service\\Drive\\DriveFile' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFile.php',
-        'Google\\Service\\Drive\\DriveFileCapabilities' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileCapabilities.php',
-        'Google\\Service\\Drive\\DriveFileContentHints' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileContentHints.php',
-        'Google\\Service\\Drive\\DriveFileContentHintsThumbnail' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileContentHintsThumbnail.php',
-        'Google\\Service\\Drive\\DriveFileImageMediaMetadata' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileImageMediaMetadata.php',
-        'Google\\Service\\Drive\\DriveFileImageMediaMetadataLocation' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileImageMediaMetadataLocation.php',
-        'Google\\Service\\Drive\\DriveFileLabelInfo' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileLabelInfo.php',
-        'Google\\Service\\Drive\\DriveFileLinkShareMetadata' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileLinkShareMetadata.php',
-        'Google\\Service\\Drive\\DriveFileShortcutDetails' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileShortcutDetails.php',
-        'Google\\Service\\Drive\\DriveFileVideoMediaMetadata' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveFileVideoMediaMetadata.php',
-        'Google\\Service\\Drive\\DriveList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveList.php',
-        'Google\\Service\\Drive\\DriveRestrictions' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/DriveRestrictions.php',
-        'Google\\Service\\Drive\\FileList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/FileList.php',
-        'Google\\Service\\Drive\\GeneratedIds' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/GeneratedIds.php',
-        'Google\\Service\\Drive\\Label' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Label.php',
-        'Google\\Service\\Drive\\LabelField' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/LabelField.php',
-        'Google\\Service\\Drive\\LabelFieldModification' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/LabelFieldModification.php',
-        'Google\\Service\\Drive\\LabelList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/LabelList.php',
-        'Google\\Service\\Drive\\LabelModification' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/LabelModification.php',
-        'Google\\Service\\Drive\\ListAccessProposalsResponse' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ListAccessProposalsResponse.php',
-        'Google\\Service\\Drive\\ListOperationsResponse' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ListOperationsResponse.php',
-        'Google\\Service\\Drive\\ModifyLabelsRequest' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ModifyLabelsRequest.php',
-        'Google\\Service\\Drive\\ModifyLabelsResponse' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ModifyLabelsResponse.php',
-        'Google\\Service\\Drive\\Operation' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Operation.php',
-        'Google\\Service\\Drive\\Permission' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Permission.php',
-        'Google\\Service\\Drive\\PermissionList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/PermissionList.php',
-        'Google\\Service\\Drive\\PermissionPermissionDetails' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/PermissionPermissionDetails.php',
-        'Google\\Service\\Drive\\PermissionTeamDrivePermissionDetails' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/PermissionTeamDrivePermissionDetails.php',
-        'Google\\Service\\Drive\\Reply' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Reply.php',
-        'Google\\Service\\Drive\\ReplyList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ReplyList.php',
-        'Google\\Service\\Drive\\ResolveAccessProposalRequest' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/ResolveAccessProposalRequest.php',
-        'Google\\Service\\Drive\\Resource\\About' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/About.php',
-        'Google\\Service\\Drive\\Resource\\Accessproposals' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Accessproposals.php',
-        'Google\\Service\\Drive\\Resource\\Apps' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Apps.php',
-        'Google\\Service\\Drive\\Resource\\Changes' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Changes.php',
-        'Google\\Service\\Drive\\Resource\\Channels' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Channels.php',
-        'Google\\Service\\Drive\\Resource\\Comments' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Comments.php',
-        'Google\\Service\\Drive\\Resource\\Drives' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Drives.php',
-        'Google\\Service\\Drive\\Resource\\Files' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Files.php',
-        'Google\\Service\\Drive\\Resource\\FilesAccessproposals' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/FilesAccessproposals.php',
-        'Google\\Service\\Drive\\Resource\\Operation' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Operation.php',
-        'Google\\Service\\Drive\\Resource\\Operations' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Operations.php',
-        'Google\\Service\\Drive\\Resource\\Permissions' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Permissions.php',
-        'Google\\Service\\Drive\\Resource\\Replies' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Replies.php',
-        'Google\\Service\\Drive\\Resource\\Revisions' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Revisions.php',
-        'Google\\Service\\Drive\\Resource\\Teamdrives' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Resource/Teamdrives.php',
-        'Google\\Service\\Drive\\Revision' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Revision.php',
-        'Google\\Service\\Drive\\RevisionList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/RevisionList.php',
-        'Google\\Service\\Drive\\StartPageToken' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/StartPageToken.php',
-        'Google\\Service\\Drive\\Status' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/Status.php',
-        'Google\\Service\\Drive\\TeamDrive' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/TeamDrive.php',
-        'Google\\Service\\Drive\\TeamDriveBackgroundImageFile' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/TeamDriveBackgroundImageFile.php',
-        'Google\\Service\\Drive\\TeamDriveCapabilities' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/TeamDriveCapabilities.php',
-        'Google\\Service\\Drive\\TeamDriveList' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/TeamDriveList.php',
-        'Google\\Service\\Drive\\TeamDriveRestrictions' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/TeamDriveRestrictions.php',
-        'Google\\Service\\Drive\\User' => __DIR__ . '/..' . '/google/apiclient-services/src/Drive/User.php',
-        'Google\\Service\\Exception' => __DIR__ . '/..' . '/google/apiclient/src/Service/Exception.php',
-        'Google\\Service\\Resource' => __DIR__ . '/..' . '/google/apiclient/src/Service/Resource.php',
-        'Google\\Task\\Composer' => __DIR__ . '/..' . '/google/apiclient/src/Task/Composer.php',
-        'Google\\Task\\Exception' => __DIR__ . '/..' . '/google/apiclient/src/Task/Exception.php',
-        'Google\\Task\\Retryable' => __DIR__ . '/..' . '/google/apiclient/src/Task/Retryable.php',
-        'Google\\Task\\Runner' => __DIR__ . '/..' . '/google/apiclient/src/Task/Runner.php',
         'Google\\Type\\CalendarPeriod' => __DIR__ . '/..' . '/google/common-protos/src/Type/CalendarPeriod.php',
         'Google\\Type\\Color' => __DIR__ . '/..' . '/google/common-protos/src/Type/Color.php',
         'Google\\Type\\Date' => __DIR__ . '/..' . '/google/common-protos/src/Type/Date.php',
@@ -5040,27 +4863,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Google\\Type\\Quaternion' => __DIR__ . '/..' . '/google/common-protos/src/Type/Quaternion.php',
         'Google\\Type\\TimeOfDay' => __DIR__ . '/..' . '/google/common-protos/src/Type/TimeOfDay.php',
         'Google\\Type\\TimeZone' => __DIR__ . '/..' . '/google/common-protos/src/Type/TimeZone.php',
-        'Google\\Utils\\UriTemplate' => __DIR__ . '/..' . '/google/apiclient/src/Utils/UriTemplate.php',
-        'Google_AccessToken_Revoke' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AccessToken_Verify' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AuthHandler_AuthHandlerFactory' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AuthHandler_Guzzle6AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_AuthHandler_Guzzle7AuthHandler' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Client' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Collection' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Exception' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Http_Batch' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Http_MediaFileUpload' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Http_REST' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Model' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Service' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Service_Exception' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Service_Resource' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Composer' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Exception' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Retryable' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Task_Runner' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
-        'Google_Utils_UriTemplate' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
         'GrahamCampbell\\ResultType\\Result' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Result.php',
         'GrahamCampbell\\ResultType\\Success' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Success.php',
@@ -7706,36 +7508,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Laravel\\SerializableClosure\\Support\\ReflectionClosure' => __DIR__ . '/..' . '/laravel/serializable-closure/src/Support/ReflectionClosure.php',
         'Laravel\\SerializableClosure\\Support\\SelfReference' => __DIR__ . '/..' . '/laravel/serializable-closure/src/Support/SelfReference.php',
         'Laravel\\SerializableClosure\\UnsignedSerializableClosure' => __DIR__ . '/..' . '/laravel/serializable-closure/src/UnsignedSerializableClosure.php',
-        'Laravel\\Socialite\\AbstractUser' => __DIR__ . '/..' . '/laravel/socialite/src/AbstractUser.php',
-        'Laravel\\Socialite\\Contracts\\Factory' => __DIR__ . '/..' . '/laravel/socialite/src/Contracts/Factory.php',
-        'Laravel\\Socialite\\Contracts\\Provider' => __DIR__ . '/..' . '/laravel/socialite/src/Contracts/Provider.php',
-        'Laravel\\Socialite\\Contracts\\User' => __DIR__ . '/..' . '/laravel/socialite/src/Contracts/User.php',
-        'Laravel\\Socialite\\Exceptions\\DriverMissingConfigurationException' => __DIR__ . '/..' . '/laravel/socialite/src/Exceptions/DriverMissingConfigurationException.php',
-        'Laravel\\Socialite\\Facades\\Socialite' => __DIR__ . '/..' . '/laravel/socialite/src/Facades/Socialite.php',
-        'Laravel\\Socialite\\One\\AbstractProvider' => __DIR__ . '/..' . '/laravel/socialite/src/One/AbstractProvider.php',
-        'Laravel\\Socialite\\One\\MissingTemporaryCredentialsException' => __DIR__ . '/..' . '/laravel/socialite/src/One/MissingTemporaryCredentialsException.php',
-        'Laravel\\Socialite\\One\\MissingVerifierException' => __DIR__ . '/..' . '/laravel/socialite/src/One/MissingVerifierException.php',
-        'Laravel\\Socialite\\One\\TwitterProvider' => __DIR__ . '/..' . '/laravel/socialite/src/One/TwitterProvider.php',
-        'Laravel\\Socialite\\One\\User' => __DIR__ . '/..' . '/laravel/socialite/src/One/User.php',
-        'Laravel\\Socialite\\SocialiteManager' => __DIR__ . '/..' . '/laravel/socialite/src/SocialiteManager.php',
-        'Laravel\\Socialite\\SocialiteServiceProvider' => __DIR__ . '/..' . '/laravel/socialite/src/SocialiteServiceProvider.php',
-        'Laravel\\Socialite\\Two\\AbstractProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/AbstractProvider.php',
-        'Laravel\\Socialite\\Two\\BitbucketProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/BitbucketProvider.php',
-        'Laravel\\Socialite\\Two\\FacebookProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/FacebookProvider.php',
-        'Laravel\\Socialite\\Two\\GithubProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/GithubProvider.php',
-        'Laravel\\Socialite\\Two\\GitlabProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/GitlabProvider.php',
-        'Laravel\\Socialite\\Two\\GoogleProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/GoogleProvider.php',
-        'Laravel\\Socialite\\Two\\InvalidStateException' => __DIR__ . '/..' . '/laravel/socialite/src/Two/InvalidStateException.php',
-        'Laravel\\Socialite\\Two\\LinkedInOpenIdProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/LinkedInOpenIdProvider.php',
-        'Laravel\\Socialite\\Two\\LinkedInProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/LinkedInProvider.php',
-        'Laravel\\Socialite\\Two\\ProviderInterface' => __DIR__ . '/..' . '/laravel/socialite/src/Two/ProviderInterface.php',
-        'Laravel\\Socialite\\Two\\SlackOpenIdProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/SlackOpenIdProvider.php',
-        'Laravel\\Socialite\\Two\\SlackProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/SlackProvider.php',
-        'Laravel\\Socialite\\Two\\Token' => __DIR__ . '/..' . '/laravel/socialite/src/Two/Token.php',
-        'Laravel\\Socialite\\Two\\TwitchProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/TwitchProvider.php',
-        'Laravel\\Socialite\\Two\\TwitterProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/TwitterProvider.php',
-        'Laravel\\Socialite\\Two\\User' => __DIR__ . '/..' . '/laravel/socialite/src/Two/User.php',
-        'Laravel\\Socialite\\Two\\XProvider' => __DIR__ . '/..' . '/laravel/socialite/src/Two/XProvider.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -8113,30 +7885,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
         'League\\MimeTypeDetection\\OverridingExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php',
-        'League\\OAuth1\\Client\\Credentials\\ClientCredentials' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/ClientCredentials.php',
-        'League\\OAuth1\\Client\\Credentials\\ClientCredentialsInterface' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/ClientCredentialsInterface.php',
-        'League\\OAuth1\\Client\\Credentials\\Credentials' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/Credentials.php',
-        'League\\OAuth1\\Client\\Credentials\\CredentialsException' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/CredentialsException.php',
-        'League\\OAuth1\\Client\\Credentials\\CredentialsInterface' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/CredentialsInterface.php',
-        'League\\OAuth1\\Client\\Credentials\\RsaClientCredentials' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/RsaClientCredentials.php',
-        'League\\OAuth1\\Client\\Credentials\\TemporaryCredentials' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/TemporaryCredentials.php',
-        'League\\OAuth1\\Client\\Credentials\\TokenCredentials' => __DIR__ . '/..' . '/league/oauth1-client/src/Credentials/TokenCredentials.php',
-        'League\\OAuth1\\Client\\Server\\Bitbucket' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Bitbucket.php',
-        'League\\OAuth1\\Client\\Server\\Magento' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Magento.php',
-        'League\\OAuth1\\Client\\Server\\Server' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Server.php',
-        'League\\OAuth1\\Client\\Server\\Trello' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Trello.php',
-        'League\\OAuth1\\Client\\Server\\Tumblr' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Tumblr.php',
-        'League\\OAuth1\\Client\\Server\\Twitter' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Twitter.php',
-        'League\\OAuth1\\Client\\Server\\User' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/User.php',
-        'League\\OAuth1\\Client\\Server\\Uservoice' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Uservoice.php',
-        'League\\OAuth1\\Client\\Server\\X' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/X.php',
-        'League\\OAuth1\\Client\\Server\\Xing' => __DIR__ . '/..' . '/league/oauth1-client/src/Server/Xing.php',
-        'League\\OAuth1\\Client\\Signature\\EncodesUrl' => __DIR__ . '/..' . '/league/oauth1-client/src/Signature/EncodesUrl.php',
-        'League\\OAuth1\\Client\\Signature\\HmacSha1Signature' => __DIR__ . '/..' . '/league/oauth1-client/src/Signature/HmacSha1Signature.php',
-        'League\\OAuth1\\Client\\Signature\\PlainTextSignature' => __DIR__ . '/..' . '/league/oauth1-client/src/Signature/PlainTextSignature.php',
-        'League\\OAuth1\\Client\\Signature\\RsaSha1Signature' => __DIR__ . '/..' . '/league/oauth1-client/src/Signature/RsaSha1Signature.php',
-        'League\\OAuth1\\Client\\Signature\\Signature' => __DIR__ . '/..' . '/league/oauth1-client/src/Signature/Signature.php',
-        'League\\OAuth1\\Client\\Signature\\SignatureInterface' => __DIR__ . '/..' . '/league/oauth1-client/src/Signature/SignatureInterface.php',
         'League\\Uri\\BaseUri' => __DIR__ . '/..' . '/league/uri/BaseUri.php',
         'League\\Uri\\Contracts\\AuthorityInterface' => __DIR__ . '/..' . '/league/uri-interfaces/Contracts/AuthorityInterface.php',
         'League\\Uri\\Contracts\\DataPathInterface' => __DIR__ . '/..' . '/league/uri-interfaces/Contracts/DataPathInterface.php',
@@ -8476,160 +8224,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Mockery\\Undefined' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Undefined.php',
         'Mockery\\VerificationDirector' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationDirector.php',
         'Mockery\\VerificationExpectation' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationExpectation.php',
-        'Mollie\\Api\\CompatibilityChecker' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/CompatibilityChecker.php',
-        'Mollie\\Api\\Endpoints\\BalanceEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/BalanceEndpoint.php',
-        'Mollie\\Api\\Endpoints\\BalanceReportEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/BalanceReportEndpoint.php',
-        'Mollie\\Api\\Endpoints\\BalanceTransactionEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/BalanceTransactionEndpoint.php',
-        'Mollie\\Api\\Endpoints\\CapabilityEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/CapabilityEndpoint.php',
-        'Mollie\\Api\\Endpoints\\ChargebackEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/ChargebackEndpoint.php',
-        'Mollie\\Api\\Endpoints\\ClientEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/ClientEndpoint.php',
-        'Mollie\\Api\\Endpoints\\ClientLinkEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/ClientLinkEndpoint.php',
-        'Mollie\\Api\\Endpoints\\CollectionEndpointAbstract' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/CollectionEndpointAbstract.php',
-        'Mollie\\Api\\Endpoints\\CustomerEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/CustomerEndpoint.php',
-        'Mollie\\Api\\Endpoints\\CustomerPaymentsEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/CustomerPaymentsEndpoint.php',
-        'Mollie\\Api\\Endpoints\\EndpointAbstract' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/EndpointAbstract.php',
-        'Mollie\\Api\\Endpoints\\InvoiceEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/InvoiceEndpoint.php',
-        'Mollie\\Api\\Endpoints\\MandateEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/MandateEndpoint.php',
-        'Mollie\\Api\\Endpoints\\MethodEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/MethodEndpoint.php',
-        'Mollie\\Api\\Endpoints\\MethodIssuerEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/MethodIssuerEndpoint.php',
-        'Mollie\\Api\\Endpoints\\OnboardingEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/OnboardingEndpoint.php',
-        'Mollie\\Api\\Endpoints\\OrderEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/OrderEndpoint.php',
-        'Mollie\\Api\\Endpoints\\OrderLineEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/OrderLineEndpoint.php',
-        'Mollie\\Api\\Endpoints\\OrderPaymentEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/OrderPaymentEndpoint.php',
-        'Mollie\\Api\\Endpoints\\OrderRefundEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/OrderRefundEndpoint.php',
-        'Mollie\\Api\\Endpoints\\OrganizationEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/OrganizationEndpoint.php',
-        'Mollie\\Api\\Endpoints\\OrganizationPartnerEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/OrganizationPartnerEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PaymentCaptureEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PaymentCaptureEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PaymentChargebackEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PaymentChargebackEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PaymentEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PaymentEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PaymentLinkEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PaymentLinkEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PaymentLinkPaymentEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PaymentLinkPaymentEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PaymentRefundEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PaymentRefundEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PaymentRouteEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PaymentRouteEndpoint.php',
-        'Mollie\\Api\\Endpoints\\PermissionEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/PermissionEndpoint.php',
-        'Mollie\\Api\\Endpoints\\ProfileEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/ProfileEndpoint.php',
-        'Mollie\\Api\\Endpoints\\ProfileMethodEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/ProfileMethodEndpoint.php',
-        'Mollie\\Api\\Endpoints\\RefundEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/RefundEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SalesInvoiceEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SalesInvoiceEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SessionEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SessionEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SettlementCaptureEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SettlementCaptureEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SettlementChargebackEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SettlementChargebackEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SettlementPaymentEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SettlementPaymentEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SettlementRefundEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SettlementRefundEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SettlementsEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SettlementsEndpoint.php',
-        'Mollie\\Api\\Endpoints\\ShipmentEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/ShipmentEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SubscriptionEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SubscriptionEndpoint.php',
-        'Mollie\\Api\\Endpoints\\SubscriptionPaymentEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/SubscriptionPaymentEndpoint.php',
-        'Mollie\\Api\\Endpoints\\TerminalEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/TerminalEndpoint.php',
-        'Mollie\\Api\\Endpoints\\WalletEndpoint' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Endpoints/WalletEndpoint.php',
-        'Mollie\\Api\\Exceptions\\ApiException' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Exceptions/ApiException.php',
-        'Mollie\\Api\\Exceptions\\CurlConnectTimeoutException' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Exceptions/CurlConnectTimeoutException.php',
-        'Mollie\\Api\\Exceptions\\HttpAdapterDoesNotSupportDebuggingException' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Exceptions/HttpAdapterDoesNotSupportDebuggingException.php',
-        'Mollie\\Api\\Exceptions\\IncompatiblePlatform' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Exceptions/IncompatiblePlatform.php',
-        'Mollie\\Api\\Exceptions\\UnrecognizedClientException' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Exceptions/UnrecognizedClientException.php',
-        'Mollie\\Api\\HttpAdapter\\CurlMollieHttpAdapter' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/HttpAdapter/CurlMollieHttpAdapter.php',
-        'Mollie\\Api\\HttpAdapter\\Guzzle6And7MollieHttpAdapter' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/HttpAdapter/Guzzle6And7MollieHttpAdapter.php',
-        'Mollie\\Api\\HttpAdapter\\Guzzle6And7RetryMiddlewareFactory' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/HttpAdapter/Guzzle6And7RetryMiddlewareFactory.php',
-        'Mollie\\Api\\HttpAdapter\\MollieHttpAdapterInterface' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/HttpAdapter/MollieHttpAdapterInterface.php',
-        'Mollie\\Api\\HttpAdapter\\MollieHttpAdapterPicker' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/HttpAdapter/MollieHttpAdapterPicker.php',
-        'Mollie\\Api\\HttpAdapter\\MollieHttpAdapterPickerInterface' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/HttpAdapter/MollieHttpAdapterPickerInterface.php',
-        'Mollie\\Api\\Idempotency\\DefaultIdempotencyKeyGenerator' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Idempotency/DefaultIdempotencyKeyGenerator.php',
-        'Mollie\\Api\\Idempotency\\FakeIdempotencyKeyGenerator' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Idempotency/FakeIdempotencyKeyGenerator.php',
-        'Mollie\\Api\\Idempotency\\IdempotencyKeyGeneratorContract' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Idempotency/IdempotencyKeyGeneratorContract.php',
-        'Mollie\\Api\\MollieApiClient' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/MollieApiClient.php',
-        'Mollie\\Api\\Resources\\Balance' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Balance.php',
-        'Mollie\\Api\\Resources\\BalanceCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/BalanceCollection.php',
-        'Mollie\\Api\\Resources\\BalanceReport' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/BalanceReport.php',
-        'Mollie\\Api\\Resources\\BalanceTransaction' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/BalanceTransaction.php',
-        'Mollie\\Api\\Resources\\BalanceTransactionCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/BalanceTransactionCollection.php',
-        'Mollie\\Api\\Resources\\BaseCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/BaseCollection.php',
-        'Mollie\\Api\\Resources\\BaseResource' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/BaseResource.php',
-        'Mollie\\Api\\Resources\\Capability' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Capability.php',
-        'Mollie\\Api\\Resources\\CapabilityCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/CapabilityCollection.php',
-        'Mollie\\Api\\Resources\\Capture' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Capture.php',
-        'Mollie\\Api\\Resources\\CaptureCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/CaptureCollection.php',
-        'Mollie\\Api\\Resources\\Chargeback' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Chargeback.php',
-        'Mollie\\Api\\Resources\\ChargebackCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/ChargebackCollection.php',
-        'Mollie\\Api\\Resources\\Client' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Client.php',
-        'Mollie\\Api\\Resources\\ClientCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/ClientCollection.php',
-        'Mollie\\Api\\Resources\\ClientLink' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/ClientLink.php',
-        'Mollie\\Api\\Resources\\CurrentProfile' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/CurrentProfile.php',
-        'Mollie\\Api\\Resources\\CursorCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/CursorCollection.php',
-        'Mollie\\Api\\Resources\\Customer' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Customer.php',
-        'Mollie\\Api\\Resources\\CustomerCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/CustomerCollection.php',
-        'Mollie\\Api\\Resources\\HasPresetOptions' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/HasPresetOptions.php',
-        'Mollie\\Api\\Resources\\Invoice' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Invoice.php',
-        'Mollie\\Api\\Resources\\InvoiceCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/InvoiceCollection.php',
-        'Mollie\\Api\\Resources\\Issuer' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Issuer.php',
-        'Mollie\\Api\\Resources\\IssuerCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/IssuerCollection.php',
-        'Mollie\\Api\\Resources\\LazyCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/LazyCollection.php',
-        'Mollie\\Api\\Resources\\Mandate' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Mandate.php',
-        'Mollie\\Api\\Resources\\MandateCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/MandateCollection.php',
-        'Mollie\\Api\\Resources\\Method' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Method.php',
-        'Mollie\\Api\\Resources\\MethodCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/MethodCollection.php',
-        'Mollie\\Api\\Resources\\MethodPrice' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/MethodPrice.php',
-        'Mollie\\Api\\Resources\\MethodPriceCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/MethodPriceCollection.php',
-        'Mollie\\Api\\Resources\\Onboarding' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Onboarding.php',
-        'Mollie\\Api\\Resources\\Order' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Order.php',
-        'Mollie\\Api\\Resources\\OrderCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/OrderCollection.php',
-        'Mollie\\Api\\Resources\\OrderLine' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/OrderLine.php',
-        'Mollie\\Api\\Resources\\OrderLineCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/OrderLineCollection.php',
-        'Mollie\\Api\\Resources\\Organization' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Organization.php',
-        'Mollie\\Api\\Resources\\OrganizationCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/OrganizationCollection.php',
-        'Mollie\\Api\\Resources\\Partner' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Partner.php',
-        'Mollie\\Api\\Resources\\Payment' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Payment.php',
-        'Mollie\\Api\\Resources\\PaymentCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/PaymentCollection.php',
-        'Mollie\\Api\\Resources\\PaymentLink' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/PaymentLink.php',
-        'Mollie\\Api\\Resources\\PaymentLinkCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/PaymentLinkCollection.php',
-        'Mollie\\Api\\Resources\\Permission' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Permission.php',
-        'Mollie\\Api\\Resources\\PermissionCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/PermissionCollection.php',
-        'Mollie\\Api\\Resources\\Profile' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Profile.php',
-        'Mollie\\Api\\Resources\\ProfileCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/ProfileCollection.php',
-        'Mollie\\Api\\Resources\\Refund' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Refund.php',
-        'Mollie\\Api\\Resources\\RefundCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/RefundCollection.php',
-        'Mollie\\Api\\Resources\\ResourceFactory' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/ResourceFactory.php',
-        'Mollie\\Api\\Resources\\Route' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Route.php',
-        'Mollie\\Api\\Resources\\RouteCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/RouteCollection.php',
-        'Mollie\\Api\\Resources\\SalesInvoice' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/SalesInvoice.php',
-        'Mollie\\Api\\Resources\\SalesInvoiceCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/SalesInvoiceCollection.php',
-        'Mollie\\Api\\Resources\\Session' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Session.php',
-        'Mollie\\Api\\Resources\\SessionCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/SessionCollection.php',
-        'Mollie\\Api\\Resources\\Settlement' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Settlement.php',
-        'Mollie\\Api\\Resources\\SettlementCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/SettlementCollection.php',
-        'Mollie\\Api\\Resources\\Shipment' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Shipment.php',
-        'Mollie\\Api\\Resources\\ShipmentCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/ShipmentCollection.php',
-        'Mollie\\Api\\Resources\\Subscription' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Subscription.php',
-        'Mollie\\Api\\Resources\\SubscriptionCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/SubscriptionCollection.php',
-        'Mollie\\Api\\Resources\\Terminal' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/Terminal.php',
-        'Mollie\\Api\\Resources\\TerminalCollection' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Resources/TerminalCollection.php',
-        'Mollie\\Api\\Types\\ApprovalPrompt' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/ApprovalPrompt.php',
-        'Mollie\\Api\\Types\\BalanceTransferFrequency' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/BalanceTransferFrequency.php',
-        'Mollie\\Api\\Types\\CapabilityStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/CapabilityStatus.php',
-        'Mollie\\Api\\Types\\InvoiceStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/InvoiceStatus.php',
-        'Mollie\\Api\\Types\\MandateMethod' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/MandateMethod.php',
-        'Mollie\\Api\\Types\\MandateStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/MandateStatus.php',
-        'Mollie\\Api\\Types\\OnboardingStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/OnboardingStatus.php',
-        'Mollie\\Api\\Types\\OrderLineStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/OrderLineStatus.php',
-        'Mollie\\Api\\Types\\OrderLineType' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/OrderLineType.php',
-        'Mollie\\Api\\Types\\OrderLineUpdateOperationType' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/OrderLineUpdateOperationType.php',
-        'Mollie\\Api\\Types\\OrderStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/OrderStatus.php',
-        'Mollie\\Api\\Types\\PaymentMethod' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/PaymentMethod.php',
-        'Mollie\\Api\\Types\\PaymentMethodStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/PaymentMethodStatus.php',
-        'Mollie\\Api\\Types\\PaymentStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/PaymentStatus.php',
-        'Mollie\\Api\\Types\\PaymentTerm' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/PaymentTerm.php',
-        'Mollie\\Api\\Types\\ProfileStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/ProfileStatus.php',
-        'Mollie\\Api\\Types\\RefundStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/RefundStatus.php',
-        'Mollie\\Api\\Types\\SalesInvoiceStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/SalesInvoiceStatus.php',
-        'Mollie\\Api\\Types\\SequenceType' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/SequenceType.php',
-        'Mollie\\Api\\Types\\SessionStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/SessionStatus.php',
-        'Mollie\\Api\\Types\\SettlementStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/SettlementStatus.php',
-        'Mollie\\Api\\Types\\SubscriptionStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/SubscriptionStatus.php',
-        'Mollie\\Api\\Types\\TerminalStatus' => __DIR__ . '/..' . '/mollie/mollie-api-php/src/Types/TerminalStatus.php',
-        'Mollie\\Laravel\\Facades\\Mollie' => __DIR__ . '/..' . '/mollie/laravel-mollie/src/Facades/Mollie.php',
-        'Mollie\\Laravel\\MollieConnectProvider' => __DIR__ . '/..' . '/mollie/laravel-mollie/src/MollieConnectProvider.php',
-        'Mollie\\Laravel\\MollieLaravelHttpClientAdapter' => __DIR__ . '/..' . '/mollie/laravel-mollie/src/MollieLaravelHttpClientAdapter.php',
-        'Mollie\\Laravel\\MollieManager' => __DIR__ . '/..' . '/mollie/laravel-mollie/src/MollieManager.php',
-        'Mollie\\Laravel\\MollieServiceProvider' => __DIR__ . '/..' . '/mollie/laravel-mollie/src/MollieServiceProvider.php',
         'Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/AsMonologProcessor.php',
         'Monolog\\Attribute\\WithMonologChannel' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/WithMonologChannel.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
@@ -10176,46 +9770,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'ParagonIE\\ConstantTime\\Encoding' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Encoding.php',
         'ParagonIE\\ConstantTime\\Hex' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Hex.php',
         'ParagonIE\\ConstantTime\\RFC4648' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/RFC4648.php',
-        'PayPalCheckoutSdk\\Core\\AccessToken' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/AccessToken.php',
-        'PayPalCheckoutSdk\\Core\\AccessTokenRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/AccessTokenRequest.php',
-        'PayPalCheckoutSdk\\Core\\AuthorizationInjector' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/AuthorizationInjector.php',
-        'PayPalCheckoutSdk\\Core\\FPTIInstrumentationInjector' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/FPTIInstrumentationInjector.php',
-        'PayPalCheckoutSdk\\Core\\GzipInjector' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/GzipInjector.php',
-        'PayPalCheckoutSdk\\Core\\PayPalEnvironment' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/PayPalEnvironment.php',
-        'PayPalCheckoutSdk\\Core\\PayPalHttpClient' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/PayPalHttpClient.php',
-        'PayPalCheckoutSdk\\Core\\ProductionEnvironment' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/ProductionEnvironment.php',
-        'PayPalCheckoutSdk\\Core\\RefreshTokenRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/RefreshTokenRequest.php',
-        'PayPalCheckoutSdk\\Core\\SandboxEnvironment' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/SandboxEnvironment.php',
-        'PayPalCheckoutSdk\\Core\\UserAgent' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/UserAgent.php',
-        'PayPalCheckoutSdk\\Core\\Version' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Core/Version.php',
-        'PayPalCheckoutSdk\\Orders\\OrdersAuthorizeRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Orders/OrdersAuthorizeRequest.php',
-        'PayPalCheckoutSdk\\Orders\\OrdersCaptureRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Orders/OrdersCaptureRequest.php',
-        'PayPalCheckoutSdk\\Orders\\OrdersCreateRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Orders/OrdersCreateRequest.php',
-        'PayPalCheckoutSdk\\Orders\\OrdersGetRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Orders/OrdersGetRequest.php',
-        'PayPalCheckoutSdk\\Orders\\OrdersPatchRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Orders/OrdersPatchRequest.php',
-        'PayPalCheckoutSdk\\Orders\\OrdersValidateRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Orders/OrdersValidateRequest.php',
-        'PayPalCheckoutSdk\\Payments\\AuthorizationsCaptureRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Payments/AuthorizationsCaptureRequest.php',
-        'PayPalCheckoutSdk\\Payments\\AuthorizationsGetRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Payments/AuthorizationsGetRequest.php',
-        'PayPalCheckoutSdk\\Payments\\AuthorizationsReauthorizeRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Payments/AuthorizationsReauthorizeRequest.php',
-        'PayPalCheckoutSdk\\Payments\\AuthorizationsVoidRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Payments/AuthorizationsVoidRequest.php',
-        'PayPalCheckoutSdk\\Payments\\CapturesGetRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Payments/CapturesGetRequest.php',
-        'PayPalCheckoutSdk\\Payments\\CapturesRefundRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Payments/CapturesRefundRequest.php',
-        'PayPalCheckoutSdk\\Payments\\RefundsGetRequest' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/lib/PayPalCheckoutSdk/Payments/RefundsGetRequest.php',
-        'PayPalHttp\\Curl' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Curl.php',
-        'PayPalHttp\\Encoder' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Encoder.php',
-        'PayPalHttp\\Environment' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Environment.php',
-        'PayPalHttp\\HttpClient' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/HttpClient.php',
-        'PayPalHttp\\HttpException' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/HttpException.php',
-        'PayPalHttp\\HttpRequest' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/HttpRequest.php',
-        'PayPalHttp\\HttpResponse' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/HttpResponse.php',
-        'PayPalHttp\\IOException' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/IOException.php',
-        'PayPalHttp\\Injector' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Injector.php',
-        'PayPalHttp\\Serializer' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Serializer.php',
-        'PayPalHttp\\Serializer\\Form' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Serializer/Form.php',
-        'PayPalHttp\\Serializer\\FormPart' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Serializer/FormPart.php',
-        'PayPalHttp\\Serializer\\Json' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Serializer/Json.php',
-        'PayPalHttp\\Serializer\\Multipart' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Serializer/Multipart.php',
-        'PayPalHttp\\Serializer\\Text' => __DIR__ . '/..' . '/paypal/paypalhttp/lib/PayPalHttp/Serializer/Text.php',
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',
         'PharIo\\Manifest\\Author' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Author.php',
@@ -12022,77 +11576,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
-        'Razorpay\\Api\\Account' => __DIR__ . '/..' . '/razorpay/razorpay/src/Account.php',
-        'Razorpay\\Api\\Addon' => __DIR__ . '/..' . '/razorpay/razorpay/src/Addon.php',
-        'Razorpay\\Api\\Api' => __DIR__ . '/..' . '/razorpay/razorpay/src/Api.php',
-        'Razorpay\\Api\\ArrayableInterface' => __DIR__ . '/..' . '/razorpay/razorpay/src/ArrayableInterface.php',
-        'Razorpay\\Api\\Card' => __DIR__ . '/..' . '/razorpay/razorpay/src/Card.php',
-        'Razorpay\\Api\\Collection' => __DIR__ . '/..' . '/razorpay/razorpay/src/Collection.php',
-        'Razorpay\\Api\\Customer' => __DIR__ . '/..' . '/razorpay/razorpay/src/Customer.php',
-        'Razorpay\\Api\\Dispute' => __DIR__ . '/..' . '/razorpay/razorpay/src/Dispute.php',
-        'Razorpay\\Api\\Document' => __DIR__ . '/..' . '/razorpay/razorpay/src/Document.php',
-        'Razorpay\\Api\\Entity' => __DIR__ . '/..' . '/razorpay/razorpay/src/Entity.php',
-        'Razorpay\\Api\\Errors\\BadRequestError' => __DIR__ . '/..' . '/razorpay/razorpay/src/Errors/BadRequestError.php',
-        'Razorpay\\Api\\Errors\\Error' => __DIR__ . '/..' . '/razorpay/razorpay/src/Errors/Error.php',
-        'Razorpay\\Api\\Errors\\ErrorCode' => __DIR__ . '/..' . '/razorpay/razorpay/src/Errors/ErrorCode.php',
-        'Razorpay\\Api\\Errors\\GatewayError' => __DIR__ . '/..' . '/razorpay/razorpay/src/Errors/GatewayError.php',
-        'Razorpay\\Api\\Errors\\ServerError' => __DIR__ . '/..' . '/razorpay/razorpay/src/Errors/ServerError.php',
-        'Razorpay\\Api\\Errors\\SignatureVerificationError' => __DIR__ . '/..' . '/razorpay/razorpay/src/Errors/SignatureVerificationError.php',
-        'Razorpay\\Api\\FundAccount' => __DIR__ . '/..' . '/razorpay/razorpay/src/FundAccount.php',
-        'Razorpay\\Api\\Iin' => __DIR__ . '/..' . '/razorpay/razorpay/src/Iin.php',
-        'Razorpay\\Api\\Invoice' => __DIR__ . '/..' . '/razorpay/razorpay/src/Invoice.php',
-        'Razorpay\\Api\\Item' => __DIR__ . '/..' . '/razorpay/razorpay/src/Item.php',
-        'Razorpay\\Api\\OAuth' => __DIR__ . '/..' . '/razorpay/razorpay/src/OAuth.php',
-        'Razorpay\\Api\\OAuthClient' => __DIR__ . '/..' . '/razorpay/razorpay/src/OAuthClient.php',
-        'Razorpay\\Api\\OAuthValidator' => __DIR__ . '/..' . '/razorpay/razorpay/src/OAuthValidator.php',
-        'Razorpay\\Api\\Order' => __DIR__ . '/..' . '/razorpay/razorpay/src/Order.php',
-        'Razorpay\\Api\\Payment' => __DIR__ . '/..' . '/razorpay/razorpay/src/Payment.php',
-        'Razorpay\\Api\\PaymentLink' => __DIR__ . '/..' . '/razorpay/razorpay/src/PaymentLink.php',
-        'Razorpay\\Api\\PaymentPage' => __DIR__ . '/..' . '/razorpay/razorpay/src/PaymentPage.php',
-        'Razorpay\\Api\\Plan' => __DIR__ . '/..' . '/razorpay/razorpay/src/Plan.php',
-        'Razorpay\\Api\\Product' => __DIR__ . '/..' . '/razorpay/razorpay/src/Product.php',
-        'Razorpay\\Api\\QrCode' => __DIR__ . '/..' . '/razorpay/razorpay/src/QrCode.php',
-        'Razorpay\\Api\\Refund' => __DIR__ . '/..' . '/razorpay/razorpay/src/Refund.php',
-        'Razorpay\\Api\\Request' => __DIR__ . '/..' . '/razorpay/razorpay/src/Request.php',
-        'Razorpay\\Api\\Resource' => __DIR__ . '/..' . '/razorpay/razorpay/src/Resource.php',
-        'Razorpay\\Api\\Settlement' => __DIR__ . '/..' . '/razorpay/razorpay/src/Settlement.php',
-        'Razorpay\\Api\\Stakeholder' => __DIR__ . '/..' . '/razorpay/razorpay/src/Stakeholder.php',
-        'Razorpay\\Api\\Subscription' => __DIR__ . '/..' . '/razorpay/razorpay/src/Subscription.php',
-        'Razorpay\\Api\\Token' => __DIR__ . '/..' . '/razorpay/razorpay/src/Token.php',
-        'Razorpay\\Api\\Transfer' => __DIR__ . '/..' . '/razorpay/razorpay/src/Transfer.php',
-        'Razorpay\\Api\\Utility' => __DIR__ . '/..' . '/razorpay/razorpay/src/Utility.php',
-        'Razorpay\\Api\\VirtualAccount' => __DIR__ . '/..' . '/razorpay/razorpay/src/VirtualAccount.php',
-        'Razorpay\\Api\\Webhook' => __DIR__ . '/..' . '/razorpay/razorpay/src/Webhook.php',
-        'Razorpay\\Tests\\AddonTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/AddonTest.php',
-        'Razorpay\\Tests\\ApiTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/ApiTest.php',
-        'Razorpay\\Tests\\CardTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/CardTest.php',
-        'Razorpay\\Tests\\CoverageTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/CoverageTest.php',
-        'Razorpay\\Tests\\CustomerTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/CustomerTest.php',
-        'Razorpay\\Tests\\EmandateTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/EmandateTest.php',
-        'Razorpay\\Tests\\ExceptionTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/ExceptionTest.php',
-        'Razorpay\\Tests\\FundTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/FundTest.php',
-        'Razorpay\\Tests\\IinTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/IinTest.php',
-        'Razorpay\\Tests\\InvoiceTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/InvoiceTest.php',
-        'Razorpay\\Tests\\ItemTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/ItemTest.php',
-        'Razorpay\\Tests\\OrdersTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/OrdersTest.php',
-        'Razorpay\\Tests\\PaperNachTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/PaperNachTest.php',
-        'Razorpay\\Tests\\PartnerTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/PartnerTest.php',
-        'Razorpay\\Tests\\PaymentLinkTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/PaymentLinkTest.php',
-        'Razorpay\\Tests\\PaymentTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/PaymentTest.php',
-        'Razorpay\\Tests\\PlanTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/PlanTest.php',
-        'Razorpay\\Tests\\QrCodeTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/QrCodeTest.php',
-        'Razorpay\\Tests\\RefundTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/RefundTest.php',
-        'Razorpay\\Tests\\RegisterEmandateTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/RegisterEmandateTest.php',
-        'Razorpay\\Tests\\RegisterNachTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/RegisterNachTest.php',
-        'Razorpay\\Tests\\RequestTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/RequestTest.php',
-        'Razorpay\\Tests\\SettlementTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/SettlementTest.php',
-        'Razorpay\\Tests\\SignatureVerificationTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/SignatureVerificationTest.php',
-        'Razorpay\\Tests\\SubscriptionTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/SubscriptionTest.php',
-        'Razorpay\\Tests\\TestCase' => __DIR__ . '/..' . '/razorpay/razorpay/tests/TestCase.php',
-        'Razorpay\\Tests\\TokenTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/TokenTest.php',
-        'Razorpay\\Tests\\TransferTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/TransferTest.php',
-        'Razorpay\\Tests\\UpiTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/UpiTest.php',
-        'Razorpay\\Tests\\VirtualAccountTest' => __DIR__ . '/..' . '/razorpay/razorpay/tests/VirtualAccountTest.php',
         'RectorLaravel\\AbstractRector' => __DIR__ . '/..' . '/driftingly/rector-laravel/src/AbstractRector.php',
         'RectorLaravel\\Contract\\ValueObject\\ArgumentFuncCallToMethodCallInterface' => __DIR__ . '/..' . '/driftingly/rector-laravel/src/Contract/ValueObject/ArgumentFuncCallToMethodCallInterface.php',
         'RectorLaravel\\NodeAnalyzer\\ApplicationAnalyzer' => __DIR__ . '/..' . '/driftingly/rector-laravel/src/NodeAnalyzer/ApplicationAnalyzer.php',
@@ -12203,7 +11686,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'RectorLaravel\\ValueObject\\ReplaceServiceContainerCallArg' => __DIR__ . '/..' . '/driftingly/rector-laravel/src/ValueObject/ReplaceServiceContainerCallArg.php',
         'RectorLaravel\\ValueObject\\ServiceNameTypeAndVariableName' => __DIR__ . '/..' . '/driftingly/rector-laravel/src/ValueObject/ServiceNameTypeAndVariableName.php',
         'RectorLaravel\\ValueObject\\TypeToTimeMethodAndPosition' => __DIR__ . '/..' . '/driftingly/rector-laravel/src/ValueObject/TypeToTimeMethodAndPosition.php',
-        'Requests' => __DIR__ . '/..' . '/rmccue/requests/library/Requests.php',
         'Resend\\ApiKey' => __DIR__ . '/..' . '/resend/resend-php/src/ApiKey.php',
         'Resend\\Audience' => __DIR__ . '/..' . '/resend/resend-php/src/Audience.php',
         'Resend\\Broadcast' => __DIR__ . '/..' . '/resend/resend-php/src/Broadcast.php',
@@ -12281,15 +11763,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Sabberworm\\CSS\\Value\\URL' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/URL.php',
         'Sabberworm\\CSS\\Value\\Value' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/Value.php',
         'Sabberworm\\CSS\\Value\\ValueList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/Value/ValueList.php',
-        'Sample\\AuthorizeIntentExamples\\AuthorizeOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/AuthorizeIntentExamples/AuthorizeOrder.php',
-        'Sample\\AuthorizeIntentExamples\\CaptureOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/AuthorizeIntentExamples/CaptureOrder.php',
-        'Sample\\AuthorizeIntentExamples\\CreateOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/AuthorizeIntentExamples/CreateOrder.php',
-        'Sample\\CaptureIntentExamples\\CaptureOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/CaptureIntentExamples/CaptureOrder.php',
-        'Sample\\CaptureIntentExamples\\CreateOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/CaptureIntentExamples/CreateOrder.php',
-        'Sample\\GetOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/GetOrder.php',
-        'Sample\\PatchOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/PatchOrder.php',
-        'Sample\\PayPalClient' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/PayPalClient.php',
-        'Sample\\RefundOrder' => __DIR__ . '/..' . '/paypal/paypal-checkout-sdk/samples/RefundOrder.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -12743,377 +12216,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Spatie\\SimpleExcel\\SimpleExcelWriter' => __DIR__ . '/..' . '/spatie/simple-excel/src/SimpleExcelWriter.php',
         'Spatie\\SimpleExcel\\WriterFactory' => __DIR__ . '/..' . '/spatie/simple-excel/src/WriterFactory.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
-        'Stripe\\Account' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Account.php',
-        'Stripe\\AccountLink' => __DIR__ . '/..' . '/stripe/stripe-php/lib/AccountLink.php',
-        'Stripe\\AccountSession' => __DIR__ . '/..' . '/stripe/stripe-php/lib/AccountSession.php',
-        'Stripe\\ApiOperations\\All' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/All.php',
-        'Stripe\\ApiOperations\\Create' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/Create.php',
-        'Stripe\\ApiOperations\\Delete' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/Delete.php',
-        'Stripe\\ApiOperations\\NestedResource' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/NestedResource.php',
-        'Stripe\\ApiOperations\\Request' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/Request.php',
-        'Stripe\\ApiOperations\\Retrieve' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/Retrieve.php',
-        'Stripe\\ApiOperations\\SingletonRetrieve' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/SingletonRetrieve.php',
-        'Stripe\\ApiOperations\\Update' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiOperations/Update.php',
-        'Stripe\\ApiRequestor' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiRequestor.php',
-        'Stripe\\ApiResource' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiResource.php',
-        'Stripe\\ApiResponse' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiResponse.php',
-        'Stripe\\ApplePayDomain' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApplePayDomain.php',
-        'Stripe\\Application' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Application.php',
-        'Stripe\\ApplicationFee' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApplicationFee.php',
-        'Stripe\\ApplicationFeeRefund' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApplicationFeeRefund.php',
-        'Stripe\\Apps\\Secret' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Apps/Secret.php',
-        'Stripe\\Balance' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Balance.php',
-        'Stripe\\BalanceTransaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/BalanceTransaction.php',
-        'Stripe\\BankAccount' => __DIR__ . '/..' . '/stripe/stripe-php/lib/BankAccount.php',
-        'Stripe\\BaseStripeClient' => __DIR__ . '/..' . '/stripe/stripe-php/lib/BaseStripeClient.php',
-        'Stripe\\BaseStripeClientInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/BaseStripeClientInterface.php',
-        'Stripe\\BillingPortal\\Configuration' => __DIR__ . '/..' . '/stripe/stripe-php/lib/BillingPortal/Configuration.php',
-        'Stripe\\BillingPortal\\Session' => __DIR__ . '/..' . '/stripe/stripe-php/lib/BillingPortal/Session.php',
-        'Stripe\\Billing\\Alert' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/Alert.php',
-        'Stripe\\Billing\\AlertTriggered' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/AlertTriggered.php',
-        'Stripe\\Billing\\CreditBalanceSummary' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/CreditBalanceSummary.php',
-        'Stripe\\Billing\\CreditBalanceTransaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/CreditBalanceTransaction.php',
-        'Stripe\\Billing\\CreditGrant' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/CreditGrant.php',
-        'Stripe\\Billing\\Meter' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/Meter.php',
-        'Stripe\\Billing\\MeterEvent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/MeterEvent.php',
-        'Stripe\\Billing\\MeterEventAdjustment' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/MeterEventAdjustment.php',
-        'Stripe\\Billing\\MeterEventSummary' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Billing/MeterEventSummary.php',
-        'Stripe\\Capability' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Capability.php',
-        'Stripe\\Card' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Card.php',
-        'Stripe\\CashBalance' => __DIR__ . '/..' . '/stripe/stripe-php/lib/CashBalance.php',
-        'Stripe\\Charge' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Charge.php',
-        'Stripe\\Checkout\\Session' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Checkout/Session.php',
-        'Stripe\\Climate\\Order' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Climate/Order.php',
-        'Stripe\\Climate\\Product' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Climate/Product.php',
-        'Stripe\\Climate\\Supplier' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Climate/Supplier.php',
-        'Stripe\\Collection' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Collection.php',
-        'Stripe\\ConfirmationToken' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ConfirmationToken.php',
-        'Stripe\\ConnectCollectionTransfer' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ConnectCollectionTransfer.php',
-        'Stripe\\CountrySpec' => __DIR__ . '/..' . '/stripe/stripe-php/lib/CountrySpec.php',
-        'Stripe\\Coupon' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Coupon.php',
-        'Stripe\\CreditNote' => __DIR__ . '/..' . '/stripe/stripe-php/lib/CreditNote.php',
-        'Stripe\\CreditNoteLineItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/CreditNoteLineItem.php',
-        'Stripe\\Customer' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Customer.php',
-        'Stripe\\CustomerBalanceTransaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/CustomerBalanceTransaction.php',
-        'Stripe\\CustomerCashBalanceTransaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/CustomerCashBalanceTransaction.php',
-        'Stripe\\CustomerSession' => __DIR__ . '/..' . '/stripe/stripe-php/lib/CustomerSession.php',
-        'Stripe\\Discount' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Discount.php',
-        'Stripe\\Dispute' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Dispute.php',
-        'Stripe\\Entitlements\\ActiveEntitlement' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Entitlements/ActiveEntitlement.php',
-        'Stripe\\Entitlements\\ActiveEntitlementSummary' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Entitlements/ActiveEntitlementSummary.php',
-        'Stripe\\Entitlements\\Feature' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Entitlements/Feature.php',
-        'Stripe\\EphemeralKey' => __DIR__ . '/..' . '/stripe/stripe-php/lib/EphemeralKey.php',
-        'Stripe\\ErrorObject' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ErrorObject.php',
-        'Stripe\\Event' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Event.php',
-        'Stripe\\EventData\\V1BillingMeterErrorReportTriggeredEventData' => __DIR__ . '/..' . '/stripe/stripe-php/lib/EventData/V1BillingMeterErrorReportTriggeredEventData.php',
-        'Stripe\\EventData\\V1BillingMeterNoMeterFoundEventData' => __DIR__ . '/..' . '/stripe/stripe-php/lib/EventData/V1BillingMeterNoMeterFoundEventData.php',
-        'Stripe\\Events\\V1BillingMeterErrorReportTriggeredEvent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Events/V1BillingMeterErrorReportTriggeredEvent.php',
-        'Stripe\\Events\\V1BillingMeterNoMeterFoundEvent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Events/V1BillingMeterNoMeterFoundEvent.php',
-        'Stripe\\Events\\V2CoreEventDestinationPingEvent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Events/V2CoreEventDestinationPingEvent.php',
-        'Stripe\\Exception\\ApiConnectionException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/ApiConnectionException.php',
-        'Stripe\\Exception\\ApiErrorException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/ApiErrorException.php',
-        'Stripe\\Exception\\AuthenticationException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/AuthenticationException.php',
-        'Stripe\\Exception\\BadMethodCallException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/BadMethodCallException.php',
-        'Stripe\\Exception\\CardException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/CardException.php',
-        'Stripe\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/ExceptionInterface.php',
-        'Stripe\\Exception\\IdempotencyException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/IdempotencyException.php',
-        'Stripe\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/InvalidArgumentException.php',
-        'Stripe\\Exception\\InvalidRequestException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/InvalidRequestException.php',
-        'Stripe\\Exception\\OAuth\\ExceptionInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/ExceptionInterface.php',
-        'Stripe\\Exception\\OAuth\\InvalidClientException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/InvalidClientException.php',
-        'Stripe\\Exception\\OAuth\\InvalidGrantException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/InvalidGrantException.php',
-        'Stripe\\Exception\\OAuth\\InvalidRequestException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/InvalidRequestException.php',
-        'Stripe\\Exception\\OAuth\\InvalidScopeException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/InvalidScopeException.php',
-        'Stripe\\Exception\\OAuth\\OAuthErrorException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/OAuthErrorException.php',
-        'Stripe\\Exception\\OAuth\\UnknownOAuthErrorException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/UnknownOAuthErrorException.php',
-        'Stripe\\Exception\\OAuth\\UnsupportedGrantTypeException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/UnsupportedGrantTypeException.php',
-        'Stripe\\Exception\\OAuth\\UnsupportedResponseTypeException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/OAuth/UnsupportedResponseTypeException.php',
-        'Stripe\\Exception\\PermissionException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/PermissionException.php',
-        'Stripe\\Exception\\RateLimitException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/RateLimitException.php',
-        'Stripe\\Exception\\SignatureVerificationException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/SignatureVerificationException.php',
-        'Stripe\\Exception\\TemporarySessionExpiredException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/TemporarySessionExpiredException.php',
-        'Stripe\\Exception\\UnexpectedValueException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/UnexpectedValueException.php',
-        'Stripe\\Exception\\UnknownApiErrorException' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Exception/UnknownApiErrorException.php',
-        'Stripe\\ExchangeRate' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ExchangeRate.php',
-        'Stripe\\File' => __DIR__ . '/..' . '/stripe/stripe-php/lib/File.php',
-        'Stripe\\FileLink' => __DIR__ . '/..' . '/stripe/stripe-php/lib/FileLink.php',
-        'Stripe\\FinancialConnections\\Account' => __DIR__ . '/..' . '/stripe/stripe-php/lib/FinancialConnections/Account.php',
-        'Stripe\\FinancialConnections\\AccountOwner' => __DIR__ . '/..' . '/stripe/stripe-php/lib/FinancialConnections/AccountOwner.php',
-        'Stripe\\FinancialConnections\\AccountOwnership' => __DIR__ . '/..' . '/stripe/stripe-php/lib/FinancialConnections/AccountOwnership.php',
-        'Stripe\\FinancialConnections\\Session' => __DIR__ . '/..' . '/stripe/stripe-php/lib/FinancialConnections/Session.php',
-        'Stripe\\FinancialConnections\\Transaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/FinancialConnections/Transaction.php',
-        'Stripe\\Forwarding\\Request' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Forwarding/Request.php',
-        'Stripe\\FundingInstructions' => __DIR__ . '/..' . '/stripe/stripe-php/lib/FundingInstructions.php',
-        'Stripe\\HttpClient\\ClientInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/HttpClient/ClientInterface.php',
-        'Stripe\\HttpClient\\CurlClient' => __DIR__ . '/..' . '/stripe/stripe-php/lib/HttpClient/CurlClient.php',
-        'Stripe\\HttpClient\\StreamingClientInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/HttpClient/StreamingClientInterface.php',
-        'Stripe\\Identity\\VerificationReport' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Identity/VerificationReport.php',
-        'Stripe\\Identity\\VerificationSession' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Identity/VerificationSession.php',
-        'Stripe\\Invoice' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Invoice.php',
-        'Stripe\\InvoiceItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/InvoiceItem.php',
-        'Stripe\\InvoiceLineItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/InvoiceLineItem.php',
-        'Stripe\\InvoicePayment' => __DIR__ . '/..' . '/stripe/stripe-php/lib/InvoicePayment.php',
-        'Stripe\\InvoiceRenderingTemplate' => __DIR__ . '/..' . '/stripe/stripe-php/lib/InvoiceRenderingTemplate.php',
-        'Stripe\\Issuing\\Authorization' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/Authorization.php',
-        'Stripe\\Issuing\\Card' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/Card.php',
-        'Stripe\\Issuing\\CardDetails' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/CardDetails.php',
-        'Stripe\\Issuing\\Cardholder' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/Cardholder.php',
-        'Stripe\\Issuing\\Dispute' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/Dispute.php',
-        'Stripe\\Issuing\\PersonalizationDesign' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/PersonalizationDesign.php',
-        'Stripe\\Issuing\\PhysicalBundle' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/PhysicalBundle.php',
-        'Stripe\\Issuing\\Token' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/Token.php',
-        'Stripe\\Issuing\\Transaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Issuing/Transaction.php',
-        'Stripe\\LineItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/LineItem.php',
-        'Stripe\\LoginLink' => __DIR__ . '/..' . '/stripe/stripe-php/lib/LoginLink.php',
-        'Stripe\\Mandate' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Mandate.php',
-        'Stripe\\OAuth' => __DIR__ . '/..' . '/stripe/stripe-php/lib/OAuth.php',
-        'Stripe\\OAuthErrorObject' => __DIR__ . '/..' . '/stripe/stripe-php/lib/OAuthErrorObject.php',
-        'Stripe\\PaymentIntent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/PaymentIntent.php',
-        'Stripe\\PaymentLink' => __DIR__ . '/..' . '/stripe/stripe-php/lib/PaymentLink.php',
-        'Stripe\\PaymentMethod' => __DIR__ . '/..' . '/stripe/stripe-php/lib/PaymentMethod.php',
-        'Stripe\\PaymentMethodConfiguration' => __DIR__ . '/..' . '/stripe/stripe-php/lib/PaymentMethodConfiguration.php',
-        'Stripe\\PaymentMethodDomain' => __DIR__ . '/..' . '/stripe/stripe-php/lib/PaymentMethodDomain.php',
-        'Stripe\\Payout' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Payout.php',
-        'Stripe\\Person' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Person.php',
-        'Stripe\\Plan' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Plan.php',
-        'Stripe\\Price' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Price.php',
-        'Stripe\\Product' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Product.php',
-        'Stripe\\ProductFeature' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ProductFeature.php',
-        'Stripe\\PromotionCode' => __DIR__ . '/..' . '/stripe/stripe-php/lib/PromotionCode.php',
-        'Stripe\\Quote' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Quote.php',
-        'Stripe\\Radar\\EarlyFraudWarning' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Radar/EarlyFraudWarning.php',
-        'Stripe\\Radar\\ValueList' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Radar/ValueList.php',
-        'Stripe\\Radar\\ValueListItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Radar/ValueListItem.php',
-        'Stripe\\Reason' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Reason.php',
-        'Stripe\\RecipientTransfer' => __DIR__ . '/..' . '/stripe/stripe-php/lib/RecipientTransfer.php',
-        'Stripe\\Refund' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Refund.php',
-        'Stripe\\RelatedObject' => __DIR__ . '/..' . '/stripe/stripe-php/lib/RelatedObject.php',
-        'Stripe\\Reporting\\ReportRun' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Reporting/ReportRun.php',
-        'Stripe\\Reporting\\ReportType' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Reporting/ReportType.php',
-        'Stripe\\RequestTelemetry' => __DIR__ . '/..' . '/stripe/stripe-php/lib/RequestTelemetry.php',
-        'Stripe\\ReserveTransaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ReserveTransaction.php',
-        'Stripe\\Review' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Review.php',
-        'Stripe\\SearchResult' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SearchResult.php',
-        'Stripe\\Service\\AbstractService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/AbstractService.php',
-        'Stripe\\Service\\AbstractServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/AbstractServiceFactory.php',
-        'Stripe\\Service\\AccountLinkService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/AccountLinkService.php',
-        'Stripe\\Service\\AccountService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/AccountService.php',
-        'Stripe\\Service\\AccountSessionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/AccountSessionService.php',
-        'Stripe\\Service\\ApplePayDomainService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ApplePayDomainService.php',
-        'Stripe\\Service\\ApplicationFeeService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ApplicationFeeService.php',
-        'Stripe\\Service\\Apps\\AppsServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Apps/AppsServiceFactory.php',
-        'Stripe\\Service\\Apps\\SecretService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Apps/SecretService.php',
-        'Stripe\\Service\\BalanceService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/BalanceService.php',
-        'Stripe\\Service\\BalanceTransactionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/BalanceTransactionService.php',
-        'Stripe\\Service\\BillingPortal\\BillingPortalServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/BillingPortal/BillingPortalServiceFactory.php',
-        'Stripe\\Service\\BillingPortal\\ConfigurationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/BillingPortal/ConfigurationService.php',
-        'Stripe\\Service\\BillingPortal\\SessionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/BillingPortal/SessionService.php',
-        'Stripe\\Service\\Billing\\AlertService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/AlertService.php',
-        'Stripe\\Service\\Billing\\BillingServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/BillingServiceFactory.php',
-        'Stripe\\Service\\Billing\\CreditBalanceSummaryService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/CreditBalanceSummaryService.php',
-        'Stripe\\Service\\Billing\\CreditBalanceTransactionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/CreditBalanceTransactionService.php',
-        'Stripe\\Service\\Billing\\CreditGrantService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/CreditGrantService.php',
-        'Stripe\\Service\\Billing\\MeterEventAdjustmentService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/MeterEventAdjustmentService.php',
-        'Stripe\\Service\\Billing\\MeterEventService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/MeterEventService.php',
-        'Stripe\\Service\\Billing\\MeterService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Billing/MeterService.php',
-        'Stripe\\Service\\ChargeService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ChargeService.php',
-        'Stripe\\Service\\Checkout\\CheckoutServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Checkout/CheckoutServiceFactory.php',
-        'Stripe\\Service\\Checkout\\SessionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Checkout/SessionService.php',
-        'Stripe\\Service\\Climate\\ClimateServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Climate/ClimateServiceFactory.php',
-        'Stripe\\Service\\Climate\\OrderService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Climate/OrderService.php',
-        'Stripe\\Service\\Climate\\ProductService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Climate/ProductService.php',
-        'Stripe\\Service\\Climate\\SupplierService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Climate/SupplierService.php',
-        'Stripe\\Service\\ConfirmationTokenService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ConfirmationTokenService.php',
-        'Stripe\\Service\\CoreServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/CoreServiceFactory.php',
-        'Stripe\\Service\\CountrySpecService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/CountrySpecService.php',
-        'Stripe\\Service\\CouponService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/CouponService.php',
-        'Stripe\\Service\\CreditNoteService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/CreditNoteService.php',
-        'Stripe\\Service\\CustomerService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/CustomerService.php',
-        'Stripe\\Service\\CustomerSessionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/CustomerSessionService.php',
-        'Stripe\\Service\\DisputeService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/DisputeService.php',
-        'Stripe\\Service\\Entitlements\\ActiveEntitlementService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Entitlements/ActiveEntitlementService.php',
-        'Stripe\\Service\\Entitlements\\EntitlementsServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Entitlements/EntitlementsServiceFactory.php',
-        'Stripe\\Service\\Entitlements\\FeatureService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Entitlements/FeatureService.php',
-        'Stripe\\Service\\EphemeralKeyService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/EphemeralKeyService.php',
-        'Stripe\\Service\\EventService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/EventService.php',
-        'Stripe\\Service\\ExchangeRateService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ExchangeRateService.php',
-        'Stripe\\Service\\FileLinkService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/FileLinkService.php',
-        'Stripe\\Service\\FileService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/FileService.php',
-        'Stripe\\Service\\FinancialConnections\\AccountService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/FinancialConnections/AccountService.php',
-        'Stripe\\Service\\FinancialConnections\\FinancialConnectionsServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/FinancialConnections/FinancialConnectionsServiceFactory.php',
-        'Stripe\\Service\\FinancialConnections\\SessionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/FinancialConnections/SessionService.php',
-        'Stripe\\Service\\FinancialConnections\\TransactionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/FinancialConnections/TransactionService.php',
-        'Stripe\\Service\\Forwarding\\ForwardingServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Forwarding/ForwardingServiceFactory.php',
-        'Stripe\\Service\\Forwarding\\RequestService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Forwarding/RequestService.php',
-        'Stripe\\Service\\Identity\\IdentityServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Identity/IdentityServiceFactory.php',
-        'Stripe\\Service\\Identity\\VerificationReportService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Identity/VerificationReportService.php',
-        'Stripe\\Service\\Identity\\VerificationSessionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Identity/VerificationSessionService.php',
-        'Stripe\\Service\\InvoiceItemService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/InvoiceItemService.php',
-        'Stripe\\Service\\InvoicePaymentService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/InvoicePaymentService.php',
-        'Stripe\\Service\\InvoiceRenderingTemplateService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/InvoiceRenderingTemplateService.php',
-        'Stripe\\Service\\InvoiceService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/InvoiceService.php',
-        'Stripe\\Service\\Issuing\\AuthorizationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/AuthorizationService.php',
-        'Stripe\\Service\\Issuing\\CardService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/CardService.php',
-        'Stripe\\Service\\Issuing\\CardholderService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/CardholderService.php',
-        'Stripe\\Service\\Issuing\\DisputeService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/DisputeService.php',
-        'Stripe\\Service\\Issuing\\IssuingServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/IssuingServiceFactory.php',
-        'Stripe\\Service\\Issuing\\PersonalizationDesignService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/PersonalizationDesignService.php',
-        'Stripe\\Service\\Issuing\\PhysicalBundleService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/PhysicalBundleService.php',
-        'Stripe\\Service\\Issuing\\TokenService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/TokenService.php',
-        'Stripe\\Service\\Issuing\\TransactionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Issuing/TransactionService.php',
-        'Stripe\\Service\\MandateService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/MandateService.php',
-        'Stripe\\Service\\OAuthService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/OAuthService.php',
-        'Stripe\\Service\\PaymentIntentService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PaymentIntentService.php',
-        'Stripe\\Service\\PaymentLinkService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PaymentLinkService.php',
-        'Stripe\\Service\\PaymentMethodConfigurationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PaymentMethodConfigurationService.php',
-        'Stripe\\Service\\PaymentMethodDomainService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PaymentMethodDomainService.php',
-        'Stripe\\Service\\PaymentMethodService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PaymentMethodService.php',
-        'Stripe\\Service\\PayoutService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PayoutService.php',
-        'Stripe\\Service\\PlanService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PlanService.php',
-        'Stripe\\Service\\PriceService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PriceService.php',
-        'Stripe\\Service\\ProductService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ProductService.php',
-        'Stripe\\Service\\PromotionCodeService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/PromotionCodeService.php',
-        'Stripe\\Service\\QuoteService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/QuoteService.php',
-        'Stripe\\Service\\Radar\\EarlyFraudWarningService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Radar/EarlyFraudWarningService.php',
-        'Stripe\\Service\\Radar\\RadarServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Radar/RadarServiceFactory.php',
-        'Stripe\\Service\\Radar\\ValueListItemService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Radar/ValueListItemService.php',
-        'Stripe\\Service\\Radar\\ValueListService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Radar/ValueListService.php',
-        'Stripe\\Service\\RefundService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/RefundService.php',
-        'Stripe\\Service\\Reporting\\ReportRunService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Reporting/ReportRunService.php',
-        'Stripe\\Service\\Reporting\\ReportTypeService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Reporting/ReportTypeService.php',
-        'Stripe\\Service\\Reporting\\ReportingServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Reporting/ReportingServiceFactory.php',
-        'Stripe\\Service\\ReviewService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ReviewService.php',
-        'Stripe\\Service\\ServiceNavigatorTrait' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ServiceNavigatorTrait.php',
-        'Stripe\\Service\\SetupAttemptService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/SetupAttemptService.php',
-        'Stripe\\Service\\SetupIntentService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/SetupIntentService.php',
-        'Stripe\\Service\\ShippingRateService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/ShippingRateService.php',
-        'Stripe\\Service\\Sigma\\ScheduledQueryRunService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Sigma/ScheduledQueryRunService.php',
-        'Stripe\\Service\\Sigma\\SigmaServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Sigma/SigmaServiceFactory.php',
-        'Stripe\\Service\\SourceService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/SourceService.php',
-        'Stripe\\Service\\SubscriptionItemService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/SubscriptionItemService.php',
-        'Stripe\\Service\\SubscriptionScheduleService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/SubscriptionScheduleService.php',
-        'Stripe\\Service\\SubscriptionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/SubscriptionService.php',
-        'Stripe\\Service\\TaxCodeService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TaxCodeService.php',
-        'Stripe\\Service\\TaxIdService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TaxIdService.php',
-        'Stripe\\Service\\TaxRateService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TaxRateService.php',
-        'Stripe\\Service\\Tax\\CalculationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Tax/CalculationService.php',
-        'Stripe\\Service\\Tax\\RegistrationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Tax/RegistrationService.php',
-        'Stripe\\Service\\Tax\\SettingsService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Tax/SettingsService.php',
-        'Stripe\\Service\\Tax\\TaxServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Tax/TaxServiceFactory.php',
-        'Stripe\\Service\\Tax\\TransactionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Tax/TransactionService.php',
-        'Stripe\\Service\\Terminal\\ConfigurationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Terminal/ConfigurationService.php',
-        'Stripe\\Service\\Terminal\\ConnectionTokenService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Terminal/ConnectionTokenService.php',
-        'Stripe\\Service\\Terminal\\LocationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Terminal/LocationService.php',
-        'Stripe\\Service\\Terminal\\ReaderService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Terminal/ReaderService.php',
-        'Stripe\\Service\\Terminal\\TerminalServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Terminal/TerminalServiceFactory.php',
-        'Stripe\\Service\\TestHelpers\\ConfirmationTokenService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/ConfirmationTokenService.php',
-        'Stripe\\Service\\TestHelpers\\CustomerService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/CustomerService.php',
-        'Stripe\\Service\\TestHelpers\\Issuing\\AuthorizationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Issuing/AuthorizationService.php',
-        'Stripe\\Service\\TestHelpers\\Issuing\\CardService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Issuing/CardService.php',
-        'Stripe\\Service\\TestHelpers\\Issuing\\IssuingServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Issuing/IssuingServiceFactory.php',
-        'Stripe\\Service\\TestHelpers\\Issuing\\PersonalizationDesignService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Issuing/PersonalizationDesignService.php',
-        'Stripe\\Service\\TestHelpers\\Issuing\\TransactionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Issuing/TransactionService.php',
-        'Stripe\\Service\\TestHelpers\\RefundService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/RefundService.php',
-        'Stripe\\Service\\TestHelpers\\Terminal\\ReaderService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Terminal/ReaderService.php',
-        'Stripe\\Service\\TestHelpers\\Terminal\\TerminalServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Terminal/TerminalServiceFactory.php',
-        'Stripe\\Service\\TestHelpers\\TestClockService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/TestClockService.php',
-        'Stripe\\Service\\TestHelpers\\TestHelpersServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/TestHelpersServiceFactory.php',
-        'Stripe\\Service\\TestHelpers\\Treasury\\InboundTransferService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Treasury/InboundTransferService.php',
-        'Stripe\\Service\\TestHelpers\\Treasury\\OutboundPaymentService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Treasury/OutboundPaymentService.php',
-        'Stripe\\Service\\TestHelpers\\Treasury\\OutboundTransferService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Treasury/OutboundTransferService.php',
-        'Stripe\\Service\\TestHelpers\\Treasury\\ReceivedCreditService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Treasury/ReceivedCreditService.php',
-        'Stripe\\Service\\TestHelpers\\Treasury\\ReceivedDebitService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Treasury/ReceivedDebitService.php',
-        'Stripe\\Service\\TestHelpers\\Treasury\\TreasuryServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TestHelpers/Treasury/TreasuryServiceFactory.php',
-        'Stripe\\Service\\TokenService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TokenService.php',
-        'Stripe\\Service\\TopupService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TopupService.php',
-        'Stripe\\Service\\TransferService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/TransferService.php',
-        'Stripe\\Service\\Treasury\\CreditReversalService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/CreditReversalService.php',
-        'Stripe\\Service\\Treasury\\DebitReversalService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/DebitReversalService.php',
-        'Stripe\\Service\\Treasury\\FinancialAccountService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/FinancialAccountService.php',
-        'Stripe\\Service\\Treasury\\InboundTransferService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/InboundTransferService.php',
-        'Stripe\\Service\\Treasury\\OutboundPaymentService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/OutboundPaymentService.php',
-        'Stripe\\Service\\Treasury\\OutboundTransferService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/OutboundTransferService.php',
-        'Stripe\\Service\\Treasury\\ReceivedCreditService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/ReceivedCreditService.php',
-        'Stripe\\Service\\Treasury\\ReceivedDebitService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/ReceivedDebitService.php',
-        'Stripe\\Service\\Treasury\\TransactionEntryService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/TransactionEntryService.php',
-        'Stripe\\Service\\Treasury\\TransactionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/TransactionService.php',
-        'Stripe\\Service\\Treasury\\TreasuryServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/Treasury/TreasuryServiceFactory.php',
-        'Stripe\\Service\\V2\\Billing\\BillingServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Billing/BillingServiceFactory.php',
-        'Stripe\\Service\\V2\\Billing\\MeterEventAdjustmentService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Billing/MeterEventAdjustmentService.php',
-        'Stripe\\Service\\V2\\Billing\\MeterEventService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Billing/MeterEventService.php',
-        'Stripe\\Service\\V2\\Billing\\MeterEventSessionService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Billing/MeterEventSessionService.php',
-        'Stripe\\Service\\V2\\Billing\\MeterEventStreamService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Billing/MeterEventStreamService.php',
-        'Stripe\\Service\\V2\\Core\\CoreServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Core/CoreServiceFactory.php',
-        'Stripe\\Service\\V2\\Core\\EventDestinationService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Core/EventDestinationService.php',
-        'Stripe\\Service\\V2\\Core\\EventService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/Core/EventService.php',
-        'Stripe\\Service\\V2\\V2ServiceFactory' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/V2/V2ServiceFactory.php',
-        'Stripe\\Service\\WebhookEndpointService' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Service/WebhookEndpointService.php',
-        'Stripe\\SetupAttempt' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SetupAttempt.php',
-        'Stripe\\SetupIntent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SetupIntent.php',
-        'Stripe\\ShippingRate' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ShippingRate.php',
-        'Stripe\\Sigma\\ScheduledQueryRun' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Sigma/ScheduledQueryRun.php',
-        'Stripe\\SingletonApiResource' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SingletonApiResource.php',
-        'Stripe\\Source' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Source.php',
-        'Stripe\\SourceMandateNotification' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SourceMandateNotification.php',
-        'Stripe\\SourceTransaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SourceTransaction.php',
-        'Stripe\\Stripe' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Stripe.php',
-        'Stripe\\StripeClient' => __DIR__ . '/..' . '/stripe/stripe-php/lib/StripeClient.php',
-        'Stripe\\StripeClientInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/StripeClientInterface.php',
-        'Stripe\\StripeObject' => __DIR__ . '/..' . '/stripe/stripe-php/lib/StripeObject.php',
-        'Stripe\\StripeStreamingClientInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/StripeStreamingClientInterface.php',
-        'Stripe\\Subscription' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Subscription.php',
-        'Stripe\\SubscriptionItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SubscriptionItem.php',
-        'Stripe\\SubscriptionSchedule' => __DIR__ . '/..' . '/stripe/stripe-php/lib/SubscriptionSchedule.php',
-        'Stripe\\TaxCode' => __DIR__ . '/..' . '/stripe/stripe-php/lib/TaxCode.php',
-        'Stripe\\TaxDeductedAtSource' => __DIR__ . '/..' . '/stripe/stripe-php/lib/TaxDeductedAtSource.php',
-        'Stripe\\TaxId' => __DIR__ . '/..' . '/stripe/stripe-php/lib/TaxId.php',
-        'Stripe\\TaxRate' => __DIR__ . '/..' . '/stripe/stripe-php/lib/TaxRate.php',
-        'Stripe\\Tax\\Calculation' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Tax/Calculation.php',
-        'Stripe\\Tax\\CalculationLineItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Tax/CalculationLineItem.php',
-        'Stripe\\Tax\\Registration' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Tax/Registration.php',
-        'Stripe\\Tax\\Settings' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Tax/Settings.php',
-        'Stripe\\Tax\\Transaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Tax/Transaction.php',
-        'Stripe\\Tax\\TransactionLineItem' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Tax/TransactionLineItem.php',
-        'Stripe\\Terminal\\Configuration' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Terminal/Configuration.php',
-        'Stripe\\Terminal\\ConnectionToken' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Terminal/ConnectionToken.php',
-        'Stripe\\Terminal\\Location' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Terminal/Location.php',
-        'Stripe\\Terminal\\Reader' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Terminal/Reader.php',
-        'Stripe\\TestHelpers\\TestClock' => __DIR__ . '/..' . '/stripe/stripe-php/lib/TestHelpers/TestClock.php',
-        'Stripe\\ThinEvent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ThinEvent.php',
-        'Stripe\\Token' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Token.php',
-        'Stripe\\Topup' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Topup.php',
-        'Stripe\\Transfer' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Transfer.php',
-        'Stripe\\TransferReversal' => __DIR__ . '/..' . '/stripe/stripe-php/lib/TransferReversal.php',
-        'Stripe\\Treasury\\CreditReversal' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/CreditReversal.php',
-        'Stripe\\Treasury\\DebitReversal' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/DebitReversal.php',
-        'Stripe\\Treasury\\FinancialAccount' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/FinancialAccount.php',
-        'Stripe\\Treasury\\FinancialAccountFeatures' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/FinancialAccountFeatures.php',
-        'Stripe\\Treasury\\InboundTransfer' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/InboundTransfer.php',
-        'Stripe\\Treasury\\OutboundPayment' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/OutboundPayment.php',
-        'Stripe\\Treasury\\OutboundTransfer' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/OutboundTransfer.php',
-        'Stripe\\Treasury\\ReceivedCredit' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/ReceivedCredit.php',
-        'Stripe\\Treasury\\ReceivedDebit' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/ReceivedDebit.php',
-        'Stripe\\Treasury\\Transaction' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/Transaction.php',
-        'Stripe\\Treasury\\TransactionEntry' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Treasury/TransactionEntry.php',
-        'Stripe\\Util\\ApiVersion' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/ApiVersion.php',
-        'Stripe\\Util\\CaseInsensitiveArray' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/CaseInsensitiveArray.php',
-        'Stripe\\Util\\DefaultLogger' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/DefaultLogger.php',
-        'Stripe\\Util\\EventTypes' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/EventTypes.php',
-        'Stripe\\Util\\LoggerInterface' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/LoggerInterface.php',
-        'Stripe\\Util\\ObjectTypes' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/ObjectTypes.php',
-        'Stripe\\Util\\RandomGenerator' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/RandomGenerator.php',
-        'Stripe\\Util\\RequestOptions' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/RequestOptions.php',
-        'Stripe\\Util\\Set' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/Set.php',
-        'Stripe\\Util\\Util' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Util/Util.php',
-        'Stripe\\V2\\Billing\\MeterEvent' => __DIR__ . '/..' . '/stripe/stripe-php/lib/V2/Billing/MeterEvent.php',
-        'Stripe\\V2\\Billing\\MeterEventAdjustment' => __DIR__ . '/..' . '/stripe/stripe-php/lib/V2/Billing/MeterEventAdjustment.php',
-        'Stripe\\V2\\Billing\\MeterEventSession' => __DIR__ . '/..' . '/stripe/stripe-php/lib/V2/Billing/MeterEventSession.php',
-        'Stripe\\V2\\Collection' => __DIR__ . '/..' . '/stripe/stripe-php/lib/V2/Collection.php',
-        'Stripe\\V2\\Event' => __DIR__ . '/..' . '/stripe/stripe-php/lib/V2/Event.php',
-        'Stripe\\V2\\EventDestination' => __DIR__ . '/..' . '/stripe/stripe-php/lib/V2/EventDestination.php',
-        'Stripe\\Webhook' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Webhook.php',
-        'Stripe\\WebhookEndpoint' => __DIR__ . '/..' . '/stripe/stripe-php/lib/WebhookEndpoint.php',
-        'Stripe\\WebhookSignature' => __DIR__ . '/..' . '/stripe/stripe-php/lib/WebhookSignature.php',
         'Svg\\CssLength' => __DIR__ . '/..' . '/dompdf/php-svg-lib/src/Svg/CssLength.php',
         'Svg\\DefaultStyle' => __DIR__ . '/..' . '/dompdf/php-svg-lib/src/Svg/DefaultStyle.php',
         'Svg\\Document' => __DIR__ . '/..' . '/dompdf/php-svg-lib/src/Svg/Document.php',
@@ -14689,70 +13791,6 @@ class ComposerStaticInit701fd8548a9f5b1b7ede5ef6d9e22c85
         'Wikimedia\\Composer\\Merge\\V2\\PluginState' => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src/PluginState.php',
         'Wikimedia\\Composer\\Merge\\V2\\StabilityFlags' => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src/StabilityFlags.php',
         'Workbench\\App\\Providers\\WorkbenchServiceProvider' => __DIR__ . '/..' . '/laravel/mcp/workbench/app/Providers/WorkbenchServiceProvider.php',
-        'WpOrg\\Requests\\Auth' => __DIR__ . '/..' . '/rmccue/requests/src/Auth.php',
-        'WpOrg\\Requests\\Auth\\Basic' => __DIR__ . '/..' . '/rmccue/requests/src/Auth/Basic.php',
-        'WpOrg\\Requests\\Autoload' => __DIR__ . '/..' . '/rmccue/requests/src/Autoload.php',
-        'WpOrg\\Requests\\Capability' => __DIR__ . '/..' . '/rmccue/requests/src/Capability.php',
-        'WpOrg\\Requests\\Cookie' => __DIR__ . '/..' . '/rmccue/requests/src/Cookie.php',
-        'WpOrg\\Requests\\Cookie\\Jar' => __DIR__ . '/..' . '/rmccue/requests/src/Cookie/Jar.php',
-        'WpOrg\\Requests\\Exception' => __DIR__ . '/..' . '/rmccue/requests/src/Exception.php',
-        'WpOrg\\Requests\\Exception\\ArgumentCount' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/ArgumentCount.php',
-        'WpOrg\\Requests\\Exception\\Http' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status304' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status304.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status305' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status305.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status306' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status306.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status400' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status400.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status401' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status401.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status402' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status402.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status403' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status403.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status404' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status404.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status405' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status405.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status406' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status406.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status407' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status407.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status408' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status408.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status409' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status409.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status410' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status410.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status411' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status411.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status412' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status412.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status413' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status413.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status414' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status414.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status415' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status415.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status416' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status416.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status417' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status417.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status418' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status418.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status428' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status428.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status429' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status429.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status431' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status431.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status500' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status500.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status501' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status501.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status502' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status502.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status503' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status503.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status504' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status504.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status505' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status505.php',
-        'WpOrg\\Requests\\Exception\\Http\\Status511' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/Status511.php',
-        'WpOrg\\Requests\\Exception\\Http\\StatusUnknown' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Http/StatusUnknown.php',
-        'WpOrg\\Requests\\Exception\\InvalidArgument' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/InvalidArgument.php',
-        'WpOrg\\Requests\\Exception\\Transport' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Transport.php',
-        'WpOrg\\Requests\\Exception\\Transport\\Curl' => __DIR__ . '/..' . '/rmccue/requests/src/Exception/Transport/Curl.php',
-        'WpOrg\\Requests\\HookManager' => __DIR__ . '/..' . '/rmccue/requests/src/HookManager.php',
-        'WpOrg\\Requests\\Hooks' => __DIR__ . '/..' . '/rmccue/requests/src/Hooks.php',
-        'WpOrg\\Requests\\IdnaEncoder' => __DIR__ . '/..' . '/rmccue/requests/src/IdnaEncoder.php',
-        'WpOrg\\Requests\\Ipv6' => __DIR__ . '/..' . '/rmccue/requests/src/Ipv6.php',
-        'WpOrg\\Requests\\Iri' => __DIR__ . '/..' . '/rmccue/requests/src/Iri.php',
-        'WpOrg\\Requests\\Port' => __DIR__ . '/..' . '/rmccue/requests/src/Port.php',
-        'WpOrg\\Requests\\Proxy' => __DIR__ . '/..' . '/rmccue/requests/src/Proxy.php',
-        'WpOrg\\Requests\\Proxy\\Http' => __DIR__ . '/..' . '/rmccue/requests/src/Proxy/Http.php',
-        'WpOrg\\Requests\\Requests' => __DIR__ . '/..' . '/rmccue/requests/src/Requests.php',
-        'WpOrg\\Requests\\Response' => __DIR__ . '/..' . '/rmccue/requests/src/Response.php',
-        'WpOrg\\Requests\\Response\\Headers' => __DIR__ . '/..' . '/rmccue/requests/src/Response/Headers.php',
-        'WpOrg\\Requests\\Session' => __DIR__ . '/..' . '/rmccue/requests/src/Session.php',
-        'WpOrg\\Requests\\Ssl' => __DIR__ . '/..' . '/rmccue/requests/src/Ssl.php',
-        'WpOrg\\Requests\\Transport' => __DIR__ . '/..' . '/rmccue/requests/src/Transport.php',
-        'WpOrg\\Requests\\Transport\\Curl' => __DIR__ . '/..' . '/rmccue/requests/src/Transport/Curl.php',
-        'WpOrg\\Requests\\Transport\\Fsockopen' => __DIR__ . '/..' . '/rmccue/requests/src/Transport/Fsockopen.php',
-        'WpOrg\\Requests\\Utility\\CaseInsensitiveDictionary' => __DIR__ . '/..' . '/rmccue/requests/src/Utility/CaseInsensitiveDictionary.php',
-        'WpOrg\\Requests\\Utility\\FilteredIterator' => __DIR__ . '/..' . '/rmccue/requests/src/Utility/FilteredIterator.php',
-        'WpOrg\\Requests\\Utility\\InputValidator' => __DIR__ . '/..' . '/rmccue/requests/src/Utility/InputValidator.php',
         'Yajra\\DataTables\\ApiResourceDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/ApiResourceDataTable.php',
         'Yajra\\DataTables\\ButtonsServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-datatables-buttons/src/ButtonsServiceProvider.php',
         'Yajra\\DataTables\\CollectionDataTable' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/CollectionDataTable.php',
