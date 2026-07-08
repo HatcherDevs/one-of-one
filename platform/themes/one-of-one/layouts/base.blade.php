@@ -100,6 +100,25 @@
     @yield('content')
 
     {!! Theme::footer() !!}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof Lenis !== 'undefined') {
+                const lenis = new Lenis({
+                    duration: 1.6,
+                    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                    smooth: true
+                });
+
+                function raf(time) {
+                    lenis.raf(time);
+                    requestAnimationFrame(raf);
+                }
+
+                requestAnimationFrame(raf);
+            }
+        });
+    </script>
 </body>
 
 </html>

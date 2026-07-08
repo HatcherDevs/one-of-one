@@ -39,6 +39,7 @@ return [
             $theme->asset()->container('footer')->usePath()->add('articles-data', 'js/articles-data.js');
             $theme->asset()->container('footer')->add('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js');
             $theme->asset()->container('footer')->usePath()->add('main', 'js/main.js', version: $version);
+            $theme->asset()->container('footer')->add('lenis-js', 'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js');
 
             if (function_exists('shortcode')) {
                 $theme->composer(['page'], function (View $view): void {
