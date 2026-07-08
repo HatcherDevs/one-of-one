@@ -1,4 +1,9 @@
 @foreach ($menu_nodes as $key => $row)
+    @php
+        $parts = explode(' - ', $row->title, 2);
+        $mainLabel = $parts[0] ?? $row->title;
+        $subLabel = $parts[1] ?? null;
+    @endphp
     <li @class([
         'has-submenu' => $row->has_child,
         'current' => $row->active,
@@ -19,6 +24,9 @@
                     'view' => 'sidebar-submenu',
                 ]) !!}
             </ul>
+        @elseif ($subLabel)
+            {{ $mainLabel }}<span class="project-sub"><a href="{{ $row->url }}" target="{{ $row->target }}">-
+                    {{ $subLabel }}</a></span>
         @else
             <a href="{{ $row->url }}" target="{{ $row->target }}">
                 {!! BaseHelper::clean($row->icon_html) !!}
