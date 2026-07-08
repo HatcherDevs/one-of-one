@@ -119,6 +119,41 @@
             }
         });
     </script>
+
+    @if (is_plugin_active('newsletter'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById('newsletter-form');
+                if (!form) return;
+
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const formData = new FormData(form);
+                    const msgDiv = document.getElementById('newsletter-message');
+
+                    fetch(form.action, {
+                            method: 'POST',
+                            headers: {
+                                'X-Requested-With': 'XMLHttpRequest'
+                            },
+                            body: formData
+                        })
+                        .then(r => r.json())
+                        .then(data => {
+                            msgDiv.style.display = 'block';
+                            msgDiv.innerHTML = data.message || '{{ __('Subscribed successfully!') }}';
+                            msgDiv.style.color = data.error ? '#ff6b6b' : '#b39c75';
+                            if (!data.error) form.reset();
+                        })
+                        .catch(() => {
+                            msgDiv.style.display = 'block';
+                            msgDiv.innerHTML = '{{ __('Something went wrong. Please try again.') }}';
+                            msgDiv.style.color = '#ff6b6b';
+                        });
+                });
+            });
+        </script>
+    @endif
 </body>
 
 </html>

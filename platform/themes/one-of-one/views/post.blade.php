@@ -74,14 +74,16 @@
                     <h6 class="mb-3 fs-30">{{ __('Stay updated') }}</h6>
                     <p class="fs-18 fw-lighter">
                         {{ __('Sign up for our newsletter to get the latest news and offers.') }}</p>
-                    <form>
-                        <input type="email" class="form-control mb-3" placeholder="{{ __('Add your email') }}"
-                            style="border-radius: 0;">
+                    <form action="{{ route('public.newsletter.subscribe') }}" method="POST" id="newsletter-form">
+                        @csrf
+                        <input type="email" name="email" class="form-control mb-3"
+                            placeholder="{{ __('Add your email') }}" style="border-radius: 0;" required>
                         <button type="submit" class="btn d-flex justify-content-between align-items-center"
                             style="background-color: #b39c75; color: white; border-radius: 0; margin-left: auto; width: 120px;">
                             {{ __('Submit') }} <span style="font-size: 1.2rem;">&#9654;</span>
                         </button>
                     </form>
+                    <div id="newsletter-message" class="mt-2" style="display: none;"></div>
                     <p class="small mt-3 lh-base" style="font-size: 11px;">
                         {{ __('By signing up for our mailers, you are agreeing to receive news and information from One of One Developments.') }}
                         <a href="#" class="text-white text-decoration-underline">{{ __('Click here') }}</a>
