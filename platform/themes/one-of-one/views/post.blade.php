@@ -2,6 +2,7 @@
     Theme::layout('default');
     Theme::set('pageTitle', $post->name);
     SeoHelper::setTitle(__('One Of One | :name', ['name' => $post->name]));
+    $isRtl = BaseHelper::isRtlEnabled();
 @endphp
 
 {{-- Page Title --}}
@@ -10,14 +11,14 @@
 </section>
 
 {{-- Article Details --}}
-<section class="py-5" style="background-color: #eae4de;">
+<section class="py-5" style="background-color: #eae4de;" @if ($isRtl) dir="rtl" @endif>
     <div class="container-fluid px-lg-5">
         <div class="row g-0 px-lg-4">
             {{-- Back Button --}}
             <div class="col-12 mb-4">
                 <a href="{{ route('public.news-press') }}" class="btn btn-link text-decoration-none"
                     style="color: #B39C75;">
-                    <i class="fa-solid fa-arrow-left me-2"></i> {{ __('Back to Press') }}
+                    <i class="fa-solid fa-arrow-{{ $isRtl ? 'right' : 'left' }} me-2"></i> {{ __('Back to Press') }}
                 </a>
             </div>
 
@@ -68,7 +69,7 @@
             </div>
 
             {{-- Sidebar --}}
-            <div class="col-lg-4 ps-lg-5 mt-lg-0">
+            <div class="col-lg-4 {{ $isRtl ? 'pe-lg-5' : 'ps-lg-5' }} mt-lg-0">
                 {{-- Newsletter Form --}}
                 <div class="text-white p-4 mb-4" style="background-color: #4a5147;">
                     <h6 class="mb-3 fs-30">{{ __('Stay updated') }}</h6>
@@ -79,8 +80,9 @@
                         <input type="email" name="email" class="form-control mb-3"
                             placeholder="{{ __('Add your email') }}" style="border-radius: 0;" required>
                         <button type="submit" class="btn d-flex justify-content-between align-items-center"
-                            style="background-color: #b39c75; color: white; border-radius: 0; margin-left: auto; width: 120px;">
-                            {{ __('Submit') }} <span style="font-size: 1.2rem;">&#9654;</span>
+                            style="background-color: #b39c75; color: white; border-radius: 0; {{ $isRtl ? 'margin-right' : 'margin-left' }}: auto; width: 120px;">
+                            {{ __('Submit') }} <span
+                                style="font-size: 1.2rem;">{{ $isRtl ? '&#9664;' : '&#9654;' }}</span>
                         </button>
                     </form>
                     <div id="newsletter-message" class="mt-2" style="display: none;"></div>
@@ -96,13 +98,23 @@
                     <p class="text-dark-gray mb-2 fw-bold">{{ __('Keep in touch') }}</p>
                     <p class="text-muted mb-3 small">{{ __("Let's connect") }}</p>
                     <div class="d-flex gap-3">
-                        <a href="#" style="color: #B39C75;"><i class="fa-brands fs-30 fa-square-facebook"></i></a>
-                        <a href="#" style="color: #B39C75;"><i
-                                class="fa-brands fs-30 fa-square-instagram"></i></a>
-                        <a href="#" style="color: #B39C75;"><i
-                                class="fa-brands fs-30 fa-square-x-twitter"></i></a>
-                        <a href="#" style="color: #B39C75;"><i class="fa-brands fs-30 fa-tiktok"></i></a>
-                        <a href="#" style="color: #B39C75;"><i class="fa-brands fs-30 fa-linkedin"></i></a>
+                        @php
+                            $socialPlatforms = [
+                                'facebook' => ['icon' => 'fa-square-facebook', 'option' => 'social_facebook'],
+                                'instagram' => ['icon' => 'fa-square-instagram', 'option' => 'social_instagram'],
+                                'twitter' => ['icon' => 'fa-square-x-twitter', 'option' => 'social_twitter'],
+                                'tiktok' => ['icon' => 'fa-tiktok', 'option' => 'social_tiktok'],
+                                'linkedin' => ['icon' => 'fa-linkedin', 'option' => 'social_linkedin'],
+                            ];
+                        @endphp
+                        @foreach ($socialPlatforms as $platform)
+                            @php $url = theme_option($platform['option']); @endphp
+                            @if ($url)
+                                <a href="{{ $url }}" target="_blank" style="color: #B39C75;">
+                                    <i class="fa-brands fs-30 {{ $platform['icon'] }}"></i>
+                                </a>
+                            @endif
+                        @endforeach
                     </div>
                 </div>
 
