@@ -31,7 +31,7 @@ return [
     ],
     'allowed_mime_types' => env(
         'RV_MEDIA_ALLOWED_MIME_TYPES',
-        'jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,m4v,doc,mpga,wav,webp,webm,mov,jfif,avif,rar,x-rar'
+        'jpg,jpeg,png,gif,svg,bmp,webp,avif,jfif,ico,tif,tiff,heic,heif,apng,txt,docx,zip,mp3,csv,xls,xlsx,ppt,pptx,pdf,mp4,m4v,mov,webm,avi,mkv,wmv,flv,3gp,3g2,mpeg,mpg,ogv,ts,m2ts,mts,doc,mpga,wav,rar,x-rar'
     ),
     // Danger warning: When enabled, admin users can upload any file types, it leads to security issues if admin users try to hack your site.
     // If it is disabled, admin users can only upload the file types in configure allowed types.
@@ -39,18 +39,35 @@ return [
     'mime_types' => [
         'image' => [
             'image/png',
+            'image/apng',
             'image/jpeg',
             'image/gif',
             'image/bmp',
+            'image/x-ms-bmp',
             'image/svg+xml',
             'image/webp',
             'image/avif',
+            'image/vnd.microsoft.icon',
+            'image/x-icon',
+            'image/tiff',
+            'image/heic',
+            'image/heif',
         ],
         'video' => [
             'video/mp4',
             'video/m4v',
             'video/mov',
             'video/quicktime',
+            'video/webm',
+            'video/x-msvideo',
+            'video/x-matroska',
+            'video/x-ms-wmv',
+            'video/x-flv',
+            'video/3gpp',
+            'video/3gpp2',
+            'video/mpeg',
+            'video/ogg',
+            'video/mp2t',
         ],
         'document' => [
             'application/pdf',

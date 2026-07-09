@@ -24611,3 +24611,10 @@ footer .footer-navbar .nav-item:last-child a {
 .projects-toggle:hover {
   opacity: 0.7;
 }
+
+
+
+.Projects-section{
+    padding-top: 60px !important;
+    padding-bottom: 0px !important;
+}

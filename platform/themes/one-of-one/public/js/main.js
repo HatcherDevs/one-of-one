@@ -3821,3 +3821,36 @@ if (closeBtn) {
         initSubmenu();
     }
 })();
+
+// Video autoplay for hero banner
+(function () {
+    function initVideoAutoplay() {
+        var video = document.querySelector('video.bg-video');
+        if (!video) return;
+
+        function tryPlay() {
+            if (video.paused || video.ended) {
+                var playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(function () {
+                        setTimeout(tryPlay, 500);
+                    });
+                }
+            }
+        }
+        tryPlay();
+
+        ['click', 'touchstart', 'scroll'].forEach(function (evt) {
+            window.addEventListener(evt, function onceHandler() {
+                tryPlay();
+                window.removeEventListener(evt, onceHandler);
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initVideoAutoplay);
+    } else {
+        initVideoAutoplay();
+    }
+})();

@@ -1,9 +1,11 @@
 @php
     $bgColor = $shortcode->background_color ?: '#e6ded5';
+    $isRtl = BaseHelper::isRtlEnabled();
 @endphp
 
 @if (!empty($cards))
-    <section class="overflow-hidden position-relative" style="background-color: {{ $bgColor }};"
+    <section @if ($isRtl) dir="rtl" @endif class="overflow-hidden position-relative"
+        style="background-color: {{ $bgColor }};"
         data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
         <div class="container-fluid p-0">
             <div class="col-12 p-0 m-0">

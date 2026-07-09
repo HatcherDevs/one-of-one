@@ -24558,3 +24558,8 @@ footer .footer-navbar .nav-item:last-child a {
 #current_projects * {
   text-align: right;
 }
+
+.Projects-section {
+  padding-top: 60px !important;
+  padding-bottom: 0px !important;
+}

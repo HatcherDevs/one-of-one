@@ -4,9 +4,11 @@
     $buttonLabel = $shortcode->button_label ?: __('View More');
     $buttonUrl = $shortcode->button_url ?: route('public.news-press');
     $buttonColor = $shortcode->button_color ?: '#B39C75';
+    $isRtl = BaseHelper::isRtlEnabled();
 @endphp
 
-<section class="p-lg-8 bg-light-gray" style="background-color: {{ $bgColor }};"
+<section @if ($isRtl) dir="rtl" @endif class="p-lg-8 bg-light-gray"
+    style="background-color: {{ $bgColor }};"
     data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
     <div class="container-fluid px-5">
         <div class="row g-0">
@@ -44,8 +46,8 @@
             </div>
             <div class="col-12 text-center mt-4">
                 <a href="{{ $buttonUrl }}" class="btn btn-lg text-white"
-                    style="background-color: {{ $buttonColor }};border-radius: 0;padding: 7px 30px;font-size: 1rem;text-wrap-mode: nowrap;font-weight: 300;">
-                    {{ $buttonLabel }} <i class="fa-solid fa-arrow-right ms-2"></i>
+                    style="background-color: {{ $buttonColor }};border-radius: 0;padding: 7px 30px;font-size: 1rem;text-wrap-mode: nowrap;font-weight: 300;text-transform: none;">
+                    {{ $buttonLabel }} <i class="fa-solid fa-arrow-{{ $isRtl ? 'left' : 'right' }} ms-2"></i>
                 </a>
             </div>
         </div>
