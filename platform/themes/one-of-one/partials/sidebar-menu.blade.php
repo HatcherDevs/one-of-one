@@ -43,3 +43,33 @@
         </li>
     @endforeach
 </ul>
+<div class="social-links">
+    <span>{{ __('Get in touch') }}</span>
+    <div class="icons">
+        @if (theme_option('social_facebook'))
+            <a href="{{ theme_option('social_facebook') }}" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        @endif
+        @if (theme_option('social_instagram'))
+            <a href="{{ theme_option('social_instagram') }}" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        @endif
+        @if (theme_option('social_twitter'))
+            <a href="{{ theme_option('social_twitter') }}" target="_blank" title="X">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        @endif
+        @if (theme_option('social_tiktok'))
+            <a href="{{ theme_option('social_tiktok') }}" target="_blank" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        @endif
+        @if (theme_option('social_linkedin'))
+            <a href="{{ theme_option('social_linkedin') }}" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        @endif
+    </div>
+</div>

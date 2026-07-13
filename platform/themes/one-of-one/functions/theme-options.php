@@ -97,34 +97,31 @@ app('events')->listen(\Botble\Theme\Events\RenderingThemeOptionSettings::class, 
                 ->sectionId('opt-text-subsection-real-estate')
                 ->defaultValue(true)
         )
-        ->setField(
-            TextField::make()
-                ->name('social_facebook')
-                ->label(__('Facebook URL'))
-                ->sectionId('opt-text-subsection-general')
-        )
-        ->setField(
-            TextField::make()
-                ->name('social_instagram')
-                ->label(__('Instagram URL'))
-                ->sectionId('opt-text-subsection-general')
-        )
-        ->setField(
-            TextField::make()
-                ->name('social_twitter')
-                ->label(__('Twitter / X URL'))
-                ->sectionId('opt-text-subsection-general')
-        )
-        ->setField(
-            TextField::make()
-                ->name('social_tiktok')
-                ->label(__('TikTok URL'))
-                ->sectionId('opt-text-subsection-general')
-        )
-        ->setField(
-            TextField::make()
-                ->name('social_linkedin')
-                ->label(__('LinkedIn URL'))
-                ->sectionId('opt-text-subsection-general')
+        ->setSection(
+            ThemeOptionSection::make('opt-text-subsection-social-links')
+                ->title(__('Social Links'))
+                ->icon('ti ti-share')
+                ->fields([
+                    TextField::make()
+                        ->name('social_facebook')
+                        ->label(__('Facebook URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('social_instagram')
+                        ->label(__('Instagram URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('social_twitter')
+                        ->label(__('Twitter / X URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('social_tiktok')
+                        ->label(__('TikTok URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('social_linkedin')
+                        ->label(__('LinkedIn URL'))
+                        ->defaultValue('#'),
+                ])
         );
 });
