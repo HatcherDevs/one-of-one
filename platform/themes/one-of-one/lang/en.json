@@ -11,5 +11,20 @@
     "Service Unavailable": "Service Unavailable",
     "Sorry, we are doing some maintenance. Please check back soon.": "Sorry, we are doing some maintenance. Please check back soon.",
     "Oh no": "Oh no",
-    "Please try again in a few minutes, or alternatively return to the homepage by <a href=\":link\">clicking here</a>.": "Please try again in a few minutes, or alternatively return to the homepage by <a href=\":link\">clicking here</a>."
+    "Please try again in a few minutes, or alternatively return to the homepage by \u003ca href=\":link\"\u003eclicking here\u003c/a\u003e.": "Please try again in a few minutes, or alternatively return to the homepage by \u003ca href=\":link\"\u003eclicking here\u003c/a\u003e.",
+    "Get in Touch": "Get in Touch",
+    "Have a query? Contact us.": "Have a query? Contact us.",
+    "To discover more about our services, please reach out to our investment team:": "To discover more about our services, please reach out to our investment team:",
+    "Email:": "Email:",
+    "Phone:": "Phone:",
+    "Alternatively, you may submit your inquiries using the form provided below. We will respond promptly.": "Alternatively, you may submit your inquiries using the form provided below. We will respond promptly.",
+    "Full name": "Full name",
+    "Phone number": "Phone number",
+    "Email": "Email",
+    "Message": "Message",
+    "Submit": "Submit",
+    "Find us at": "Find us at",
+    "Contact Us": "Contact Us",
+    "Contact us": "Contact us",
+    "Get in touch": "Get in touch"
 }
