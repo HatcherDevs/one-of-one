@@ -32,7 +32,7 @@
                     <a href="{{ $featured->url }}" class="position-relative d-block text-decoration-none">
                         <img src="{{ RvMedia::getImageUrl($featured->image, null, false, RvMedia::getDefaultImage()) }}"
                             alt="{{ $featured->name }}" class="w-100 mb-0"
-                            style="height: 500px; object-fit: cover; object-position: top;">
+                            style="width: 100%;margin-bottom: 0px;height: 500px;object-fit: cover;object-position: center 20%;">
                         <div class="position-absolute bottom-0 w-100 p-lg-4 p-2 featured-overlay">
                             <h3 class="sm-mb-10px m-0 pb-2 xs-fs-15 fs-40 fw-semibold w-80 featured-title">
                                 {{ $featured->name }}

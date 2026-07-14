@@ -152,14 +152,14 @@
    8. Post card image - EXACT MATCH
    ============================================================ */
 /* Featured article image (first post) - 500px height */
-.news-press-body .featured-section .card img,
+/* .news-press-body .featured-section .card img,
 .news-press-body .position-relative.d-block img {
     height: 500px !important;
     object-fit: cover !important;
     object-position: top !important;
     width: 100% !important;
     margin-bottom: 15px !important;
-}
+} */
 
 /* Regular post images - 280px height */
 .news-press-body .post-image {
