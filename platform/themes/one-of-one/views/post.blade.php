@@ -81,8 +81,7 @@
                             placeholder="{{ __('Add your email') }}" style="border-radius: 0;" required>
                         <button type="submit" class="btn d-flex justify-content-between align-items-center"
                             style="background-color: #b39c75; color: white; border-radius: 0; {{ $isRtl ? 'margin-right' : 'margin-left' }}: auto; width: 120px;">
-                            {{ __('Submit') }} <span
-                                style="font-size: 1.2rem;">{{ $isRtl ? '&#9664;' : '&#9654;' }}</span>
+                            {{ __('Submit') }} <span style="font-size: 1.2rem;">{!! $isRtl ? '&#9664;' : '&#9654;' !!}</span>
                         </button>
                     </form>
                     <div id="newsletter-message" class="mt-2" style="display: none;"></div>
