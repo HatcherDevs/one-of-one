@@ -1,6 +1,7 @@
 @use(Botble\Menu\Facades\Menu)
 @use(Botble\Media\Facades\RvMedia)
-<footer class="pb-0 pt-3" style="background-color: #434B42;">
+@php $isRtl = BaseHelper::isRtlEnabled(); @endphp
+<footer class="pb-0 pt-3" style="background-color: #434B42;" dir="ltr">
     <div class="container-fluid px-lg-5">
         <div class="row g-0 align-items-center">
 
