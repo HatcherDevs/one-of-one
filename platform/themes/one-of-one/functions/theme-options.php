@@ -123,5 +123,32 @@ app('events')->listen(\Botble\Theme\Events\RenderingThemeOptionSettings::class, 
                         ->label(__('LinkedIn URL'))
                         ->defaultValue('#'),
                 ])
+        )
+        ->setSection(
+            ThemeOptionSection::make('opt-text-subsection-footer-social-links')
+                ->title(__('Footer Social Links'))
+                ->icon('ti ti-share')
+                ->fields([
+                    TextField::make()
+                        ->name('footer_social_facebook')
+                        ->label(__('Facebook URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('footer_social_instagram')
+                        ->label(__('Instagram URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('footer_social_twitter')
+                        ->label(__('Twitter / X URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('footer_social_tiktok')
+                        ->label(__('TikTok URL'))
+                        ->defaultValue('#'),
+                    TextField::make()
+                        ->name('footer_social_linkedin')
+                        ->label(__('LinkedIn URL'))
+                        ->defaultValue('#'),
+                ])
         );
 });

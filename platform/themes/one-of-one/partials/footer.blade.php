@@ -25,35 +25,36 @@
                 <!-- Social Icons -->
                 <div class="text-center text-md-end px-4 mb-2 mb-md-0">
                     <div class="d-flex justify-content-center justify-content-md-end gap-3">
-                        @php
-                            $socialLinks = \Botble\Theme\Supports\ThemeSupport::getSocialLinks();
-                            // Map Tabler icons to Bootstrap Icons (used in footer)
-                            $iconMap = [
-                                'ti-brand-facebook' => 'bi bi-facebook',
-                                'ti-brand-instagram' => 'bi bi-instagram',
-                                'ti-brand-linkedin' => 'bi bi-linkedin',
-                                'ti-brand-x' => 'bi bi-twitter',
-                                'ti-brand-youtube' => 'bi bi-youtube',
-                                'ti-brand-tiktok' => 'bi bi-tiktok',
-                                'ti-facebook' => 'bi bi-facebook',
-                                'ti-instagram' => 'bi bi-instagram',
-                                'ti-linkedin' => 'bi bi-linkedin',
-                                'ti-twitter' => 'bi bi-twitter',
-                                'ti-youtube' => 'bi bi-youtube',
-                            ];
-                        @endphp
-                        @foreach ($socialLinks as $link)
-                            @php $icon = strtr($link->getIcon() ?? '', $iconMap); @endphp
-                            <a href="{{ $link->getUrl() }}" target="_blank" title="{{ $link->getName() }}"
+                        @if (theme_option('footer_social_facebook'))
+                            <a href="{{ theme_option('footer_social_facebook') }}" target="_blank" title="Facebook"
                                 class="text-tranpirant rounded-circle bg-white" style="padding: 4px 10px;">
-                                @if ($link->getImage())
-                                    <img src="{{ RvMedia::url($link->getImage()) }}" alt="{{ $link->getName() }}"
-                                        style="width: 20px; height: 20px;">
-                                @else
-                                    <i class="{{ $icon }}"></i>
-                                @endif
+                                <i class="bi bi-facebook"></i>
                             </a>
-                        @endforeach
+                        @endif
+                        @if (theme_option('footer_social_instagram'))
+                            <a href="{{ theme_option('footer_social_instagram') }}" target="_blank" title="Instagram"
+                                class="text-tranpirant rounded-circle bg-white" style="padding: 4px 10px;">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        @endif
+                        @if (theme_option('footer_social_twitter'))
+                            <a href="{{ theme_option('footer_social_twitter') }}" target="_blank" title="X"
+                                class="text-tranpirant rounded-circle bg-white" style="padding: 4px 10px;">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        @endif
+                        @if (theme_option('footer_social_tiktok'))
+                            <a href="{{ theme_option('footer_social_tiktok') }}" target="_blank" title="TikTok"
+                                class="text-tranpirant rounded-circle bg-white" style="padding: 4px 10px;">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        @endif
+                        @if (theme_option('footer_social_linkedin'))
+                            <a href="{{ theme_option('footer_social_linkedin') }}" target="_blank" title="LinkedIn"
+                                class="text-tranpirant rounded-circle bg-white" style="padding: 4px 10px;">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        @endif
                     </div>
                 </div>
 

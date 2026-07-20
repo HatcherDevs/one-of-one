@@ -24454,7 +24454,7 @@ footer .footer-navbar .nav-item:last-child a {
 
 .main-title {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
   right: 0;
   text-align: center !important;
@@ -24487,10 +24487,10 @@ footer .footer-navbar .nav-item:last-child a {
   text-align: center;
   opacity: 0;
   transition: opacity 0.33s, filter 0.4s;
-  padding: 40px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
   pointer-events: none;
   z-index: 4;
-  padding-top: 12%;
+  /* padding-top: 12%; */
 }
 
 .card:hover .card-overlay-custom,
