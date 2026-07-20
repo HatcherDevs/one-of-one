@@ -18,7 +18,7 @@
     <div class="container-fluid px-lg-5">
         <div class="g-0 px-lg-4">
             <h2 class="fw-lighter xs-fs-20 lg-fs-50" style="color: #554A41;line-height: 1.3;">
-                <p class="fs-20 mb-1" style="color: #B39C75;">News</p>
+                <p class="fs-20 mb-1" style="color: #232922 !important;">News</p>
                 latest News
             </h2>
 
