@@ -21,7 +21,7 @@ return [
     'post' => 'Post',
     'edit_this_post' => 'Edit this post',
     'no_new_post_now' => 'There is no new post now!',
-    'menu_name' => 'Posts',
+    'menu_name' => 'Articles',
     'widget_posts_recent' => 'Recent Posts',
     'categories' => 'Categories',
     'category' => 'Category',

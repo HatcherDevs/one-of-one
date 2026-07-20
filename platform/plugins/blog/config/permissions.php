@@ -2,7 +2,7 @@
 
 return [
     [
-        'name' => 'Blog',
+        'name' => 'News & Press',
         'flag' => 'plugins.blog',
         'parent_flag' => 'core.cms',
     ],
@@ -69,7 +69,7 @@ return [
         'parent_flag' => 'tags.index',
     ],
     [
-        'name' => 'Blog',
+        'name' => 'News & Press',
         'flag' => 'blog.settings',
         'parent_flag' => 'settings.others',
     ],

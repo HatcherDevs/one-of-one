@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'menu_name' => 'Blog',
-    'blog_page' => 'Blog Page',
+    'menu_name' => 'News & Press',
+    'blog_page' => 'News & Press Page',
     'select' => '-- Select --',
     'blog_page_id' => 'Blog page',
     'number_posts_per_page' => 'Number of posts per page',
@@ -12,7 +12,7 @@ return [
     'number_posts_per_page_in_category' => 'Number of posts per page in a category',
     'number_posts_per_page_in_tag' => 'Number of posts per page in a tag',
     'settings' => [
-        'title' => 'Blog',
+        'title' => 'News & Press',
         'description' => 'View and update blog settings',
         'enable_blog_post_schema' => 'Enable Schema for blog posts',
         'enable_blog_post_schema_description' => 'Learn more: https://schema.org/Article',
